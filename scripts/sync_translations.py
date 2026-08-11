@@ -3,26 +3,32 @@
 
 目录结构:
     translations/<版本号>/zh/global.mo + global.po
-    translations/<版本号>/zh-sg/global.mo + global.po
+    translations/<版本号>/zh_sg/global.mo + global.po
     translations/<版本号>/en/global.mo + global.po
 旧版本永远保留。
+
+说明:
+  - 拉取方式: 直接用 GitHub raw URL 下载三个 .mo 文件
+    (sparse checkout 在 partial clone 环境下不可靠, 已弃用)
+  - ModSDK 实际语言目录: zh / zh_sg / en (注意 zh_sg 是下划线!)
 """
 import json
 import os
 import shutil
 import struct
-import subprocess
 import sys
-import tempfile
+import urllib.error
+import urllib.parse
 import urllib.request
 from pathlib import Path
 
 import polib
 
 REPO = "wgmods/ModSDK"
-REMOTE = f"https://github.com/{REPO}.git"
+RAW_BASE = f"https://raw.githubusercontent.com/{REPO}"
 API_TAGS = f"https://api.github.com/repos/{REPO}/tags"
-LANGS = ["zh", "zh-sg", "en"]
+# 注意: ModSDK 的语言目录是 zh_sg(下划线), 不是 zh-sg(连字符)
+LANGS = ["zh", "zh_sg", "en"]
 MO_PATH_TMPL = "global.mo/{lang}/LC_MESSAGES/global.mo"
 TRANSLATIONS_DIR = Path("translations")
 
@@ -128,33 +134,47 @@ def get_latest_tag(token: str | None) -> str | None:
     req = urllib.request.Request(API_TAGS, headers={"User-Agent": "wows-zh-shipname-fixes"})
     if token:
         req.add_header("Authorization", f"token {token}")
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        tags = json.load(resp)
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            tags = json.load(resp)
+    except urllib.error.HTTPError as e:
+        print(f"  [失败] GitHub API 返回 {e.code}: {e.read()[:500]!r}")
+        raise
+    except urllib.error.URLError as e:
+        print(f"  [失败] 无法访问 GitHub API: {e.reason}")
+        raise
     if not tags:
         return None
     return tags[0]["name"]
 
 
-def fetch_mo(tag: str, workdir: Path) -> dict[str, Path]:
-    """用 sparse clone 只拉取指定 tag 的 global.mo 目录"""
-    tmp = workdir / "modsdk_tmp"
-    subprocess.run(
-        ["git", "clone", "--depth", "1", "--filter=blob:none", "--sparse",
-         "--branch", tag, REMOTE, str(tmp)],
-        check=True, capture_output=True, text=True,
-    )
-    subprocess.run(
-        ["git", "sparse-checkout", "set", "global.mo"],
-        cwd=tmp, check=True, capture_output=True, text=True,
-    )
+def download_file(url: str, dst: Path) -> None:
+    """下载文件到目标路径，失败时打印清晰错误"""
+    print(f"  [下载] {url}")
+    req = urllib.request.Request(url, headers={"User-Agent": "wows-zh-shipname-fixes"})
+    try:
+        with urllib.request.urlopen(req, timeout=60) as resp, open(dst, "wb") as f:
+            shutil.copyfileobj(resp, f)
+    except urllib.error.HTTPError as e:
+        raise RuntimeError(f"下载失败 HTTP {e.code}: {url}") from e
+    except urllib.error.URLError as e:
+        raise RuntimeError(f"下载失败: {e.reason}: {url}") from e
+
+
+def fetch_mo(tag: str, out_dir: Path) -> dict[str, Path]:
+    """用 raw URL 直接下载三个语言的 .mo 文件到 out_dir"""
     result = {}
     for lang in LANGS:
-        src = tmp / MO_PATH_TMPL.format(lang=lang)
-        if src.exists():
-            result[lang] = src
-        else:
-            print(f"  [警告] {lang} 的 mo 文件不存在: {src}")
-    shutil.rmtree(tmp, ignore_errors=True)
+        rel = MO_PATH_TMPL.format(lang=lang)
+        url = f"{RAW_BASE}/{urllib.parse.quote(tag)}/{rel}"
+        dst = out_dir / lang / "global.mo"
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        try:
+            download_file(url, dst)
+            result[lang] = dst
+            print(f"  [OK] {lang}: {dst} ({dst.stat().st_size:,} 字节)")
+        except RuntimeError as e:
+            print(f"  [警告] {e}")
     return result
 
 
@@ -190,17 +210,13 @@ def main() -> int:
         return 0
 
     print(f"拉取版本 {tag} 的翻译文件 ...")
-    with tempfile.TemporaryDirectory() as td:
-        mos = fetch_mo(tag, Path(td))
-        if not mos:
-            print("没有获取到任何 mo 文件，终止")
-            return 1
-        for lang, mo_path in mos.items():
-            lang_dir = out_dir / lang
-            lang_dir.mkdir(parents=True, exist_ok=True)
-            dst_mo = lang_dir / "global.mo"
-            shutil.copy(mo_path, dst_mo)
-            decompile(dst_mo, lang_dir / "global.po")
+    out_dir.mkdir(parents=True, exist_ok=True)
+    mos = fetch_mo(tag, out_dir)
+    if not mos:
+        print("没有获取到任何 mo 文件，终止")
+        return 1
+    for lang, mo_path in mos.items():
+        decompile(mo_path, mo_path.parent / "global.po")
 
     (out_dir / "README.md").write_text(
         f"# 版本 {tag}\n\n"
