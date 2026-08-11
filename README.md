@@ -2,6 +2,8 @@
 
 修正《战舰世界》(World of Warships) 简体中文舰船名称翻译错误的勘误项目。
 
+> 仓库地址：<https://github.com/XYY1411/wows-zh-shipname-fixes>
+
 自动从 [wgmods/ModSDK](https://github.com/wgmods/ModSDK) 同步官方翻译，生成三语言对照表与版本差异表，供人工校对并修正舰船译名。
 
 ## 项目做什么
@@ -13,15 +15,15 @@
 
 ## 去哪找文件
 
-| 内容 | 位置 |
-|---|---|
-| 各版本翻译与表格 | `translations/<版本号>/`（如 `translations/15.7.0/`） |
-| 三语言对照表 | `translations/<版本号>/global.xlsx` |
-| 舰船词条表（翻译入口） | `translations/<版本号>/ship.xlsm` |
-| 版本差异表 | `translations/<版本号>/global_diff.xlsx`、`ship_diff.xlsx` |
-| 原始键值数据 | `translations/<版本号>/<语言>/global.csv`、`ship.csv` |
-| 自动同步工作流 | `.github/workflows/sync-translations.yml` |
-| 生成脚本 | `scripts/sync_translations.py`、`scripts/generate_tables.py` |
+| 内容                   | 位置                                                         |
+| ---------------------- | ------------------------------------------------------------ |
+| 各版本翻译与表格       | `translations/<版本号>/`（如 `translations/15.7.0/`）        |
+| 三语言对照表           | `translations/<版本号>/global.xlsx`                          |
+| 舰船词条表（翻译入口） | `translations/<版本号>/ship.xlsm`                            |
+| 版本差异表             | `translations/<版本号>/global_diff.xlsx`、`ship_diff.xlsx`   |
+| 原始键值数据           | `translations/<版本号>/<语言>/global.csv`、`ship.csv`        |
+| 自动同步工作流         | `.github/workflows/sync-translations.yml`                    |
+| 生成脚本               | `scripts/sync_translations.py`、`scripts/generate_tables.py` |
 
 ## 怎么用
 
@@ -35,3 +37,14 @@
 - [自动同步工作流](docs/workflow.md)
 - [表格与差异生成](docs/tables.md)
 - [翻译修正流程](docs/translation.md)
+
+## 感谢
+
+- [战舰世界全系舰名翻译勘误 by Mrtn](https://www.bilibili.com/opus/1234142123653070865)
+
+## 版权与许可
+
+- **翻译数据**来源 [wgmods/ModSDK](https://github.com/wgmods/ModSDK)，版权归 **© 2012 – 2026 Wargaming.net** 所有，本项目仅引用翻译文本用于非商业勘误
+- 本项目的**修正翻译、脚本与文档**采用 **CC BY-NC-SA 4.0** 许可
+- 本项目与 Wargaming.net **无官方关联**；船舰名称及相关商标归各自所有者所有
+- 完整声明见 [LICENSE](LICENSE)
