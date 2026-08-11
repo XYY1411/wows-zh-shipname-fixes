@@ -237,7 +237,17 @@ def main() -> int:
 
     out_dir = TRANSLATIONS_DIR / tag
     if out_dir.exists():
-        print(f"版本 {tag} 已同步过，跳过")
+        print(f"版本 {tag} 已同步过，检查 CSV ...")
+        for lang in LANGS:
+            po_path = out_dir / lang / "global.po"
+            if po_path.exists():
+                g_csv = out_dir / lang / "global.csv"
+                s_csv = out_dir / lang / "ship.csv"
+                if not g_csv.exists() or not s_csv.exists():
+                    po = polib.pofile(str(po_path))
+                    po_to_csv(po, g_csv)
+                    extract_ship_csv(po, s_csv)
+                    print(f"  [补生成] {lang} 的 CSV")
         return 0
 
     print(f"拉取版本 {tag} 的翻译文件 ...")
