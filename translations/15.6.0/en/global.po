@@ -727,38 +727,6 @@ msgstr "Black Friday"
 msgid "IDS_2D_HUB_BLACK_FRIDAY_MOUSE_INSTRUCTION"
 msgstr "Go to the Black Friday category in the Armory"
 
-msgid "IDS_2D_HUB_CLR_LEADERBOARD_1_BANNER_DESCRIPTION"
-msgstr ""
-"Two consecutive Leaderboards dedicated to the Colorful Regatta event await "
-"you within one update! The Top 25 players by the highest amount of Base XP "
-"earned in a single battle will get valuable rewards in the first "
-"Leaderboard."
-
-msgid "IDS_2D_HUB_CLR_LEADERBOARD_1_BANNER_TITLE"
-msgstr "Colorful Leaderboard: Top 25"
-
-msgid "IDS_2D_HUB_CLR_LEADERBOARD_2_BANNER_DESCRIPTION"
-msgstr ""
-"The second Leaderboard will grant valuable rewards to the Top 50 players by "
-"the highest amount of Base XP earned in a single battle!"
-
-msgid "IDS_2D_HUB_CLR_LEADERBOARD_2_BANNER_TITLE"
-msgstr "Colorful Leaderboard: Top 50"
-
-msgid "IDS_2D_HUB_CLR_LEADERBOARD_MOUSE_INSTRUCTION"
-msgstr "Go to the Leaderboard screen"
-
-msgid "IDS_2D_HUB_ESP_LEGENDARY_BANNER_DESCRIPTION"
-msgstr ""
-"Obtain the dedicated containers in the Armory to complete the new collection"
-" and receive a unique Commander as a reward."
-
-msgid "IDS_2D_HUB_ESP_LEGENDARY_BANNER_TITLE"
-msgstr "Battle of Santiago de Cuba"
-
-msgid "IDS_2D_HUB_ESP_LEGENDARY_MOUSE_INSTRUCTION"
-msgstr "Go to Armory"
-
 msgid "IDS_2D_HUB_FINISH_TIME_BANNER_STATUS"
 msgstr "Ends in %(_timeLeftToFinish)s"
 
@@ -791,17 +759,6 @@ msgstr "10th Anniversary: Grand Voyage"
 msgid "IDS_2D_HUB_GRAND_VOYAGE_MOUSE_INSTRUCTION"
 msgstr "Go to the \"10th Anniversary: Grand Voyage\" page"
 
-msgid "IDS_2D_HUB_HOLIDAY_CONVOY_BANNER_DESCRIPTION"
-msgstr ""
-"Play every day and exchange resources to obtain Holiday Convoy Tokens. Spend"
-" them on Doubloons and ships until the end of the event!"
-
-msgid "IDS_2D_HUB_HOLIDAY_CONVOY_BANNER_TITLE"
-msgstr "Holiday Convoy"
-
-msgid "IDS_2D_HUB_HOLIDAY_CONVOY_MOUSE_INSTRUCTION"
-msgstr "Go to the Holiday Convoy page"
-
 msgid "IDS_2D_HUB_KOTS_BANNER_DESCRIPTION"
 msgstr ""
 "Take part in one of the major competitions in World of Warships—prove you "
@@ -812,20 +769,6 @@ msgstr "King of the Sea XVIII"
 
 msgid "IDS_2D_HUB_KOTS_MOUSE_INSTRUCTION"
 msgstr "Learn more"
-
-msgid "IDS_2D_HUB_LEGENARY_BONUSES_BANNER_DESCRIPTION"
-msgstr ""
-"Your Free XP epic expendable economic bonuses have already been converted "
-"into Exchange Tokens. These are now waiting to be spent on the newly added "
-"legendary expendable economic bonuses! Obtain new bonuses of your choice "
-"before they are automatically exchanged for legendary Free XP bonuses at the"
-" start of Update 15.8."
-
-msgid "IDS_2D_HUB_LEGENARY_BONUSES_BANNER_TITLE"
-msgstr "Legendary Bonuses"
-
-msgid "IDS_2D_HUB_LEGENARY_BONUSES_MOUSE_INSTRUCTION"
-msgstr "Go to Armory"
 
 msgid "IDS_2D_HUB_LNY_CONTAINERS_BANNER_DESCRIPTION"
 msgstr ""
@@ -914,17 +857,6 @@ msgstr "Your Gift"
 msgid "IDS_2D_HUB_NY_GIFT_MOUSE_INSTRUCTION"
 msgstr "Claim Your Gift"
 
-msgid "IDS_2D_HUB_PAM_DD_EA_BANNER_DESCRIPTION"
-msgstr ""
-"Pan-American destroyers have arrived in Early Access! Navigate to the Armory"
-" and welcome the newcomers!"
-
-msgid "IDS_2D_HUB_PAM_DD_EA_BANNER_TITLE"
-msgstr "Pan-American Destroyers"
-
-msgid "IDS_2D_HUB_PAM_DD_EA_MOUSE_INSTRUCTION"
-msgstr "Go to Armory"
-
 msgid "IDS_2D_HUB_PLAYER_REPORT_BANNER_DESCRIPTION"
 msgstr ""
 "Relive the best moments of your journey in World of Warships—discover your "
@@ -989,18 +921,6 @@ msgstr "Required:"
 
 msgid "IDS_2D_HUB_START_TIME_BANNER_STATUS"
 msgstr "Available in %(_timeLeftToStart)s"
-
-msgid "IDS_2D_HUB_TMNT_BANNER_DESCRIPTION"
-msgstr ""
-"Special offers are available in the Armory! Don't miss your chance to obtain"
-" TMNT-themed Commanders, Premium containers, camouflages, and other items "
-"with great discounts!"
-
-msgid "IDS_2D_HUB_TMNT_BANNER_TITLE"
-msgstr "TMNT"
-
-msgid "IDS_2D_HUB_TMNT_MOUSE_INSTRUCTION"
-msgstr "Go to Armory"
 
 msgid "IDS_2D_HUB_WINDOW_HEADER_UPPER"
 msgstr "Update Navigator"
@@ -1316,6 +1236,18 @@ msgstr "Migi"
 
 msgid "IDS_AAAURA_DAMAGE_CHANGED"
 msgstr "Continuous AA damage increased"
+
+msgid "IDS_AA_PRIORITY_SECTOR_CANT_SET"
+msgstr "Priority AA sector already selected"
+
+msgid "IDS_AA_PRIORITY_SECTOR_READY"
+msgstr "Priority AA sector ready"
+
+msgid "IDS_AA_PRIORITY_SECTOR_SELECTED_LEFT"
+msgstr "Priority AA sector selected"
+
+msgid "IDS_AA_PRIORITY_SECTOR_SELECTED_RIGHT"
+msgstr "Priority AA sector selected"
 
 msgid "IDS_ABSOLUTE_GUNS_LOCK"
 msgstr "Lock guns on point"
@@ -2460,12 +2392,12 @@ msgstr "Destroy three enemy ships in three different ways in a single battle."
 msgid "IDS_ACHIEVEMENT_DESCRIPTION_AIRDEFENSEEXPERT"
 msgstr ""
 "In a single battle, destroy at least %(goalValue)s enemy aircraft, including"
-" planes from ships other than aircraft carriers."
+" planes launched from cruisers and battleships."
 
 msgid "IDS_ACHIEVEMENT_DESCRIPTION_AIRKING"
 msgstr ""
 "In a single battle, destroy at least %(goalValue)s enemy aircraft, including"
-" planes from ships other than aircraft carriers, using your own aircraft or "
+" planes launched from cruisers and battleships, using your own aircraft or "
 "the AA guns mounted on your aircraft carrier."
 
 msgid "IDS_ACHIEVEMENT_DESCRIPTION_ALL_THREE_HALLOWEEN_COMPLETE"
@@ -2840,7 +2772,7 @@ msgstr "Your Division must destroy %(classCount)s ships of different types."
 msgid "IDS_ACHIEVEMENT_DESCRIPTION_CLEAR_SKY"
 msgstr ""
 "In a single battle, destroy at least half of all enemy aircraft (including "
-"planes from ships other than aircraft carriers). You must destroy at least "
+"planes from cruisers and battleships). You must destroy at least "
 "%(planesCount)s aircraft using fighters or AA guns."
 
 msgid "IDS_ACHIEVEMENT_DESCRIPTION_COLLECTION_AMERICANARC_COMPLETED"
@@ -3098,9 +3030,6 @@ msgstr "Complete the '39–'45 Chronicles collection."
 
 msgid "IDS_ACHIEVEMENT_DESCRIPTION_FILLALBUM_EPOCHSOFSHIPS_COMPLETED"
 msgstr "Complete the \"Five Epochs of the Navy\" collection."
-
-msgid "IDS_ACHIEVEMENT_DESCRIPTION_FILLALBUM_ESP_LEGENDARY_PUZZLE_COMPLETED"
-msgstr "Complete the Battle of Santiago de Cuba collection."
 
 msgid "IDS_ACHIEVEMENT_DESCRIPTION_FILLALBUM_FRENCHDD_COMPLETED"
 msgstr "Complete the Legion of Honor collection."
@@ -3805,9 +3734,6 @@ msgstr "Reach the Hurricane League in Clan Battles Season 33."
 msgid "IDS_ACHIEVEMENT_DESCRIPTION_TOP_LEAGUE_CLAN_SEASON_34"
 msgstr "Reach the Hurricane League in Clan Battles Season 34."
 
-msgid "IDS_ACHIEVEMENT_DESCRIPTION_TOP_LEAGUE_CLAN_SEASON_35"
-msgstr "Reach the Hurricane League in Clan Battles Season 35."
-
 msgid "IDS_ACHIEVEMENT_DESCRIPTION_TOP_LEAGUE_CLAN_SEASON_4"
 msgstr "Reach the Hurricane League in Clan Battles Season 4."
 
@@ -3949,9 +3875,6 @@ msgstr "Win Season 33 of Clan Battles."
 
 msgid "IDS_ACHIEVEMENT_DESCRIPTION_WINNER_CLAN_SEASON_34"
 msgstr "Win Season 34 of Clan Battles."
-
-msgid "IDS_ACHIEVEMENT_DESCRIPTION_WINNER_CLAN_SEASON_35"
-msgstr "Win Season 35 of Clan Battles."
 
 msgid "IDS_ACHIEVEMENT_DESCRIPTION_WINNER_CLAN_SEASON_4"
 msgstr "Win Season 4 of Clan Battles."
@@ -4110,9 +4033,6 @@ msgstr "'39–'45 Chronicles"
 
 msgid "IDS_ACHIEVEMENT_FILLALBUM_EPOCHSOFSHIPS_COMPLETED"
 msgstr "Five Epochs of the Navy"
-
-msgid "IDS_ACHIEVEMENT_FILLALBUM_ESP_LEGENDARY_PUZZLE_COMPLETED"
-msgstr "Battle of Santiago de Cuba"
 
 msgid "IDS_ACHIEVEMENT_FILLALBUM_FRENCHDD_COMPLETED"
 msgstr "Legion of Honor"
@@ -4873,9 +4793,6 @@ msgstr "Hurricane: Blue Marlin"
 msgid "IDS_ACHIEVEMENT_TOP_LEAGUE_CLAN_SEASON_34"
 msgstr "Hurricane: Hammerhead"
 
-msgid "IDS_ACHIEVEMENT_TOP_LEAGUE_CLAN_SEASON_35"
-msgstr "Hurricane: Komodo Dragon"
-
 msgid "IDS_ACHIEVEMENT_TOP_LEAGUE_CLAN_SEASON_4"
 msgstr "Hurricane: North"
 
@@ -5034,9 +4951,6 @@ msgstr "Blue Marlin"
 
 msgid "IDS_ACHIEVEMENT_WINNER_CLAN_SEASON_34"
 msgstr "Hammerhead"
-
-msgid "IDS_ACHIEVEMENT_WINNER_CLAN_SEASON_35"
-msgstr "Komodo Dragon"
 
 msgid "IDS_ACHIEVEMENT_WINNER_CLAN_SEASON_4"
 msgstr "North"
@@ -6323,21 +6237,6 @@ msgstr ""
 msgid "IDS_AHEAD_CAMERA"
 msgstr "Quick View Camera"
 
-msgid "IDS_AIMED_FIRE_ACTIVATED"
-msgstr "Concentrated AA Fire activated"
-
-msgid "IDS_AIMED_FIRE_ALREADY_ACTIVATED"
-msgstr "Concentrated AA Fire already active"
-
-msgid "IDS_AIMED_FIRE_READY"
-msgstr "Concentrated AA Fire ready"
-
-msgid "IDS_AIMED_FIRE_UNAVAILABLE_AA_RELOADING"
-msgstr "Concentrated AA Fire unavailable"
-
-msgid "IDS_AIMED_FIRE_UNAVAILABLE_NOT_ENOUGH_CHARGE"
-msgstr "Concentrated AA Fire not ready yet"
-
 msgid "IDS_AIRBARRIER"
 msgstr "Concealed Maneuvers"
 
@@ -7008,9 +6907,6 @@ msgstr[2] "And %(count)s more ships"
 
 msgid "IDS_ANGELALUTTI"
 msgstr "Angela Lutti"
-
-msgid "IDS_ANGEL_ORTIZ_MONASTERIO"
-msgstr "Ángel Ortiz Monasterio"
 
 msgid "IDS_ANGLE_LEFT"
 msgstr "Hold turn to port"
@@ -7756,7 +7652,7 @@ msgid "IDS_ARM_FEAT_BAD_ACOUSTIC_RANGEDAMAGE"
 msgstr "Short-range acoustic homing torpedoes inflict low damage"
 
 msgid "IDS_ARM_FEAT_BAD_ADEF_NOBARRAGE"
-msgstr "Auxiliary and Torpedo Weaponry Coordination consumable unavailable"
+msgstr "Defensive AA Fire consumable unavailable"
 
 msgid "IDS_ARM_FEAT_BAD_AIRSTRIKE_LEAD"
 msgstr "Airstrike bombs fall slowly"
@@ -7953,7 +7849,7 @@ msgid "IDS_ARM_FEAT_GERHYDROPHONE_DESC"
 msgstr "Long-range and fast-reloading."
 
 msgid "IDS_ARM_FEAT_GOOD_ADEF_BONUSBARRAGE"
-msgstr "Auxiliary and Torpedo Weaponry Coordination consumable available"
+msgstr "Defensive AA Fire consumable available"
 
 msgid "IDS_ARM_FEAT_GOOD_AIRSTRIKE_DMGPEN"
 msgstr "High Airstrike bomb damage and penetration"
@@ -8045,10 +7941,6 @@ msgstr ""
 
 msgid "IDS_ARM_FEAT_GOOD_CONSUMABLE_RADAR"
 msgstr "Surveillance Radar consumable available"
-
-msgid "IDS_ARM_FEAT_GOOD_CONS_IMPROVED_COORDINATION"
-msgstr ""
-"Enhanced Auxiliary and Torpedo Weaponry Coordination consumable available"
 
 msgid "IDS_ARM_FEAT_GOOD_CONS_RELOAD_MANYCHARGES_CITADEL_DESC"
 msgstr ""
@@ -8209,14 +8101,8 @@ msgstr "High firing accuracy of the main battery"
 msgid "IDS_ARM_FEAT_GOOD_MC_MODSHELLS"
 msgstr "Modified Shells alternative fire mode available"
 
-msgid "IDS_ARM_FEAT_GOOD_MC_MODSHELLS_APDAMAGE"
-msgstr "Increased main battery AP shell damage"
-
 msgid "IDS_ARM_FEAT_GOOD_MC_MODSHELLS_GOODACCURACY"
 msgstr "Reduced shell dispersion"
-
-msgid "IDS_ARM_FEAT_GOOD_MC_MODSHELLS_HEDAMAGE"
-msgstr "Increased main battery HE shell damage"
 
 msgid "IDS_ARM_FEAT_GOOD_MOVE_ACCELERATION"
 msgstr "High ship acceleration"
@@ -8256,16 +8142,6 @@ msgstr "Immediate Main Battery Fire Adjustment Combat Instructions available"
 msgid "IDS_ARM_FEAT_GOOD_RAGEMODE_MC_ACCURACY"
 msgstr "Reduces maximum main battery shell dispersion when used"
 
-msgid "IDS_ARM_FEAT_GOOD_RAGEMODE_MG_APDAMAGE"
-msgstr ""
-"Combat Instructions increase the damage dealt by the main battery AP shells "
-"upon activation"
-
-msgid "IDS_ARM_FEAT_GOOD_RAGEMODE_MG_APPEN"
-msgstr ""
-"Combat Instructions increase the armor penetration capabilities of the main "
-"battery AP shells upon activation"
-
 msgid "IDS_ARM_FEAT_GOOD_RAGEMODE_PAMPA"
 msgstr "Covert Consumable Readiness Combat Instructions available"
 
@@ -8279,11 +8155,6 @@ msgid "IDS_ARM_FEAT_GOOD_RAGEMODE_SECONDARY_ACCURACY"
 msgstr ""
 "Combat Instructions increase the accuracy of the secondary battery upon "
 "activation"
-
-msgid "IDS_ARM_FEAT_GOOD_RAGEMODE_SECONDARY_APDAMAGE"
-msgstr ""
-"Combat Instructions increase the damage dealt by the secondary battery AP "
-"shells upon activation"
 
 msgid "IDS_ARM_FEAT_GOOD_RAGEMODE_SECONDARY_PEN"
 msgstr ""
@@ -8398,9 +8269,6 @@ msgstr "Reduced reload time."
 
 msgid "IDS_ARM_FEAT_GOOD_VIS_SMOKEGENERATOR_TIMEBASED"
 msgstr "Smoke Generator with pooled usage time available"
-
-msgid "IDS_ARM_FEAT_GOOD_VIS_SMOKEGENERATOR_TIMEBASED_LONG"
-msgstr "Smoke Generator consumable has a long total usage time"
 
 msgid "IDS_ARM_FEAT_GOOD_VIS_UNIQUESMOKE"
 msgstr "Exhaust Smoke Generator consumable available"
@@ -9408,7 +9276,7 @@ msgid "IDS_BATTLEPASS_INFORMER_BUTTON"
 msgstr "Show"
 
 msgid "IDS_BATTLEPASS_INFORMER_HEADER"
-msgstr "Pan-American Destroyers"
+msgstr "250 Years of Independence"
 
 msgid "IDS_BATTLEPASS_INFORMER_HEADER_CHAPTER_1"
 msgstr "Chapter 1: Adventure's Call"
@@ -9484,7 +9352,7 @@ msgid "IDS_BATTLEPASS_ONBOARDING_TITLE_CHAPTER_2"
 msgstr "Chapter 2: Echoes of the Past"
 
 msgid "IDS_BATTLEPASS_ONBOARDING_TITLE_UPPER"
-msgstr "Pan-American Destroyers"
+msgstr "250 Years of Independence"
 
 msgid "IDS_BATTLEPASS_PAID_LINE_LOCKED"
 msgstr "Unlock the second progression line to get more rewards, plus a bonus!"
@@ -9715,7 +9583,7 @@ msgid "IDS_BATTLEPASS_TASK_TITLE_3"
 msgstr "Weekend Mission"
 
 msgid "IDS_BATTLEPASS_TITLE"
-msgstr "Pan-American Destroyers"
+msgstr "250 Years of Independence"
 
 msgid "IDS_BATTLEPASS_TITLE_CHAPTER_1"
 msgstr "CHAPTER 1: ADVENTURE'S CALL"
@@ -16804,7 +16672,7 @@ msgstr ""
 "accelerate her and slow down the enemy airship."
 
 msgid "IDS_CONTEXT_TUTORIAL_AA_SECTOR"
-msgstr "Activate AA Defense Priority"
+msgstr "Select a priority AA sector"
 
 msgid "IDS_CONTEXT_TUTORIAL_BINOCULARS_LEAVE"
 msgstr "Exit the Binocular view"
@@ -20548,96 +20416,6 @@ msgstr "Joseph"
 msgid "IDS_CREW_FIRSTNAME_USA_9"
 msgstr "Thomas"
 
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_0"
-msgstr "Alejandro"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_1"
-msgstr "Alfredo"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_10"
-msgstr "Fernando"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_11"
-msgstr "Gabriel"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_12"
-msgstr "Guillermo"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_13"
-msgstr "Hugo"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_14"
-msgstr "Ignacio"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_15"
-msgstr "Jorge"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_16"
-msgstr "José"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_17"
-msgstr "Juan"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_18"
-msgstr "León"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_19"
-msgstr "Mauro"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_2"
-msgstr "Álvaro"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_20"
-msgstr "Miguel"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_21"
-msgstr "Norberto"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_22"
-msgstr "Pablo"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_23"
-msgstr "Pedro"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_24"
-msgstr "Ramón"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_25"
-msgstr "Raúl"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_26"
-msgstr "Rodrigo"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_27"
-msgstr "Santiago"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_28"
-msgstr "Sergio"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_29"
-msgstr "Teodoro"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_3"
-msgstr "Arturo"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_4"
-msgstr "Carlos"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_5"
-msgstr "Daniel"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_6"
-msgstr "Diego"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_7"
-msgstr "Edmundo"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_8"
-msgstr "Emilio"
-
-msgid "IDS_CREW_FIRSTNAME_VENEZUELA_9"
-msgstr "Ernesto"
-
 msgid "IDS_CREW_FIRSTNAME_YUGOSLAVIA_0"
 msgstr "Aleksandar"
 
@@ -23392,96 +23170,6 @@ msgstr "Brown"
 msgid "IDS_CREW_LASTNAME_USA_9"
 msgstr "Shaw"
 
-msgid "IDS_CREW_LASTNAME_VENEZUELA_0"
-msgstr "Almeida"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_1"
-msgstr "Alvarado"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_10"
-msgstr "García"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_11"
-msgstr "González"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_12"
-msgstr "Guerrero"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_13"
-msgstr "Huerta"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_14"
-msgstr "Lucas"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_15"
-msgstr "Mantegna"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_16"
-msgstr "Marcos"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_17"
-msgstr "Martínez"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_18"
-msgstr "Morales"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_19"
-msgstr "Ortega"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_2"
-msgstr "Álvarez"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_20"
-msgstr "Pereira"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_21"
-msgstr "Ramírez"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_22"
-msgstr "Rivas"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_23"
-msgstr "Rivera"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_24"
-msgstr "Rojas"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_25"
-msgstr "Ruiz"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_26"
-msgstr "Santos"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_27"
-msgstr "Saavedra"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_28"
-msgstr "Torres"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_29"
-msgstr "Villa"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_3"
-msgstr "Andrés"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_4"
-msgstr "Barros"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_5"
-msgstr "Blanco"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_6"
-msgstr "Bueras"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_7"
-msgstr "Castillo"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_8"
-msgstr "Costa"
-
-msgid "IDS_CREW_LASTNAME_VENEZUELA_9"
-msgstr "Díaz"
-
 msgid "IDS_CREW_LASTNAME_YUGOSLAVIA_0"
 msgstr "Aleksić"
 
@@ -24734,39 +24422,6 @@ msgstr "Vice Admiral"
 msgid "IDS_CREW_RANK_USA_9"
 msgstr "Admiral"
 
-msgid "IDS_CREW_RANK_VENEZUELA_0"
-msgstr "Guardiamarina"
-
-msgid "IDS_CREW_RANK_VENEZUELA_1"
-msgstr "Alférez de Navío"
-
-msgid "IDS_CREW_RANK_VENEZUELA_10"
-msgstr "Almirante en jefe"
-
-msgid "IDS_CREW_RANK_VENEZUELA_2"
-msgstr "Teniente de Fragata"
-
-msgid "IDS_CREW_RANK_VENEZUELA_3"
-msgstr "Teniente de Navío"
-
-msgid "IDS_CREW_RANK_VENEZUELA_4"
-msgstr "Capitán de Corbeta"
-
-msgid "IDS_CREW_RANK_VENEZUELA_5"
-msgstr "Capitán de Fragata"
-
-msgid "IDS_CREW_RANK_VENEZUELA_6"
-msgstr "Capitán de Navío"
-
-msgid "IDS_CREW_RANK_VENEZUELA_7"
-msgstr "Contraalmirante"
-
-msgid "IDS_CREW_RANK_VENEZUELA_8"
-msgstr "Vicealmirante"
-
-msgid "IDS_CREW_RANK_VENEZUELA_9"
-msgstr "Almirante"
-
 msgid "IDS_CREW_RANK_YUGOSLAVIA_0"
 msgstr "Poručnik Korvete"
 
@@ -25180,44 +24835,38 @@ msgid "IDS_CURRENCY_EVENTUM_1"
 msgstr "Italian Tokens"
 
 msgid "IDS_CURRENCY_EVENTUM_10"
-msgstr "Holiday Convoy Tokens"
+msgstr "Voyage Tokens"
 
 msgid "IDS_CURRENCY_EVENTUM_10_GET_DESCRIPTION"
 msgstr ""
-"By completing combat missions or exchanging Steel, Coal, and Research Points"
-" starting from Update 15.7 and continuing until the end of the event in "
-"Update 16.0."
+"By completing combat missions from the start of Update 14.7 until "
+"December 31, 2025."
 
 msgid "IDS_CURRENCY_EVENTUM_10_SPEND_DESCRIPTION"
 msgstr ""
-"Can be exchanged for Doubloons or used to obtain bundles containing rare, "
-"epic, and legendary ships. Featured ships, including Tier VIII battleship "
-"Bismarck '41, Tier X cruiser Kitakami, and Tier X battleship New Jersey, "
-"become available at different times between Updates 15.7 and 16.0. You can "
-"spend the Tokens starting from Update 15.7 and until the end of Update 16.0."
-" If not exchanged, the Tokens will be removed without compensation."
+"Can be exchanged for Doubloons or Steel from the start of Update 14.7 until "
+"December 31, 2025. Any Tokens still held after this date will be removed "
+"without compensation."
 
 msgid "IDS_CURRENCY_EVENTUM_10_STATUS"
 msgstr "Temporary resource"
 
 msgid "IDS_CURRENCY_EVENTUM_11"
-msgstr "Colorful Tokens"
+msgstr "GQ Johnny Tokens"
 
 msgid "IDS_CURRENCY_EVENTUM_11_GET_DESCRIPTION"
 msgstr ""
-"From Colorful Regatta Premium containers, as well as by ranking in the event"
-" Leaderboards until the end of Update 15.7."
+"You can complete combat missions to get U.S. Tier IX destroyer GQ Johnny in "
+"a special Armory category from the start of Update 14.7 until December 31, "
+"2025."
 
 msgid "IDS_CURRENCY_EVENTUM_11_SPEND_DESCRIPTION"
 msgstr ""
-"Can be exchanged for Tier X battleship Conqueror CLR, Tier X cruiser "
-"Zaō CLR, Tier X destroyer Kléber CLR, Tier IX cruiser Roon CLR, and "
-"Tier VIII battleship North Carolina CLR; 10-skill-point Commanders; special "
-"flags; and other items in the Armory event category until the end of "
-"Update 15.7."
+"U.S. Tier IX destroyer GQ Johnny in a special Armory category from the start"
+" of Update 14.7 until December 31, 2025."
 
 msgid "IDS_CURRENCY_EVENTUM_11_STATUS"
-msgstr "Temporary resource of the Colorful Regatta event"
+msgstr "Temporary resource"
 
 msgid "IDS_CURRENCY_EVENTUM_12"
 msgstr "Memory Notes"
@@ -25361,44 +25010,36 @@ msgid "IDS_CURRENCY_EVENTUM_5_STATUS"
 msgstr "Temporary resource for the Wishing Wharf event"
 
 msgid "IDS_CURRENCY_EVENTUM_6"
-msgstr "Pan-American Tokens"
+msgstr "Bounty Hunt Tokens"
 
 msgid "IDS_CURRENCY_EVENTUM_6_GET_DESCRIPTION"
 msgstr ""
-"From random bundles in the Armory, as well as from a bundle that will become"
-" obtainable for Doubloons after you complete combat missions in a special "
-"category until the end of Update 15.8."
+"By completing combat missions in the Bounty Hunt event during a limited time"
+" in Update 15.4."
 
 msgid "IDS_CURRENCY_EVENTUM_6_SPEND_DESCRIPTION"
 msgstr ""
-"Can be exchanged for sequential bundles with Early Access Tier VIII "
-"destroyer Cuauhtémoc and Tier IX destroyer Nueva Esparta; permanent "
-"camouflages and bonus packages for Tier VIII Cuauhtémoc, Tier IX Nueva "
-"Esparta, and Tier X 20 de Julio; and other items in the event category of "
-"the Armory until the end of Update 15.8. Upon obtaining all sequential "
-"bundles for Pan-American Tokens, you will be able to obtain Tier X destroyer"
-" 20 de Julio for Doubloons."
+"New \"Hunt Continues\" permanent camouflage for Tier VII battleship King "
+"George V, the Last Sortie enemy destruction effect, Coal, Wharf Tokens, and "
+"other items in the event category of the Armory in Update 15.4."
 
 msgid "IDS_CURRENCY_EVENTUM_6_STATUS"
-msgstr "Temporary resource"
+msgstr "Temporary resource for the Bounty Hunt event"
 
 msgid "IDS_CURRENCY_EVENTUM_7"
-msgstr "Exchange Tokens"
+msgstr "Azur Lane Tokens"
 
 msgid "IDS_CURRENCY_EVENTUM_7_GET_DESCRIPTION"
 msgstr ""
-"Received automatically in exchange for epic Free XP Economic Bonuses at a "
-"rate of 1:1 with the release of Update 15.7. Each epic Free XP Economic "
-"Bonus is converted into one Exchange Token."
+"As a bonus when purchasing certain bundles that include Azur Lane containers"
+" in the Azur Lane category of the Armory and Premium Shop until the end of "
+"Update 15.4."
 
 msgid "IDS_CURRENCY_EVENTUM_7_SPEND_DESCRIPTION"
 msgstr ""
-"Can be exchanged for legendary expendable economic bonuses of any type in "
-"the Armory at the rate of 1:1 until the end of Update 15.7. Available "
-"bonuses include legendary Credit, XP, Commander XP, and Free XP expendable "
-"economic bonuses. If not exchanged, the Tokens will be automatically "
-"converted into legendary Free XP expendable economic bonuses at the start of"
-" Update 15.8."
+"Azur Lane permanent camouflages and enemy destruction effects in the \"Items"
+" for Azur Lane Tokens\" section of the Azur Lane category in the Armory "
+"until the end of Update 15.4."
 
 msgid "IDS_CURRENCY_EVENTUM_7_STATUS"
 msgstr "Temporary resource"
@@ -26687,24 +26328,6 @@ msgstr ""
 "commemorate the adoption of the Declaration each year on July 4, celebrated "
 "as Independence Day."
 
-msgid "IDS_DESCRIPTION_PCZA048_ESP_LEGENDARY"
-msgstr ""
-"The Battle of Santiago de Cuba, fought off the southern coast of Cuba on "
-"July 3, 1898, was a decisive naval engagement of the Spanish–American War. "
-"In the course of the battle, the United States Navy squadrons under the "
-"command of Rear Admiral William Thomas Sampson and Commodore Winfield Scott "
-"Schley confronted the Spanish squadron led by Admiral Pascual Cervera y "
-"Topete. Attempting to break out of the blockaded harbor of Santiago de Cuba,"
-" the Spanish ships came under concentrated American fire and suffered "
-"catastrophic losses. Within several hours, all major Spanish warships "
-"involved in the sortie, including the armored cruisers Infanta María Teresa,"
-" Vizcaya, Almirante Oquendo, and Cristóbal Colón, were destroyed or forced "
-"ashore. Little more than a month after the Spanish defeat at Santiago de "
-"Cuba, hostilities in the Spanish–American War came to an end. Many years "
-"later, in the late 1920s, the Spanish Navy named a light cruiser in honor of"
-" Admiral Pascual Cervera y Topete, who continued to be held in high regard "
-"in Spain despite the loss of his squadron during the battle."
-
 msgid "IDS_DESC_PCM001_MAINGUN_MOD_I"
 msgstr "Increases survivability and accelerates repairs of the main battery"
 
@@ -27292,9 +26915,6 @@ msgstr "to risk of magazine detonation"
 
 msgid "IDS_DEUTERANOPIA"
 msgstr "Deuteranopia"
-
-msgid "IDS_DE_GRASSE"
-msgstr "François J. P. de Grasse"
 
 msgid "IDS_DE_JONG"
 msgstr "Klaas Janssen"
@@ -28093,10 +27713,10 @@ msgid "IDS_DOCK_BANNER_ADECK_TOOLTIP_HEADER"
 msgstr "Dunkirk 1940"
 
 msgid "IDS_DOCK_BANNER_BATTLEPASS"
-msgstr "Event Pass"
+msgstr "250 Years of Independence"
 
 msgid "IDS_DOCK_BANNER_BATTLEPASS_TOOLTIP_HEADER"
-msgstr "Pan-American Destroyers"
+msgstr "250 Years of Independence"
 
 msgid "IDS_DOCK_BANNER_BATTLEPASS_TOOLTIP_HEADER_CHAPTER_1"
 msgstr "Chapter 1: Adventure's Call"
@@ -28673,28 +28293,11 @@ msgstr ""
 "\n"
 "If several consumables are used on the same ship and their modifiers coincide by type but differ by value, only the higher values are applied. Using a consumable with identical modifiers and values on the same ship resets the consumable action timer."
 
-msgid "IDS_DOCK_CONSUME_DESCRIPTION_PCY084_SUPPORTHEALCONSUMABLERELOAD"
+msgid "IDS_DOCK_CONSUME_DESCRIPTION_PCY084_SUPPORTHEALCONSUM"
 msgstr ""
 "This consumable can reinforce an allied ship. Using it on your own ship significantly reduces the consumable efficiency.\n"
 "\n"
 "If several consumables are used on the same ship and their modifiers coincide by type but differ by value, only the higher values are applied. Using a consumable with identical modifiers and values on the same ship resets the consumable action timer."
-
-msgid "IDS_DOCK_CONSUME_DESCRIPTION_PCY085_SUPPORTFIREEXTINGUISHING"
-msgstr ""
-"This consumable can reinforce an allied ship.\n"
-"\n"
-"If several consumables are used on the same ship and their modifiers coincide by type but differ by values, only the higher values are applied. Using a consumable with identical modifiers and values on the same ship resets the consumable action timer."
-
-msgid "IDS_DOCK_CONSUME_DESCRIPTION_PCY086_SUPPORTHEAL"
-msgstr ""
-"This consumable can reinforce an allied ship. Using it on your own ship significantly reduces the consumable efficiency.\n"
-"\n"
-"If several consumables are used on the same ship and their modifiers coincide by type but differ by values, only the higher values are applied. Using a consumable with identical modifiers and values on the same ship resets the consumable action timer."
-
-msgid "IDS_DOCK_CONSUME_DESCRIPTION_PCY087_AUXILIARYTORPEDOARMAMENTBOOSTER"
-msgstr ""
-"Accelerates Concentrated AA Fire progress gain and improves the efficiency "
-"of auxiliary and torpedo armaments."
 
 msgid "IDS_DOCK_CONSUME_DESCRIPTION_PXY001_MINDCONTROL"
 msgstr "Enemy ships stop firing their main guns at your ship."
@@ -29578,17 +29181,8 @@ msgstr "Gun Crew Assistance"
 msgid "IDS_DOCK_CONSUME_TITLE_PCY083_SUPPORTAUX"
 msgstr "Auxiliary and Torpedo Armament Assistance"
 
-msgid "IDS_DOCK_CONSUME_TITLE_PCY084_SUPPORTHEALCONSUMABLERELOAD"
+msgid "IDS_DOCK_CONSUME_TITLE_PCY084_SUPPORTHEALCONSUM"
 msgstr "Engineering Crew Assistance"
-
-msgid "IDS_DOCK_CONSUME_TITLE_PCY085_SUPPORTFIREEXTINGUISHING"
-msgstr "Firefighting Assistance"
-
-msgid "IDS_DOCK_CONSUME_TITLE_PCY086_SUPPORTHEAL"
-msgstr "Repair Assistance"
-
-msgid "IDS_DOCK_CONSUME_TITLE_PCY087_AUXILIARYTORPEDOARMAMENTBOOSTER"
-msgstr "Auxiliary and Torpedo Weaponry Coordination"
 
 msgid "IDS_DOCK_CONSUME_TITLE_PXY001_MINDCONTROL"
 msgstr "Anti-Guidance System I"
@@ -30064,6 +29658,9 @@ msgid ""
 "IDS_DOCK_RAGE_MODE_TITLE_AMMO_RELOAD_BY_SHIELD_SHIP_DAMAGE_AUTO_FILLING"
 msgstr "Hit Them Hard"
 
+msgid "IDS_DOCK_RAGE_MODE_TITLE_AP_DAMAGE_BOOST"
+msgstr "Armor-Piercing Barrage"
+
 msgid "IDS_DOCK_RAGE_MODE_TITLE_ATBA_FIREPOWER"
 msgstr "Direct Control Over Secondary Battery Crews"
 
@@ -30096,12 +29693,6 @@ msgstr "High-Explosive Barrage"
 
 msgid "IDS_DOCK_RAGE_MODE_TITLE_MAIN_GUN_ACCURACY"
 msgstr "Immediate Main Battery Fire Adjustment"
-
-msgid "IDS_DOCK_RAGE_MODE_TITLE_MAIN_GUN_AP_DAMAGE"
-msgstr "Armor-Piercing Barrage"
-
-msgid "IDS_DOCK_RAGE_MODE_TITLE_MAIN_GUN_AP_DAMAGE_ATBA_DAMAGE_ACCURACY"
-msgstr "Heavy Armor-Piercing Barrage"
 
 msgid "IDS_DOCK_RAGE_MODE_TITLE_MAIN_GUN_DIST_ACCURACY"
 msgstr "Immediate Main Battery Recalibration"
@@ -37188,10 +36779,10 @@ msgstr ""
 " than the duration of the main event."
 
 msgid "IDS_EVENTUM_10_COLON"
-msgstr "Holiday Convoy Tokens:"
+msgstr "Voyage Tokens:"
 
 msgid "IDS_EVENTUM_11_COLON"
-msgstr "Colorful Tokens:"
+msgstr "GQ Johnny Tokens:"
 
 msgid "IDS_EVENTUM_12_COLON"
 msgstr "Memory Notes:"
@@ -37218,10 +36809,10 @@ msgid "IDS_EVENTUM_5_COLON"
 msgstr "Wharf Tokens:"
 
 msgid "IDS_EVENTUM_6_COLON"
-msgstr "Pan-American Tokens:"
+msgstr "Bounty Hunt Tokens:"
 
 msgid "IDS_EVENTUM_7_COLON"
-msgstr "Exchange Tokens:"
+msgstr "Azur Lane Tokens:"
 
 msgid "IDS_EVENTUM_8_COLON"
 msgstr "Summer Tokens:"
@@ -37245,7 +36836,7 @@ msgid "IDS_EVENT_AGGREGATOR_4"
 msgstr "Welcome Bonus"
 
 msgid "IDS_EVENT_AGGREGATOR_5"
-msgstr "Engage, Complete, Conquer!"
+msgstr "Battle of Trafalgar"
 
 msgid "IDS_EVENT_AGGREGATOR_6"
 msgstr "Anchors Smackdown Tournament S2"
@@ -39278,8 +38869,8 @@ msgstr ""
 
 msgid "IDS_EXPENDABLE_ECOBOOST_BULLETLIST_BOOSTS_RARITY"
 msgstr ""
-"Common and uncommon bonuses can be purchased for Doubloons. Rare, epic, and "
-"legendary bonuses can be obtained by participating in events."
+"Common and uncommon bonuses can be purchased for Doubloons. Rare and epic "
+"bonuses can be obtained by participating in events."
 
 msgid "IDS_EXPENDABLE_ECOBOOST_BULLETLIST_HOW_COUNTED"
 msgstr ""
@@ -39436,7 +39027,7 @@ msgid "IDS_FEAT_BAD_ADEF_AIRDEFENSE"
 msgstr "Low AA defense efficiency"
 
 msgid "IDS_FEAT_BAD_ADEF_NOBARRAGE"
-msgstr "Auxiliary and Torpedo Weaponry Coordination consumable unavailable"
+msgstr "Defensive AA Fire consumable unavailable"
 
 msgid "IDS_FEAT_BAD_AERIALTORP_SPEED"
 msgstr "Low torpedo speed"
@@ -39488,9 +39079,6 @@ msgstr "Small HP pool"
 
 msgid "IDS_FEAT_BAD_BMB_SPEED"
 msgstr "Low aircraft speed"
-
-msgid "IDS_FEAT_BAD_BURSTFIRE_RANGE"
-msgstr "Reduced firing range"
 
 msgid "IDS_FEAT_BAD_BURSTFIRE_RELOAD"
 msgstr "Long reload time after use"
@@ -39554,9 +39142,6 @@ msgstr "Low survivability"
 
 msgid "IDS_FEAT_BAD_FEW_LOADERS"
 msgstr "Small number of loaders"
-
-msgid "IDS_FEAT_BAD_GENERIC_RELOAD_DESC"
-msgstr "Long consumable cooldown time."
 
 msgid "IDS_FEAT_BAD_HEDPM"
 msgstr "Low damage per minute with HE shells"
@@ -39657,9 +39242,6 @@ msgstr "Engine Boost consumable unavailable"
 
 msgid "IDS_FEAT_BAD_MOVE_SPEED"
 msgstr "Low speed"
-
-msgid "IDS_FEAT_BAD_MOVE_SPEED_8"
-msgstr "Low speed from Tier VIII"
 
 msgid "IDS_FEAT_BAD_MOVE_SPEED_UNDERWATER"
 msgstr "Low underwater speed"
@@ -39893,31 +39475,22 @@ msgid "IDS_FEAT_GOOD_ADEF_AIRDEFENSE_9"
 msgstr "High AA defense efficiency from Tier IX"
 
 msgid "IDS_FEAT_GOOD_ADEF_BONUSBARRAGE"
-msgstr "Auxiliary and Torpedo Weaponry Coordination consumable available"
+msgstr "Defensive AA Fire consumable available"
 
 msgid "IDS_FEAT_GOOD_ADEF_BONUSBARRAGE_5"
-msgstr ""
-"Auxiliary and Torpedo Weaponry Coordination consumable available from Tier V"
+msgstr "Defensive AA Fire consumable available from Tier V"
 
 msgid "IDS_FEAT_GOOD_ADEF_BONUSBARRAGE_6"
-msgstr ""
-"Auxiliary and Torpedo Weaponry Coordination consumable available from Tier "
-"VI"
+msgstr "Defensive AA Fire consumable available from Tier VI"
 
 msgid "IDS_FEAT_GOOD_ADEF_BONUSBARRAGE_7"
-msgstr ""
-"Auxiliary and Torpedo Weaponry Coordination consumable available from Tier "
-"VII"
+msgstr "Defensive AA Fire consumable available from Tier VII"
 
 msgid "IDS_FEAT_GOOD_ADEF_BONUSBARRAGE_8"
-msgstr ""
-"Auxiliary and Torpedo Weaponry Coordination consumable available from Tier "
-"VIII"
+msgstr "Defensive AA Fire consumable available from Tier VIII"
 
 msgid "IDS_FEAT_GOOD_ADEF_BONUSBARRAGE_9"
-msgstr ""
-"Auxiliary and Torpedo Weaponry Coordination consumable available from Tier "
-"IX"
+msgstr "Defensive AA Fire consumable available from Tier IX"
 
 msgid "IDS_FEAT_GOOD_AIRSTRIKE_LEAD"
 msgstr "Airstrike bombs fall fast"
@@ -40078,13 +39651,13 @@ msgstr ""
 
 msgid "IDS_FEAT_GOOD_CONS_DEFAA_SPOTTER"
 msgstr ""
-"Possibility to simultaneously mount the Spotting Aircraft and Auxiliary and "
-"Torpedo Weaponry Coordination consumables"
+"Possibility to simultaneously mount the Spotting Aircraft and Defensive AA "
+"Fire consumables"
 
 msgid "IDS_FEAT_GOOD_CONS_MANYCONS"
 msgstr ""
 "Possibility to simultaneously mount the Hydroacoustic Search, Surveillance "
-"Radar, and Auxiliary and Torpedo Weaponry Coordination consumables"
+"Radar, and Defensive AA Fire consumables"
 
 msgid "IDS_FEAT_GOOD_CONS_MOREHP_MANYCHARGES_CITADEL_DESC"
 msgstr ""
@@ -40347,11 +39920,6 @@ msgstr "Main Battery Reload Booster consumable available from Tier VI"
 msgid "IDS_FEAT_GOOD_MAIN_BONUSMAINRELOAD_DESC"
 msgstr "Reduces main battery gun reload time."
 
-msgid "IDS_FEAT_GOOD_MAIN_BONUSMAINRELOAD_TIMEBASED_6"
-msgstr ""
-"Main Battery Reload Booster consumable with pooled usage time available from"
-" Tier VI"
-
 msgid "IDS_FEAT_GOOD_MAIN_BONUSMOD1"
 msgstr "Artillery Plotting Room Modification 1 upgrade available"
 
@@ -40538,9 +40106,6 @@ msgstr "Access to Surveillance Radar consumable with special characteristics"
 msgid "IDS_FEAT_GOOD_RADAR_SPECIAL_LONGRANGE_SHORTTIME_DESC"
 msgstr "Long acquisition range of ships and short action time."
 
-msgid "IDS_FEAT_GOOD_RAGEMODE_APDAMAGE"
-msgstr "Increases damage from main battery AP shells when used"
-
 msgid "IDS_FEAT_GOOD_RAGEMODE_ATBA_RANGE_DAMAGE"
 msgstr "Modified Secondary Munitions Combat Instructions available"
 
@@ -40552,12 +40117,6 @@ msgstr "Consumable Operational Readiness Combat Instructions available"
 
 msgid "IDS_FEAT_GOOD_RAGEMODE_CONSUMABLES_RELOAD"
 msgstr "Consumable cooldown speed increased"
-
-msgid "IDS_FEAT_GOOD_RAGEMODE_EASY"
-msgstr "Fulfilling activation conditions is easy"
-
-msgid "IDS_FEAT_GOOD_RAGEMODE_GENERIC_8"
-msgstr "Combat Instructions available from Tier VIII"
 
 msgid "IDS_FEAT_GOOD_RAGEMODE_GRAU"
 msgstr "Immediate Main Battery Reload Combat Instructions available"
@@ -42779,8 +42338,8 @@ msgstr ""
 msgid ""
 "IDS_GRAND_STRATEGY_PASS_ON_MAP_ACTION_SUPPLIES_DROP_POINT_TOOLTIP_DEFAULT"
 msgstr ""
-"Claiming linked sector first\n"
-"will increase rewards in this one"
+"Claiming will increase\n"
+"rewards in linked sector"
 
 msgid ""
 "IDS_GRAND_STRATEGY_PASS_ON_MAP_ACTION_SUPPLIES_DROP_POINT_TOOLTIP_FAILED"
@@ -43568,7 +43127,7 @@ msgid "IDS_GUIDING_TIP_280_DESC"
 msgstr "Join the event and earn rewards for completing missions!"
 
 msgid "IDS_GUIDING_TIP_280_HEADER"
-msgstr "Pan-American Destroyers"
+msgstr "250 Years of Independence"
 
 msgid "IDS_GUIDING_TIP_281_DESC"
 msgstr "Complete daily and weekly missions to earn Progress Points."
@@ -49920,10 +49479,10 @@ msgid "IDS_LOOTBOXES"
 msgstr "CONTAINERS"
 
 msgid "IDS_LOOTBOXES_BANNER_2_TEXT"
-msgstr "Battle of Santiago de Cuba"
+msgstr "[Go to Armory]"
 
 msgid "IDS_LOOTBOXES_BANNER_TEXT"
-msgstr "Colorful Regatta"
+msgstr "Summer Festival"
 
 msgid "IDS_LOOTBOXES_OPENING"
 msgstr "Opening containers"
@@ -49932,7 +49491,7 @@ msgid "IDS_LOOTBOXES_TOOLTIP"
 msgstr "Containers"
 
 msgid "IDS_LOOTBOXES_TOOLTIP_2_TEXT"
-msgstr "Go to Armory"
+msgstr "[Go to Armory]"
 
 msgid "IDS_LOOTBOXES_TOOLTIP_TEXT"
 msgstr "Go to Armory"
@@ -50247,9 +49806,6 @@ msgstr "Stonebeard"
 msgid "IDS_LUDWIG_CN"
 msgstr "Louis"
 
-msgid "IDS_LUIS_BRION"
-msgstr "Luis Brión"
-
 msgid "IDS_LUTJENS"
 msgstr "Günther Lütjens"
 
@@ -50393,7 +49949,7 @@ msgid "IDS_MAIN_GOOD_ACCURACY"
 msgstr "High firing accuracy of the main battery"
 
 msgid "IDS_MAIN_GOOD_ADEFBONUSBARRAGE"
-msgstr "Auxiliary and Torpedo Weaponry Coordination consumable available"
+msgstr "Defensive AA Fire consumable available"
 
 msgid "IDS_MAIN_GOOD_BONUSREPAIR"
 msgstr "Repair Party consumable available"
@@ -50509,9 +50065,6 @@ msgstr "Low damage per minute"
 
 msgid "IDS_MAIN_MC_DPM_GOOD"
 msgstr "High damage per minute"
-
-msgid "IDS_MAIN_MC_POTENTIALDPM_6"
-msgstr "Increased damage-dealing capabilities from Tier VI"
 
 msgid "IDS_MAIN_MOVE_SPEED_SURFACE_GOOD"
 msgstr "High top speed on the surface"
@@ -50663,18 +50216,6 @@ msgstr "Manage your Division"
 
 msgid "IDS_MANAGE_LOCKED_CONTACTS"
 msgstr "Blocked Contacts"
-
-msgid "IDS_MANUAL_AA_ACTIVATED"
-msgstr "AA Defense Priority activated"
-
-msgid "IDS_MANUAL_AA_READY"
-msgstr "AA Defense Priority ready"
-
-msgid "IDS_MANUAL_AA_RELOADING"
-msgstr "AA Defense Priority unavailable"
-
-msgid "IDS_MANUAL_AA_UNAVAILABLE"
-msgstr "AA Defense Priority already active"
 
 msgid "IDS_MAP_ATTENTION_POINT_IN_RECT_MESSAGE"
 msgstr "Attention to Area in Square %s"
@@ -52105,8 +51646,7 @@ msgid "IDS_MODAL_WINDOW_GRAND_STRATEGY_PASS_RULES_PARAGRAPH_7_HEADER"
 msgstr "Sectors Reducing Claim Cost"
 
 msgid "IDS_MODAL_WINDOW_GRAND_STRATEGY_PASS_RULES_PARAGRAPH_7_TEXT_1"
-msgstr ""
-"Claim radar sectors to reduce the cost of linked sectors in Battle Points."
+msgstr "Claim radar sectors to reduce the cost of linked sectors."
 
 msgid "IDS_MODAL_WINDOW_GRAND_STRATEGY_PASS_RULES_PARAGRAPH_8_HEADER"
 msgstr "Extra Rewards"
@@ -57661,17 +57201,6 @@ msgstr ""
 "such in the Republic of Turkey without significant changes until the present"
 " day."
 
-msgid "IDS_NAVAL_FLAG_VENEZUELA"
-msgstr "Venezuelan Navy"
-
-msgid "IDS_NAVAL_FLAG_VENEZUELA_DESCRIPTION"
-msgstr ""
-"The colors of the naval ensign and the state flag of the Republic of "
-"Venezuela symbolize the nation’s rich lands, the Caribbean waters, and the "
-"blood shed in the struggle for independence. The seven-star arc, which was "
-"featured on the flag from 1930 to 2006, honors the original provinces that "
-"declared the independence of Venezuela on July 5, 1811."
-
 msgid "IDS_NAVAL_FLAG_YUGOSLAVIA"
 msgstr "Yugoslav Navy"
 
@@ -58877,19 +58406,17 @@ msgstr ""
 "Display counter for damage dealt to enemy aircraft by AA guns and fighters."
 
 msgid "IDS_OPTION_BARRAGE_OR_FORSAGE_GOOD"
-msgstr ""
-"Choice of consumables available: Auxiliary and Torpedo Weaponry Coordination"
-" or Engine Boost"
+msgstr "Choice of consumables available: Defensive AA Fire or Engine Boost"
 
 msgid "IDS_OPTION_BARRAGE_OR_FORSAGE_OR_HYDRO_GOOD"
 msgstr ""
-"Choice of consumables available: Auxiliary and Torpedo Weaponry "
-"Coordination, Engine Boost, or Hydroacoustic Search"
+"Choice of consumables available: Defensive AA Fire, Engine Boost, or "
+"Hydroacoustic Search"
 
 msgid "IDS_OPTION_BARRAGE_OR_FORSAGE_OR_RADAR_GOOD"
 msgstr ""
-"Choice of consumables available: Auxiliary and Torpedo Weaponry "
-"Coordination, Engine Boost, or Surveillance Radar"
+"Choice of consumables available: Defensive AA Fire, Engine Boost, or "
+"Surveillance Radar"
 
 msgid "IDS_OPTION_BLOCKED_DAMAGE_COUNTER"
 msgstr "Potential damage"
@@ -58956,8 +58483,7 @@ msgstr "Display the time it takes for your ammunition to reach the target."
 
 msgid "IDS_OPTION_TORPEDORELOADER_OR_BARRAGE_GOOD"
 msgstr ""
-"Choice of consumables available: Torpedo Reload Booster or Auxiliary and "
-"Torpedo Weaponry Coordination"
+"Choice of consumables available: Torpedo Reload Booster or Defensive AA Fire"
 
 msgid "IDS_OPTION_UI_SCALE"
 msgstr "UI scale"
@@ -60565,7 +60091,7 @@ msgstr ""
 
 msgid "IDS_OP_02_04_CSM_ANTI_AIR_HINT"
 msgstr ""
-"Activate AA Defense Priority to cause more damage.\n"
+"Set a priority fire sector for AA armament to cause more damage.\n"
 "[KEY_O] or [KEY_GRAVE]."
 
 msgid "IDS_OP_02_04_CSM_DUNKIRK_LOADING"
@@ -60944,7 +60470,7 @@ msgstr "Aircraft carrier Adler destroyed."
 
 msgid "IDS_OP_09_CSM_ANTI_AIR_HINT"
 msgstr ""
-"Activate AA Defense Priority to increase damage: \n"
+"Select a priority AA sector to increase damage: \n"
 "[CMD_SET_PRIORITY_SECTOR]"
 
 msgid "IDS_OP_09_ENEMY_IS_COMING"
@@ -61123,9 +60649,7 @@ msgid "IDS_OP_10_CSM_006_MAIN_TASK_3"
 msgstr "Meet the allied aircraft carriers."
 
 msgid "IDS_OP_10_CSM_007_KILL_AIRPLANES"
-msgstr ""
-"Use Auxiliary and Torpedo Weaponry Coordination to reinforce your AA "
-"defenses!"
+msgstr "Use Defensive AA Fire to reinforce your AA defenses!"
 
 msgid "IDS_OP_10_CSM_008_MAIN_TASK_4"
 msgstr "Destroy the enemy aerodromes."
@@ -66394,9 +65918,6 @@ msgstr "Evasive Maneuvers consumable cooldown time"
 msgid "IDS_PARAMS_MODIFIER_ACTIVEMANEUVERINGWORKTIMECOEFF"
 msgstr "Evasive Maneuvers consumable action time"
 
-msgid "IDS_PARAMS_MODIFIER_ACTIVEPROGRESSRATE_AIMEDFIRE"
-msgstr "Progress gain per second"
-
 msgid "IDS_PARAMS_MODIFIER_ADDITIONALANTIMISSILESCHARGES"
 msgstr "Anti-Missile Radar charges"
 
@@ -66414,9 +65935,6 @@ msgstr "Affects ships"
 
 msgid "IDS_PARAMS_MODIFIER_AFTERBATTLEREPAIR"
 msgstr "Cost of the ship's post-battle service"
-
-msgid "IDS_PARAMS_MODIFIER_AIMEDFIREPROGRESSBONUS"
-msgstr "Concentrated AA Fire progress per second"
 
 msgid "IDS_PARAMS_MODIFIER_AIMRANGE"
 msgstr "Target area radius"
@@ -66607,11 +66125,6 @@ msgstr "Secondary battery reload time"
 
 msgid "IDS_PARAMS_MODIFIER_AURACOEFF"
 msgstr "Average AA damage"
-
-msgid "IDS_PARAMS_MODIFIER_AUXTORPBOOSTERRELOADCOEFF"
-msgstr ""
-"Auxiliary and Torpedo Weaponry Coordination consumable preparation and "
-"cooldown time"
 
 msgid "IDS_PARAMS_MODIFIER_BATTERYBURNRATE"
 msgstr "Dive Capacity Depletion When Detected by the Enemy"
@@ -66819,9 +66332,6 @@ msgstr "Consumable action time"
 
 msgid "IDS_PARAMS_MODIFIER_CONTROLLABLEWEAPONDAMAGECOEFF"
 msgstr "Damage from ship armament"
-
-msgid "IDS_PARAMS_MODIFIER_COOLDOWN_AIMEDFIRE"
-msgstr "Reload time"
 
 msgid "IDS_PARAMS_MODIFIER_CRASHCREWADDITIONALCONSUMABLES"
 msgstr "Number of Damage Control Party consumable charges"
@@ -67057,9 +66567,6 @@ msgstr "Strike aircraft HP"
 msgid "IDS_PARAMS_MODIFIER_FIGHTERWORKTIMECOEFF"
 msgstr "Airborne time"
 
-msgid "IDS_PARAMS_MODIFIER_FIREIMMUNITYENABLED"
-msgstr "Immediately extinguishes fires and prevents fires while active"
-
 msgid "IDS_PARAMS_MODIFIER_FIRERATEMULTIPLIER"
 msgstr "Number of explosions produced by a salvo from long-range AA defenses"
 
@@ -67159,9 +66666,6 @@ msgstr "Main battery firing range"
 
 msgid "IDS_PARAMS_MODIFIER_GMMAXHP"
 msgstr "Main battery survivability"
-
-msgid "IDS_PARAMS_MODIFIER_GMPENETRATIONCOEFFCS"
-msgstr "Main battery SAP shell armor penetration capability"
 
 msgid "IDS_PARAMS_MODIFIER_GMPENETRATIONCOEFFHE"
 msgstr "Main battery HE shell armor penetration capability"
@@ -67385,9 +66889,6 @@ msgstr "Ship bearing"
 
 msgid "IDS_PARAMS_MODIFIER_IGNOREPTZBONUS"
 msgstr "Torpedo protection: damage increase"
-
-msgid "IDS_PARAMS_MODIFIER_INSTANTDAMAGEINTERVAL_AIMEDFIRE"
-msgstr "Instantaneous damage interval"
 
 msgid "IDS_PARAMS_MODIFIER_INSTANTDAMAGE_STEALTHDEBUFF"
 msgstr "Instantaneous damage"
@@ -67661,16 +67162,16 @@ msgid "IDS_PARAMS_MODIFIER_PREPARATIONTIME"
 msgstr "Consumable preparation time"
 
 msgid "IDS_PARAMS_MODIFIER_PRIORITYSECTORCOOLDOWNMULTIPLIER"
-msgstr "AA Defense Priority cooldown time"
+msgstr "Priority AA sector preparation time"
 
 msgid "IDS_PARAMS_MODIFIER_PRIORITYSECTORSTARTPHASESTRENGTHBONUS"
-msgstr "Damage caused with AA Defense Priority activated"
+msgstr "Damage caused with a priority sector activated"
 
 msgid "IDS_PARAMS_MODIFIER_PRIORITYSECTORSTARTPHASESTRENGTHCOEFFICIENT"
 msgstr "Instantaneous Damage"
 
 msgid "IDS_PARAMS_MODIFIER_PRIORITYSECTORSTRENGTHBONUS"
-msgstr "AA Defense Priority reinforcement"
+msgstr "Priority sector reinforcement"
 
 msgid "IDS_PARAMS_MODIFIER_PRIORITYSECTORSTRENGTHCOEFFICIENT"
 msgstr "AA sector reinforcement efficiency"
@@ -68285,9 +67786,6 @@ msgstr "Maximum range"
 
 msgid "IDS_PARAMS_MODIFIER_WORKTIME"
 msgstr "Consumable action time"
-
-msgid "IDS_PARAMS_MODIFIER_WORKTIME_AIMEDFIRE"
-msgstr "Action time"
 
 msgid "IDS_PARAMS_MODIFIER_WORKTIME_RAGEMODE"
 msgstr "Action time"
@@ -69655,10 +69153,10 @@ msgstr ""
 "Kongō-class came to light, the leadership of the U.S. Navy realized the need"
 " to build a battlecruiser. When the construction process started, the "
 "Lexington-class battleships were the largest warships ever built in the "
-"United States. Their armament consisted of eight 406 mm guns housed in four "
-"twin-gun turrets. USS Constellation was laid down in August 1920. The "
-"construction order was canceled three years later following the outcome of "
-"the Washington Naval Conference."
+"United States. Their armament consisted of eight 406 mm/50-caliber guns "
+"housed in four twin-gun turrets. USS Constellation was laid down in "
+"August 1920. The construction order was canceled three years later following"
+" the outcome of the Washington Naval Conference."
 
 msgid "IDS_PASB538_FULL"
 msgstr "Constellation"
@@ -76734,9 +76232,6 @@ msgstr "Battle Honor"
 msgid "IDS_PBES302_HUNT_KING_GEORGE_V"
 msgstr "Hunt Continues"
 
-msgid "IDS_PBES304_CONQUEROR_COLORFUL"
-msgstr "Violet Flash"
-
 msgid "IDS_PBES305_AGINCOURT_JUTLAND"
 msgstr "Jutland Veteran"
 
@@ -79392,25 +78887,6 @@ msgstr "1"
 msgid "IDS_PBSB911_YEAR"
 msgstr "1949"
 
-msgid "IDS_PBSB920"
-msgstr "Conqueror CLR"
-
-msgid "IDS_PBSB920_DESCR"
-msgstr ""
-"After battleship Vanguard was laid down, the plan was to develop British "
-"battleships in such a way as to increase their dimensions while maintaining "
-"the layout design of their predecessors. One of the options was to switch to"
-" three-gun turrets and increase the caliber to 419 mm."
-
-msgid "IDS_PBSB920_FULL"
-msgstr "Conqueror CLR"
-
-msgid "IDS_PBSB920_NUMBER"
-msgstr "1"
-
-msgid "IDS_PBSB920_YEAR"
-msgstr "1949"
-
 msgid "IDS_PBSB998"
 msgstr "St. Lawrence"
 
@@ -81204,9 +80680,6 @@ msgstr "356 mm/45 Mk.VII on a Mk.II mount"
 msgid "IDS_PBUA916_ART_PIRATE_PLYMOUTH"
 msgstr "152 mm/50 BL Mk.XXIII on a Mk.XXIII mount"
 
-msgid "IDS_PBUA917_ART_MC_CONQUEROR"
-msgstr "419 mm/45 Mk.I on a Type C/D mount"
-
 msgid "IDS_PBUA920_ART_SELKIE"
 msgstr "102 mm/40 QF Mk.XII on an SI mount"
 
@@ -81695,9 +81168,6 @@ msgstr "Propulsion: 4,930 hp"
 
 msgid "IDS_PBUE921_ENG_PIRATE_PLYMOUTH"
 msgstr "Propulsion: 80,000 hp"
-
-msgid "IDS_PBUE922_ENG_MC_CONQUEROR"
-msgstr "Propulsion: 135,650 hp"
 
 msgid "IDS_PBUE930_C11_ENG_STOCK"
 msgstr "Propulsion: 130,000 hp"
@@ -82211,9 +81681,6 @@ msgstr "Selkie"
 msgid "IDS_PBUH921_HULL_PIRATE_PLYMOUTH"
 msgstr "Fearmaw"
 
-msgid "IDS_PBUH922_HULL_MC_CONQUEROR"
-msgstr "Conqueror CLR"
-
 msgid "IDS_PBUH930_C11_HULL_A"
 msgstr "Edgar"
 
@@ -82703,9 +82170,6 @@ msgstr "Mk X mod. 1"
 msgid "IDS_PBUS915_SUO_PIRATE_PLYMOUTH"
 msgstr "Mk X mod. 1"
 
-msgid "IDS_PBUS916_SUO_MC_CONQUEROR"
-msgstr "Mk X mod. 1"
-
 msgid "IDS_PBUS930_C11_SUO_STOCK"
 msgstr "Mk XI mod. 1"
 
@@ -82994,12 +82458,6 @@ msgstr "Credits +320%"
 msgid "IDS_PCEA014_CRBOOST_4_OVERRIDE_FOR_WEB"
 msgstr "\"Credits +320%\""
 
-msgid "IDS_PCEA015_CRBOOST_5"
-msgstr "Credits +480%"
-
-msgid "IDS_PCEA015_CRBOOST_5_OVERRIDE_FOR_WEB"
-msgstr "\"Credits +480%\""
-
 msgid "IDS_PCEA021_TOTALXPBOOST_1"
 msgstr "Ship XP +100%"
 
@@ -83023,12 +82481,6 @@ msgstr "Ship XP +1,600%"
 
 msgid "IDS_PCEA024_TOTALXPBOOST_4_OVERRIDE_FOR_WEB"
 msgstr "\"Ship XP +1,600%\""
-
-msgid "IDS_PCEA025_TOTALXPBOOST_5"
-msgstr "Ship XP +2,400%"
-
-msgid "IDS_PCEA025_TOTALXPBOOST_5_OVERRIDE_FOR_WEB"
-msgstr "\"Ship XP +2,400%\""
 
 msgid "IDS_PCEA031_CREWXPBOOST_1"
 msgstr "Commander XP +100%"
@@ -83054,12 +82506,6 @@ msgstr "Commander XP +1,600%"
 msgid "IDS_PCEA034_CREWXPBOOST_4_OVERRIDE_FOR_WEB"
 msgstr "\"Commander XP +1,600%\""
 
-msgid "IDS_PCEA035_CREWXPBOOST_5"
-msgstr "Commander XP +2,400%"
-
-msgid "IDS_PCEA035_CREWXPBOOST_5_OVERRIDE_FOR_WEB"
-msgstr "\"Commander XP +2,400%\""
-
 msgid "IDS_PCEA041_FREEXPBOOST_1"
 msgstr "Free XP +300%"
 
@@ -83079,15 +82525,9 @@ msgid "IDS_PCEA043_FREEXPBOOST_3_OVERRIDE_FOR_WEB"
 msgstr "\"Free XP +2,400%\""
 
 msgid "IDS_PCEA044_FREEXPBOOST_4"
-msgstr "Free XP +4,800%"
-
-msgid "IDS_PCEA044_FREEXPBOOST_4_OVERRIDE_FOR_WEB"
-msgstr "\"Free XP +4,800%\""
-
-msgid "IDS_PCEA045_FREEXPBOOST_5"
 msgstr "Free XP +7,200%"
 
-msgid "IDS_PCEA045_FREEXPBOOST_5_OVERRIDE_FOR_WEB"
+msgid "IDS_PCEA044_FREEXPBOOST_4_OVERRIDE_FOR_WEB"
 msgstr "\"Free XP +7,200%\""
 
 msgid "IDS_PCEC001_CAMO_1"
@@ -85044,7 +84484,7 @@ msgid "IDS_PCEE176_NAVIGATION_DEPARTMENT_FLAG_EXTRA_DESCRIPTION"
 msgstr "From the High School Fleet series."
 
 msgid "IDS_PCEE177_ENGINEERING_DEPARTMENT_FLAG"
-msgstr "Yokosuka Girls' Marine High School Engineering Department"
+msgstr "Yokosuka Girls' Marine High School Engineering Department."
 
 msgid "IDS_PCEE177_ENGINEERING_DEPARTMENT_FLAG_DESCRIPTION"
 msgstr ""
@@ -91861,14 +91301,6 @@ msgstr ""
 "\n"
 "The German raiders sank British battlecruiser Hood soon after. In turn, Bismarck herself was destroyed by the Royal Navy on May 27, bringing Operation Rheinübung to an end with the loss of one of the German Navy’s most important capital ships."
 
-msgid "IDS_PCEE913_NAVAL_MUSEUM_FLAG"
-msgstr "Naval Museum Atlas"
-
-msgid "IDS_PCEE913_NAVAL_MUSEUM_FLAG_DESCRIPTION"
-msgstr ""
-"Raise this flag in tribute to the ships preserved as museum vessels and the "
-"people dedicated to safeguarding their legacies."
-
 msgid "IDS_PCEE920_CAYUGA_FLAG"
 msgstr "HMCS Cayuga"
 
@@ -91891,33 +91323,6 @@ msgstr ""
 "period of relative prosperity despite fighting in several wars, including a "
 "crusade to aid the Byzantine Emperor against the Turks."
 
-msgid "IDS_PCEE922_ALMIRANTE_IRIZAR_FLAG"
-msgstr "Almirante Irízar"
-
-msgid "IDS_PCEE922_ALMIRANTE_IRIZAR_FLAG_DESCRIPTION"
-msgstr ""
-"The ship is named in honor of Julián Irízar, Vice Admiral of the Argentine "
-"Navy, noted for his efforts rescuing the crew of a Swedish Antarctic "
-"Expedition in 1903 while commanding the ARA Uruguay. He would go on to "
-"supervise the modernization of Argentina's dreadnought fleet during the "
-"1920s. His legacy endures through ARA Almirante Irízar, a large icebreaker "
-"of the Argentine Navy that serves to this day."
-
-msgid "IDS_PCEE923_TRIUNFANTE_FLAG"
-msgstr "Triunfante"
-
-msgid "IDS_PCEE923_TRIUNFANTE_FLAG_DESCRIPTION"
-msgstr ""
-"The ship is named in honor of the 18th-century ship of the line, meaning "
-"\"Triumphant.\" The ship played a role in several important events in "
-"Spanish history at the time. She escorted the newly proclaimed King Charles "
-"III to Barcelona in 1759 and served throughout the Seven Years' War. She "
-"again saw action during the American War of Independence, taking part in the"
-" Battle of Cape Spartel and the bombardments of Gibraltar. After being "
-"grounded by her crew to prevent her loss in a storm, Triunfante was "
-"abandoned without casualties. Her wreck has since been surveyed, and "
-"elements are on display in the Naval Museum of Madrid."
-
 msgid "IDS_PCEE933_TROUPES_DE_LA_MARINE_FLAG"
 msgstr "Troupes de la Marine"
 
@@ -91930,51 +91335,11 @@ msgstr ""
 "the foundations for the future \"Troupes de la Marine\", formalized "
 "alongside the creation of the French Royal Navy in 1626."
 
-msgid "IDS_PCEE934_FRENCH_BOURBON_FLAG"
-msgstr "La Royale 400"
-
-msgid "IDS_PCEE934_FRENCH_BOURBON_FLAG_DESCRIPTION"
-msgstr ""
-"The fleur-de-lys is a symbol closely associated with the French monarchy and"
-" the House of Bourbon. The royal dynasty ruled France for much of the Age of"
-" Sail. The flower appeared on French naval ensigns and military banners, "
-"becoming a recognizable emblem of the kingdom's maritime power and naval "
-"tradition. It remains one of the most enduring symbols of French heritage to"
-" this day."
-
 msgid "IDS_PCEE939_KOL_RAMMING_FLAG"
 msgstr "Impact Alert"
 
 msgid "IDS_PCEE939_KOL_RAMMING_FLAG_DESCRIPTION"
 msgstr "Ram! Let's ram!"
-
-msgid "IDS_PCEE947_SHENG_GE_FLAG"
-msgstr "Mugshot of Sheng Ge"
-
-msgid "IDS_PCEE947_SHENG_GE_FLAG_DESCRIPTION"
-msgstr ""
-"A flag with a large icon of Sheng Ge. Flying it will make your ship "
-"invincible, as if blessed by the gods."
-
-msgid "IDS_PCEE948_SUMI_FLAG"
-msgstr "Mugshot of Sumi"
-
-msgid "IDS_PCEE948_SUMI_FLAG_DESCRIPTION"
-msgstr ""
-"A flag with a large icon of Sumi. Flying it will fill you with the fire of a"
-" warrior's soul—unstoppable."
-
-msgid "IDS_PCEE956_CONQUEROR_COLORFUL_FLAG"
-msgstr "Conqueror CLR"
-
-msgid "IDS_PCEE956_CONQUEROR_COLORFUL_FLAG_DESCRIPTION"
-msgstr ""
-"Violet is often associated with creativity, imagination, and ambition. It "
-"has long been a color of mystery and innovation, and it symbolizes "
-"individuality and confidence across many cultures."
-
-msgid "IDS_PCEE956_CONQUEROR_COLORFUL_FLAG_EXTRA_DESCRIPTION"
-msgstr "To commemorate the release of some dazzlingly bright ships."
 
 msgid "IDS_PCEE998_SECRETSANTA_2"
 msgstr "Santas Wanted 2016"
@@ -92727,9 +92092,6 @@ msgstr "We the People"
 
 msgid "IDS_PCEM222_TILE_SONGKRAN"
 msgstr "Songkran Festival"
-
-msgid "IDS_PCEM228_TILE_PSPLIVE2026"
-msgstr "Glassy Spindrift"
 
 msgid "IDS_PCEP103_PERMO_PREM_LOW_LVL"
 msgstr "Default"
@@ -97158,12 +96520,6 @@ msgstr "Dawn of a Nation"
 msgid "IDS_PCZA047_INDEPENDENCE250_PUZZLE_QUOTES"
 msgstr "Dawn of a Nation"
 
-msgid "IDS_PCZA048_ESP_LEGENDARY"
-msgstr "Battle of Santiago de Cuba"
-
-msgid "IDS_PCZA048_ESP_LEGENDARY_QUOTES"
-msgstr "Battle of Santiago de Cuba"
-
 msgid "IDS_PCZC011_BISMARCK_BISMARCK"
 msgstr "Bismarck"
 
@@ -99426,30 +98782,6 @@ msgstr "Mosaic Fragment"
 msgid "IDS_PCZC1251_INDEPENDENCE250_60"
 msgstr "Mosaic Fragment"
 
-msgid "IDS_PCZC1252_ESP_LEGENDARY_01"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1253_ESP_LEGENDARY_02"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1254_ESP_LEGENDARY_03"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1255_ESP_LEGENDARY_04"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1256_ESP_LEGENDARY_05"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1257_ESP_LEGENDARY_06"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1258_ESP_LEGENDARY_07"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1259_ESP_LEGENDARY_08"
-msgstr "Mosaic Fragment"
-
 msgid "IDS_PCZC125_HSF_SHIMA_TATEISHI"
 msgstr "Shima Tateishi"
 
@@ -99470,36 +98802,6 @@ msgstr ""
 "<h3>Favorite saying:</h3> \"Silence is golden\"\n"
 "\n"
 "<h3>Personality:</h3> Taciturn and quiet, she's not very good at communicating."
-
-msgid "IDS_PCZC1260_ESP_LEGENDARY_09"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1261_ESP_LEGENDARY_10"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1262_ESP_LEGENDARY_11"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1263_ESP_LEGENDARY_12"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1264_ESP_LEGENDARY_13"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1265_ESP_LEGENDARY_14"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1266_ESP_LEGENDARY_15"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1267_ESP_LEGENDARY_16"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1268_ESP_LEGENDARY_17"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1269_ESP_LEGENDARY_18"
-msgstr "Mosaic Fragment"
 
 msgid "IDS_PCZC126_HSF_MEI_IRIZAKI"
 msgstr "Mei Irizaki"
@@ -99522,36 +98824,6 @@ msgstr ""
 "\n"
 "<h3>Personality:</h3> Impatient"
 
-msgid "IDS_PCZC1270_ESP_LEGENDARY_19"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1271_ESP_LEGENDARY_20"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1272_ESP_LEGENDARY_21"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1273_ESP_LEGENDARY_22"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1274_ESP_LEGENDARY_23"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1275_ESP_LEGENDARY_24"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1276_ESP_LEGENDARY_25"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1277_ESP_LEGENDARY_26"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1278_ESP_LEGENDARY_27"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1279_ESP_LEGENDARY_28"
-msgstr "Mosaic Fragment"
-
 msgid "IDS_PCZC127_HSF_KOUKO_NOSA"
 msgstr "Kouko Nosa"
 
@@ -99572,36 +98844,6 @@ msgstr ""
 "<h3>Favorite saying:</h3> \"From the cradle to the grave\"\n"
 "\n"
 "<h3>Personality:</h3> Prone to over-the-top monologues"
-
-msgid "IDS_PCZC1280_ESP_LEGENDARY_29"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1281_ESP_LEGENDARY_30"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1282_ESP_LEGENDARY_31"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1283_ESP_LEGENDARY_32"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1284_ESP_LEGENDARY_33"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1285_ESP_LEGENDARY_34"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1286_ESP_LEGENDARY_35"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1287_ESP_LEGENDARY_36"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1288_ESP_LEGENDARY_37"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1289_ESP_LEGENDARY_38"
-msgstr "Mosaic Fragment"
 
 msgid "IDS_PCZC128_HSF_RIN_SHIRETOKO"
 msgstr "Rin Shiretoko"
@@ -99624,36 +98866,6 @@ msgstr ""
 "\n"
 "<h3>Personality:</h3> Prone to excessive worrying"
 
-msgid "IDS_PCZC1290_ESP_LEGENDARY_39"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1291_ESP_LEGENDARY_40"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1292_ESP_LEGENDARY_41"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1293_ESP_LEGENDARY_42"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1294_ESP_LEGENDARY_43"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1295_ESP_LEGENDARY_44"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1296_ESP_LEGENDARY_45"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1297_ESP_LEGENDARY_46"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1298_ESP_LEGENDARY_47"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1299_ESP_LEGENDARY_48"
-msgstr "Mosaic Fragment"
-
 msgid "IDS_PCZC129_HSF_KAEDE_MARIKOUJI"
 msgstr "Kaede Marikouji"
 
@@ -99675,36 +98887,6 @@ msgstr ""
 "\n"
 "<h3>Personality:</h3> Always composed, and speaks in the most refined manner"
 
-msgid "IDS_PCZC1300_ESP_LEGENDARY_49"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1301_ESP_LEGENDARY_50"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1302_ESP_LEGENDARY_51"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1303_ESP_LEGENDARY_52"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1304_ESP_LEGENDARY_53"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1305_ESP_LEGENDARY_54"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1306_ESP_LEGENDARY_55"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1307_ESP_LEGENDARY_56"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1308_ESP_LEGENDARY_57"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1309_ESP_LEGENDARY_58"
-msgstr "Mosaic Fragment"
-
 msgid "IDS_PCZC130_HSF_HIMEJI_KAYOKO"
 msgstr "Kayoko Himeji"
 
@@ -99725,12 +98907,6 @@ msgstr ""
 "<h3>Favorite saying:</h3> \"Let's always think about what comes next\"\n"
 "\n"
 "<h3>Personality:</h3> Easygoing"
-
-msgid "IDS_PCZC1310_ESP_LEGENDARY_59"
-msgstr "Mosaic Fragment"
-
-msgid "IDS_PCZC1311_ESP_LEGENDARY_60"
-msgstr "Mosaic Fragment"
 
 msgid "IDS_PCZC131_HSF_OGASAWARA_HIKARI"
 msgstr "Hikari Ogasawara"
@@ -108355,15 +107531,6 @@ msgstr "150 mm Spr.Gr. Ausf. B"
 msgid "IDS_PFPA138_150MM_AP_HOCHE"
 msgstr "150 mm P.Spr.Gr. Ausf. C"
 
-msgid "IDS_PFPA139_305MM_HE_LATOUCHE_TREVILLE"
-msgstr "305 mm HE OEA Mle 1931"
-
-msgid "IDS_PFPA140_305MM_AP_LATOUCHE_TREVILLE"
-msgstr "305 mm AP OPf Mle 1931"
-
-msgid "IDS_PFPA141_127MM_54_1948_HE_SG_LATOUCHE_TREVILLE"
-msgstr "127 mm HE Mark 41"
-
 msgid "IDS_PFPA142_105MM_HE_CHATEAURENAULT"
 msgstr "105 mm Spr.Gr. Kz."
 
@@ -108501,9 +107668,6 @@ msgstr "550 mm 19D Mle 1"
 
 msgid "IDS_PFPT026_550_19D_FRDD_TOP"
 msgstr "550 mm 19D Mle 2"
-
-msgid "IDS_PFPT027_550_LATOUCHE_TREVILLE"
-msgstr "550 mm 23DT"
 
 msgid "IDS_PFPT030_550_23DT_STOCK"
 msgstr "550 mm 23DT Mle 3"
@@ -109589,29 +108753,6 @@ msgstr "1"
 msgid "IDS_PFSC719_YEAR"
 msgstr "1944"
 
-msgid "IDS_PFSC720"
-msgstr "Latouche-Tréville"
-
-msgid "IDS_PFSC720_DESCR"
-msgstr ""
-"During the interwar period, the French Marine Nationale investigated new "
-"capital ship designs to modernize its fleet. Among them was a proposed "
-"37,000-ton battlecruiser armed with twelve 305 mm guns mounted in three "
-"quadruple-gun turrets. These ships would have been well-suited to counter "
-"the new Italian heavy cruisers. Ultimately, the design was never "
-"constructed. If such a ship had been built and survived World War II, she "
-"would likely have undergone modernization with updated anti-aircraft "
-"armament at the end of the 1940s."
-
-msgid "IDS_PFSC720_FULL"
-msgstr "Latouche-Tréville"
-
-msgid "IDS_PFSC720_NUMBER"
-msgstr "1"
-
-msgid "IDS_PFSC720_YEAR"
-msgstr "1929"
-
 msgid "IDS_PFSC730"
 msgstr "Amiral Lartigue"
 
@@ -110400,9 +109541,6 @@ msgstr "139 mm/50 Mle 1929 on an Mle 1929 mount"
 msgid "IDS_PFUA720_ART_SURCOUF"
 msgstr "203 mm/50 Mle 1924 on a Mle 1924 mount"
 
-msgid "IDS_PFUA721_ART_LATOUCHE_TREVILLE"
-msgstr "305 mm/50 Mle 1930 in a turret"
-
 msgid "IDS_PFUA730_ART_CHATEAURENAULT"
 msgstr "105 mm/65 SK C/33 on a Dop. L. C/37 mount"
 
@@ -110660,9 +109798,6 @@ msgstr "Propulsion: 86,433 hp"
 
 msgid "IDS_PFUE720_ENG_SURCOUF"
 msgstr "Propulsion: 7,600 hp"
-
-msgid "IDS_PFUE721_ENG_LATOUCHE_TREVILLE"
-msgstr "Propulsion: 160,000 hp"
 
 msgid "IDS_PFUE730_ENG_CHATEAURENAULT"
 msgstr "Propulsion: 110,000 hp"
@@ -110981,9 +110116,6 @@ msgstr "AL Richelieu"
 
 msgid "IDS_PFUH720_HULL_SURCOUF"
 msgstr "Surcouf"
-
-msgid "IDS_PFUH721_HULL_LATOUCHE_TREVILLE"
-msgstr "Latouche-Tréville"
 
 msgid "IDS_PFUH730_HULL_CHATEAURENAULT"
 msgstr "Châteaurenault"
@@ -111321,9 +110453,6 @@ msgstr "PCA n° 8 Mle 1"
 msgid "IDS_PFUS717_SUO_AZUR_RICHELIEU"
 msgstr "PCA n° 8 Mle 2"
 
-msgid "IDS_PFUS721_SUO_LATOUCHE_TREVILLE"
-msgstr "PCA n° 10 Mle 1"
-
 msgid "IDS_PFUS730_SUO_CHATEAURENAULT"
 msgstr "PCA n° 10 Mle 1"
 
@@ -111527,9 +110656,6 @@ msgstr "550 mm 24V"
 
 msgid "IDS_PFUT720_TORP_SURCOUF"
 msgstr "400 mm/550 mm tube lance-torpilles"
-
-msgid "IDS_PFUT721_TORP_LATOUCHE_TREVILLE"
-msgstr "550 mm 23DT"
 
 msgid "IDS_PFUT730_TORP_CHATEAURENAULT"
 msgstr "550 mm tube lance-torpilles"
@@ -112554,12 +111680,6 @@ msgstr "150 mm/60 SK C/25 on a Drh Tr C/25 mount"
 
 msgid "IDS_PGGM2010_120MM45_WILTON_FIJENOORD_MK6"
 msgstr "120 mm/45 Wilton-Fijenoord Mk.6 on a shielded mount"
-
-msgid "IDS_PGGM2015_380MM_SKC_34_RF"
-msgstr "380 mm/52 SK C/34 on a Drh LC/34 mount"
-
-msgid "IDS_PGGM2016_380MM_SKC_34"
-msgstr "380 mm/52 SK C/34 on a Drh LC/34 mount"
 
 msgid "IDS_PGGM534_203MM_SK_L56_SPACE"
 msgstr "203 mm L/60 Morning Star"
@@ -119436,9 +118556,6 @@ msgstr "Fokker T.V."
 msgid "IDS_PHAD024_TONIJN_AS"
 msgstr "Fokker T.V."
 
-msgid "IDS_PHAD025_AS_ALMONDE"
-msgstr "Fokker T.V."
-
 msgid "IDS_PHAD901_ASW_T5"
 msgstr "Consolidated PB4Y-2 Privateer"
 
@@ -119631,7 +118748,7 @@ msgid "IDS_PHGM027_203MM_SK_L56"
 msgstr "203 mm/60 SK C/34 on a turret mount"
 
 msgid "IDS_PHGM028_120MM50_WILTON_FIJENOORD_MK6"
-msgstr "120 mm/45 Wilton-Fijenoord Mk.6 on a shielded mount"
+msgstr "120 mm/50 Wilton-Fijenoord Mk.6 on a shielded mount"
 
 msgid "IDS_PHGM2000_9_2IN_MARK_X_QUADRUPLE"
 msgstr "234 mm/50 Mk.XI in a turret"
@@ -119647,9 +118764,6 @@ msgstr "120 mm/50 Model 1942 in a turret"
 
 msgid "IDS_PHGM2008_16_5IN_45_MKIII_TRIPLE"
 msgstr "419 mm/45 Mk.I on a Mk.I mount"
-
-msgid "IDS_PHGM2013_120MM45_TWIN_MARK_8"
-msgstr "120 mm/45 Wilton-Fijenoord Mk.6/Mk.8 on a shielded mount"
 
 msgid "IDS_PHGM206_BOFORS_152MM53_MODEL_1942_BARREL2"
 msgstr "152 mm/53 Bofors M42"
@@ -119668,9 +118782,6 @@ msgstr "533 mm"
 
 msgid "IDS_PHGT041_533MM_3_TUBES"
 msgstr "53,3 cm drievoudige torpedobuis"
-
-msgid "IDS_PHGT2014_533MM_4_TUBES"
-msgstr "533 mm viervoudige torpedobuis"
 
 msgid "IDS_PHOTON_TORPEDOES"
 msgstr "Photon torpedoes"
@@ -119795,12 +118906,6 @@ msgstr "419 mm HE Mk Ia"
 msgid "IDS_PHPA041_419MM_MII_AP_BC"
 msgstr "419 mm AP Mk V"
 
-msgid "IDS_PHPA042_120MM_HE_PHILIPS_VAN_ALMONDE"
-msgstr "120 mm Springgranaat"
-
-msgid "IDS_PHPA043_120MM_AP_PHILIPS_VAN_ALMONDE"
-msgstr "120 mm Pantsergranaat"
-
 msgid "IDS_PHPA048_150MM_HE_BOFORS_JAVA"
 msgstr "150 mm HE Springgranaat gd. L/4,1 No. 1"
 
@@ -119808,10 +118913,10 @@ msgid "IDS_PHPA049_150MM_AP_BOFORS_JAVA"
 msgstr "150 mm AP Pantsergranaat No. 2 N.M"
 
 msgid "IDS_PHPA050_120MM_HE_UNIE"
-msgstr "120 mm Springgranaat"
+msgstr "120 mm Brisantgranaat M/52"
 
 msgid "IDS_PHPA051_120MM_AP_UNIE"
-msgstr "120 mm Pantsergranaat"
+msgstr "120 mm Pantserprojectiel M/52"
 
 msgid "IDS_PHPA910_234MM_AP_PRINS_V_O"
 msgstr "234 mm AP 6 CRH"
@@ -119870,9 +118975,6 @@ msgstr "P.u.W. 160 kg"
 msgid "IDS_PHPB035_PUW_250KG_AS_HE_UNIE"
 msgstr "P.u.W. 250 kg"
 
-msgid "IDS_PHPB036_PUW_120KG_AS_HE_ALMONDE"
-msgstr "P.u.W. 150 kg"
-
 msgid "IDS_PHPB124_PUW_160KG_AS_HE"
 msgstr "P.u.W. 160 kg"
 
@@ -119892,9 +118994,6 @@ msgid "IDS_PHPD105_DEPTH_T10_ALT"
 msgstr "325 lb Depth Bomb"
 
 msgid "IDS_PHPT001_533MM_TROMP"
-msgstr "53,3 cm torpedo"
-
-msgid "IDS_PHPT002_533MM_PHILIPS_VAN_ALMONDE"
 msgstr "53,3 cm torpedo"
 
 msgid "IDS_PHPT121_MKIX_TONIJN"
@@ -120439,28 +119538,6 @@ msgstr "2"
 msgid "IDS_PHSD610_YEAR"
 msgstr "1938"
 
-msgid "IDS_PHSD708"
-msgstr "Ph. van Almonde"
-
-msgid "IDS_PHSD708_DESCR"
-msgstr ""
-"Philips van Almonde was the fourth and final ship of the Gerard Callenburgh "
-"class destroyers, a class intended to modernize the Dutch destroyer force in"
-" response to the increasingly large and capable destroyers entering service "
-"with other navies. Laid down in March 1939, the ship was destroyed on her "
-"slipway during the German invasion of the Netherlands in May 1940. The "
-"demolition effort was so thorough that the Germans chose to scrap the "
-"remains rather than attempt to complete the vessel."
-
-msgid "IDS_PHSD708_FULL"
-msgstr "Philips van Almonde"
-
-msgid "IDS_PHSD708_NUMBER"
-msgstr "1"
-
-msgid "IDS_PHSD708_YEAR"
-msgstr "1938"
-
 msgid "IDS_PHSS710"
 msgstr "Tonijn"
 
@@ -120529,9 +119606,6 @@ msgstr "128 mm/45 SK C/41 on a Drh LC/41 mount"
 
 msgid "IDS_PHUA809_C9_ART"
 msgstr "128 mm/61 KM40 in a turret"
-
-msgid "IDS_PHUA900_ART_PHILIPS_VAN_ALMONDE"
-msgstr "120 mm/45 Wilton-Fijenoord Mk.8 on a shielded mount"
 
 msgid "IDS_PHUA901_C10_ART_STOCK"
 msgstr "283 mm/54.5 in a turret"
@@ -120607,9 +119681,6 @@ msgstr "Propulsion: 116,500 hp"
 
 msgid "IDS_PHUE809_C9_ENG"
 msgstr "Propulsion: 84,000 hp"
-
-msgid "IDS_PHUE900_ENG_PHILIPS_VAN_ALMONDE"
-msgstr "Propulsion: 45,000 hp"
 
 msgid "IDS_PHUE901_C10_ENG_STOCK"
 msgstr "Propulsion: 156,000 hp"
@@ -120715,9 +119786,6 @@ msgstr "M. van Coehoorn (B)"
 
 msgid "IDS_PHUH818_C8_HULL_TOP"
 msgstr "Jaarsveld (B)"
-
-msgid "IDS_PHUH900_HULL_PHILIPS_VAN_ALMONDE"
-msgstr "Philips van Almonde"
 
 msgid "IDS_PHUH901_C10_HULL_STOCK"
 msgstr "Gouden Leeuw"
@@ -120830,9 +119898,6 @@ msgstr "Vuurleiding Mk 9 Mod. 2"
 msgid "IDS_PHUS818_C8_SUO_TOP"
 msgstr "Vuurleiding Mk 8 Mod. 2"
 
-msgid "IDS_PHUS900_SUO_PHILIPS_VAN_ALMONDE"
-msgstr "Vuurleiding Mk 8 Mod. 1"
-
 msgid "IDS_PHUS901_C10_SUO_STOCK"
 msgstr "Vuurleiding Mk 10 Mod. 1"
 
@@ -120859,9 +119924,6 @@ msgstr "Vuurleiding Mk 8 Mod. 1"
 
 msgid "IDS_PHUS998_SUO_STATENLAND"
 msgstr "Vuurleiding Mk 8 Mod. 1"
-
-msgid "IDS_PHUT900_TORP_PHILIPS_VAN_ALMONDE"
-msgstr "533 mm Philips van Almonde"
 
 msgid "IDS_PHUT901_TORP_TROMP"
 msgstr "53,3 cm torpedo"
@@ -121284,9 +120346,6 @@ msgstr "203 mm/55 Model 1934 in a turret"
 
 msgid "IDS_PIGM2008_100MM_43_MODEL_1927"
 msgstr "100 mm/43 Model 1927 on a single mount"
-
-msgid "IDS_PIGM2009_TWIN_203_77"
-msgstr "203 mm/77 Model 1938 in a turret"
 
 msgid "IDS_PIGS003_100MM_50_MOD_OTO"
 msgstr "100 mm/47 Model 1924/27/28 on a Eugenio Minisini mount"
@@ -121777,12 +120836,6 @@ msgstr "203 mm proiettili AP 1927"
 msgid "IDS_PIPA119_203MM_53_HE_FIUME_ALT"
 msgstr "203 mm proiettili HE 1927"
 
-msgid "IDS_PIPA120_203MM_70_1938_CS_LA_SPEZIA"
-msgstr "203 mm proiettili CS 1938"
-
-msgid "IDS_PIPA121_203MM_70_1938_AP_LA_SPEZIA"
-msgstr "203 mm proiettili AP 1938"
-
 msgid "IDS_PIPA167_120MM_50_1926_CS"
 msgstr "120 mm proiettili CS 1926"
 
@@ -121923,9 +120976,6 @@ msgstr "533 mm Si 270 M1"
 
 msgid "IDS_PIPT025_533_FERRANTE_GONZAGA"
 msgstr "533 mm Si 270 M2"
-
-msgid "IDS_PIPT026_533_LA_SPEZIA"
-msgstr "533 mm Si 270 N"
 
 msgid "IDS_PIPT100_533MM_SI_S10_SUB_STOCK"
 msgstr "533 mm"
@@ -123024,29 +122074,6 @@ msgstr "1"
 msgid "IDS_PISC729_YEAR"
 msgstr "1943"
 
-msgid "IDS_PISC739"
-msgstr "La Spezia"
-
-msgid "IDS_PISC739_DESCR"
-msgstr ""
-"Following the success of the First World War-era \"Paris Gun,\" several "
-"countries began experimenting with exceptionally long-barrel artillery "
-"pieces in an effort to improve ballistic performance without increasing "
-"shell caliber, an especially important consideration during the era of naval"
-" treaty limitations. Italy was among the nations pursuing such experiments, "
-"including the development of long-barrel 203 mm naval guns. Had these "
-"weapons proven successful, they might have been adopted for a new generation"
-" of Italian heavy cruisers."
-
-msgid "IDS_PISC739_FULL"
-msgstr "La Spezia"
-
-msgid "IDS_PISC739_NUMBER"
-msgstr "1"
-
-msgid "IDS_PISC739_YEAR"
-msgstr "1943"
-
 msgid "IDS_PISC897"
 msgstr "AL Gorizia"
 
@@ -123647,9 +122674,6 @@ msgstr "203 mm/53 Model 1927 on a Model 1927 mount"
 msgid "IDS_PIUA913_ART_CONTE_VERDE"
 msgstr "203 mm/55 Model 1934 in a turret"
 
-msgid "IDS_PIUA914_ART_LA_SPEZIA"
-msgstr "203 mm/77 Model 1938 in a turret"
-
 msgid "IDS_PIUA991_ART_VARESE"
 msgstr "320 mm/44 Model 1934 on an OTO Model 1935 mount"
 
@@ -123859,9 +122883,6 @@ msgstr "Propulsion: 110,793 hp"
 
 msgid "IDS_PIUE913_ENG_CONTE_VERDE"
 msgstr "Propulsion: 235,000 hp"
-
-msgid "IDS_PIUE914_ENG_LA_SPEZIA"
-msgstr "Propulsion: 220,000 hp"
 
 msgid "IDS_PIUE991_ENG_VARESE"
 msgstr "Propulsion: 200,000 hp"
@@ -124141,9 +123162,6 @@ msgstr "Fiume"
 
 msgid "IDS_PIUH913_HULL_CONTE_VERDE"
 msgstr "Conte Verde"
-
-msgid "IDS_PIUH914_HULL_LA_SPEZIA"
-msgstr "La Spezia"
 
 msgid "IDS_PIUH991_VARESE"
 msgstr "Varese"
@@ -124427,9 +123445,6 @@ msgstr "SDT 7 mod.1"
 msgid "IDS_PIUS913_SUO_CONTE_VERDE"
 msgstr "SDT 10"
 
-msgid "IDS_PIUS914_SUO_LA_SPEZIA"
-msgstr "SDT 9"
-
 msgid "IDS_PIUS991_SUO_VARESE"
 msgstr "SDT 10 mod.1"
 
@@ -124561,9 +123576,6 @@ msgstr "533 mm Si 270"
 
 msgid "IDS_PIUT905_DD10_TORP_STOCK"
 msgstr "533 mm Si 270 N2"
-
-msgid "IDS_PIUT914_TORP_LA_SPEZIA"
-msgstr "533 mm Si 270 N"
 
 msgid "IDS_PIUT991_TORP_VARESE"
 msgstr "533 mm Si 270"
@@ -126457,18 +125469,6 @@ msgstr "203 mm HE Type95"
 msgid "IDS_PJPA183_203MM_60_AP_KURAMA_ALT"
 msgstr "203 mm AP Type95"
 
-msgid "IDS_PJPA184_310MM_HE_TOGASA"
-msgstr "310 mm HE Type92"
-
-msgid "IDS_PJPA185_310MM_AP_TOGASA"
-msgstr "310 mm AP Type92"
-
-msgid "IDS_PJPA186_310MM_HE_TOGASA_ALT"
-msgstr "310 mm HE Type92"
-
-msgid "IDS_PJPA187_310MM_AP_TOGASA_ALT"
-msgstr "310 mm AP Type92"
-
 msgid "IDS_PJPA211_127MM_AP_SHIGURE"
 msgstr "127 mm AP Type0"
 
@@ -126920,9 +125920,6 @@ msgid "IDS_PJPT076_610_TYPE93_MODEL_2_TURN"
 msgstr "Type 93 mod. 2"
 
 msgid "IDS_PJPT077_610MM_KURAMA"
-msgstr "Type 93 mod. 3"
-
-msgid "IDS_PJPT078_610MM_TOGASA"
 msgstr "Type 93 mod. 3"
 
 msgid "IDS_PJPT104_HOSHO_STOCK"
@@ -128145,26 +127142,6 @@ msgstr "1"
 
 msgid "IDS_PJSB720_YEAR"
 msgstr "1945"
-
-msgid "IDS_PJSB730"
-msgstr "Tōgasa"
-
-msgid "IDS_PJSB730_DESCR"
-msgstr ""
-"A battlecruiser armed with 310 mm and 100 mm gun mounts originally intended "
-"for the B-65 super cruiser design of 1941. The ship herself, designed in the"
-" late 1910s, could have been built as part of the famous 8-8 Program and "
-"modernized two decades later, with her armament replaced by more modern "
-"artillery systems that were then in the design stage."
-
-msgid "IDS_PJSB730_FULL"
-msgstr "Tōgasa"
-
-msgid "IDS_PJSB730_NUMBER"
-msgstr "1"
-
-msgid "IDS_PJSB730_YEAR"
-msgstr "1941"
 
 msgid "IDS_PJSB799"
 msgstr "ARP Kirishima"
@@ -130833,9 +129810,6 @@ msgstr "140 mm/40 11th Year Type"
 msgid "IDS_PJUA731_ART_BA_I56"
 msgstr "140 mm/40 11th Year Type"
 
-msgid "IDS_PJUA732_ART_TOGASA"
-msgstr "310 mm/50 Type 0 in a triple-gun turret"
-
 msgid "IDS_PJUA739_ART_SUZUYA"
 msgstr "155 mm/60 3rd Year Type in a triple-gun turret"
 
@@ -131642,9 +130616,6 @@ msgstr "Propulsion: 9,400 hp"
 
 msgid "IDS_PJUE731_ENG_BA_I56"
 msgstr "Propulsion: 9,400 hp"
-
-msgid "IDS_PJUE732_ENG_TOGASA"
-msgstr "Propulsion: 131,200 hp"
 
 msgid "IDS_PJUE739_ENG_SUZUYA"
 msgstr "Propulsion: 152,000 hp"
@@ -132476,9 +131447,6 @@ msgstr "I-56 '44"
 msgid "IDS_PJUH731_HULL_BA_I56"
 msgstr "BA Arona's Whale"
 
-msgid "IDS_PJUH732_HULL_TOGASA"
-msgstr "Tōgasa"
-
 msgid "IDS_PJUH739_HULL_SUZUYA"
 msgstr "Suzuya"
 
@@ -133263,9 +132231,6 @@ msgstr "Type7 mod. 1"
 msgid "IDS_PJUS729_SUO_GW_CHIKUMA_2_HYB"
 msgstr "Type9 mod. 1"
 
-msgid "IDS_PJUS732_SUO_TOGASA"
-msgstr "Type10 mod. 1"
-
 msgid "IDS_PJUS739_SUO_SUZUYA"
 msgstr "Type9 mod. 1"
 
@@ -133784,9 +132749,6 @@ msgstr "Type95 mod. 3"
 
 msgid "IDS_PJUT731_TORP_BA_I56"
 msgstr "Type95 mod. 3"
-
-msgid "IDS_PJUT732_TORP_TOGASA"
-msgstr "Type 93 mod. 1"
 
 msgid "IDS_PJUT739_TORP_SUZUYA"
 msgstr "Type 93"
@@ -136422,12 +135384,6 @@ msgstr "381 mm/42 Mk.I on a Mk.I mount"
 msgid "IDS_PRGM2017_15IN42_MK1_RF"
 msgstr "381 mm/42 Mk.I on a Mk.I mount"
 
-msgid "IDS_PRGM2029_16IN_45_MK6_QUADRUPLE"
-msgstr "406 mm/45 Mk.6 in a quadruple-gun turret"
-
-msgid "IDS_PRGM2038_16IN45_MK6"
-msgstr "406 mm/45 Mk.6 in a triple-gun turret"
-
 msgid "IDS_PRGM203_240MM_60_MK_3"
 msgstr "240 mm/60 on a MK-3-240 mount"
 
@@ -137236,9 +136192,6 @@ msgstr "152 mm HE 109 lb"
 msgid "IDS_PRPA084_152_AP_VARYAG"
 msgstr "152 mm AP 91 lb"
 
-msgid "IDS_PRPA085_406MM_HE_HC_MK_13E"
-msgstr "406 mm HE/HC Mk13"
-
 msgid "IDS_PRPA086_305MM_AP_KRON"
 msgstr "305 mm AP Model 1928"
 
@@ -137443,18 +136396,6 @@ msgstr "SAP-46"
 msgid "IDS_PRPA160_130MM_HE_PEREDOVOY"
 msgstr "HE-46"
 
-msgid "IDS_PRPA161_406MM_HE_SOVETSKAYA_ROSSIYA"
-msgstr "406 mm HE Model 1937"
-
-msgid "IDS_PRPA162_406MM_AP_SOVETSKAYA_ROSSIYA"
-msgstr "406 mm AP Model 1937"
-
-msgid "IDS_PRPA163_100MM_HE_F_56_SOVETSKAYA_ROSSIYA"
-msgstr "HE-56"
-
-msgid "IDS_PRPA164_152MM_OFU35_SG_SOVETSKAYA_ROSSIYA"
-msgstr "OFU-35"
-
 msgid "IDS_PRPA170_381MM_HE_ARKHANGELSK"
 msgstr "381 mm HE Mk VIIIb"
 
@@ -137560,9 +136501,6 @@ msgstr "356 mm AP Model 1912"
 msgid "IDS_PRPA220_150MM_HE_PROVORNY"
 msgstr "150 mm Spr.Gr. Vers."
 
-msgid "IDS_PRPA221_406MM_AP_AP_MK_8"
-msgstr "406 mm AP Mk8"
-
 msgid "IDS_PRPA222_150MM_AP_PROVORNY"
 msgstr "150 mm P.Spr.Gr. Vers."
 
@@ -137571,12 +136509,6 @@ msgstr "130 mm HE Model 1910"
 
 msgid "IDS_PRPA224_130MM_HE_B_13_KOMSOMOLETS"
 msgstr "HE-45"
-
-msgid "IDS_PRPA232_406MM_HE_RESPUBLIKA"
-msgstr "406 mm HE/HC Mk13"
-
-msgid "IDS_PRPA233_406MM_AP_RESPUBLIKA"
-msgstr "406 mm AP Mk8"
 
 msgid "IDS_PRPA601_1ST_AP_APRIL"
 msgstr "BANG"
@@ -138547,52 +137479,6 @@ msgstr "1"
 
 msgid "IDS_PRSB719_YEAR"
 msgstr "1936"
-
-msgid "IDS_PRSB729"
-msgstr "Respublika"
-
-msgid "IDS_PRSB729_DESCR"
-msgstr ""
-"During the 1930s, the Soviet Union sought to modernize and expand its naval "
-"capabilities, dispatching delegations to several leading naval powers to "
-"seek assistance in the design and construction of modern warships. One such "
-"delegation visited the American naval architecture firm Gibbs & Cox, which "
-"produced several proposals for the Soviets, including Project 1058.4. This "
-"design notably featured an aft-mounted quadruple 406 mm turret. However, "
-"following the Soviet invasion of Poland, all American assistance to the "
-"Soviet naval program came to an end."
-
-msgid "IDS_PRSB729_FULL"
-msgstr "Respublika"
-
-msgid "IDS_PRSB729_NUMBER"
-msgstr "1"
-
-msgid "IDS_PRSB729_YEAR"
-msgstr "1939"
-
-msgid "IDS_PRSB739"
-msgstr "Sov. Rossiya"
-
-msgid "IDS_PRSB739_DESCR"
-msgstr ""
-"Sovetskaya Rossiya was the fourth ship of the Sovetsky Soyuz-class "
-"battleships, a class intended to form the core of a new Soviet battlefleet. "
-"The ship herself was laid down at Molotovsk in Northern Russia. Following "
-"the German invasion of the Soviet Union in June 1941, resources and "
-"industrial capacity were redirected away from battleship construction toward"
-" more immediate wartime requirements. As a result, by the end of the war, "
-"Sovetskaya Rossiya was just 5% complete. She was ultimately ordered scrapped"
-" in March 1947."
-
-msgid "IDS_PRSB739_FULL"
-msgstr "Sovetskaya Rossiya"
-
-msgid "IDS_PRSB739_NUMBER"
-msgstr "1"
-
-msgid "IDS_PRSB739_YEAR"
-msgstr "1939"
 
 msgid "IDS_PRSB818"
 msgstr "Borodino TE"
@@ -140614,9 +139500,6 @@ msgstr "406 mm/45 Model 1915 in a turret"
 msgid "IDS_PRUA603_ART_TASHKENT39"
 msgstr "130 mm/50 Model 1936 on a B-13 mount"
 
-msgid "IDS_PRUA609_ART_RESPUBLIKA"
-msgstr "406 mm/45 Mk.6 in a turret"
-
 msgid "IDS_PRUA610_ART_PEREDOVOY"
 msgstr "130 mm/50 Model 1936 on a B-2LM mount"
 
@@ -140691,9 +139574,6 @@ msgstr "152 mm/57 B-38 on an MK-5-bis mount"
 
 msgid "IDS_PRUA731_ART_BA_ZARYA_SVOBODY"
 msgstr "406 mm/45 Model 1915 in a turret"
-
-msgid "IDS_PRUA732_ART_SOVETSKAYA_ROSSIYA"
-msgstr "406 mm/50 B-37 on an MK-1-406 mount"
 
 msgid "IDS_PRUA801_D9_ART_STOCK"
 msgstr "130 mm/55 on a B-2-U mount"
@@ -141010,9 +139890,6 @@ msgstr "Propulsion: 100,000 hp"
 msgid "IDS_PRUE604_ENG_TASHKENT39"
 msgstr "Propulsion: 110,000 hp"
 
-msgid "IDS_PRUE609_ENG_RESPUBLIKA"
-msgstr "Propulsion: 200,000 hp"
-
 msgid "IDS_PRUE610_ENG_PEREDOVOY"
 msgstr "Propulsion: 81,000 hp"
 
@@ -141093,9 +139970,6 @@ msgstr "Propulsion: 121,000 hp"
 
 msgid "IDS_PRUE731_ENG_BA_ZARYA_SVOBODY"
 msgstr "Propulsion: 201,000 hp"
-
-msgid "IDS_PRUE732_ENG_SOVETSKAYA_ROSSIYA"
-msgstr "Propulsion: 231,000 hp"
 
 msgid "IDS_PRUE801_D9_ENG_STOCK"
 msgstr "Propulsion: 84,500 hp"
@@ -141469,9 +140343,6 @@ msgstr "Sinop (B)"
 msgid "IDS_PRUH607_TASHKENT39"
 msgstr "Tashkent '39"
 
-msgid "IDS_PRUH609_HULL_RESPUBLIKA"
-msgstr "Respublika"
-
 msgid "IDS_PRUH610_HULL_PEREDOVOY"
 msgstr "Peredovoy"
 
@@ -141579,9 +140450,6 @@ msgstr "Kiberpankov"
 
 msgid "IDS_PRUH731_HULL_BA_ZARYA_SVOBODY"
 msgstr "BA Hovercraft"
-
-msgid "IDS_PRUH732_HULL_SOVETSKAYA_ROSSIYA"
-msgstr "Sovetskaya Rossiya"
 
 msgid "IDS_PRUH801_KIEV_A"
 msgstr "Kiev (A)"
@@ -142012,9 +140880,6 @@ msgstr "GFCS VII mod. 2"
 msgid "IDS_PRUS605_SUO_TASHKENT39"
 msgstr "GFCS VII mod. 1"
 
-msgid "IDS_PRUS609_SUO_RESPUBLIKA"
-msgstr "GFCS IX mod. 1"
-
 msgid "IDS_PRUS610_SUO_PEREDOVOY"
 msgstr "GFCS X mod. 1"
 
@@ -142106,9 +140971,6 @@ msgid "IDS_PRUS730_SUO_CYBER_DMITRY_POZHARSKY"
 msgstr "GFCS VIII mod. 1"
 
 msgid "IDS_PRUS731_SUO_BA_ZARYA_SVOBODY"
-msgstr "GFCS IX mod. 1"
-
-msgid "IDS_PRUS732_SUO_SOVETSKAYA_ROSSIYA"
 msgstr "GFCS IX mod. 1"
 
 msgid "IDS_PRUS801_SUO"
@@ -145070,15 +143932,6 @@ msgstr "Inca Treasure"
 
 msgid "IDS_PVES418_ALMIRANTE_LAMA"
 msgstr "Ancient Totem"
-
-msgid "IDS_PVES501_EA_CUAUHTEMOC"
-msgstr "Ombligo de la Luna"
-
-msgid "IDS_PVES502_EA_NUEVA_ESPARTA"
-msgstr "Abrazo de la Selva"
-
-msgid "IDS_PVES503_EA_VEINTE_DE_JULIO"
-msgstr "Cumbres Doradas"
 
 msgid "IDS_PVES506_JURUA_BOITATA"
 msgstr "Boitatá"
@@ -152426,7 +151279,7 @@ msgid "IDS_PXSB101_YEAR"
 msgstr "2020"
 
 msgid "IDS_PXSB103"
-msgstr "Heracles"
+msgstr "Heracles "
 
 msgid "IDS_PXSB103_DESCR"
 msgstr ""
@@ -152436,7 +151289,7 @@ msgstr ""
 "allies."
 
 msgid "IDS_PXSB103_FULL"
-msgstr "Heracles"
+msgstr "Heracles "
 
 msgid "IDS_PXSB103_NUMBER"
 msgstr "1"
@@ -160639,19 +159492,32 @@ msgid "IDS_RARITY"
 msgstr "Rarity"
 
 msgid "IDS_RARITY_COMMON_DESCRIPTION"
-msgstr "Common item"
+msgstr ""
+"Common %(entity)s. Always or frequently available through regular gameplay. "
+"Designed to be broadly accessible."
 
 msgid "IDS_RARITY_EPIC_DESCRIPTION"
-msgstr "Epic item"
+msgstr ""
+"Epic %(entity)s. Requires significant time, effort, or high investment. "
+"Typically limited-time and difficult to reobtain."
+
+msgid "IDS_RARITY_ITEM_ENTITY_NAME"
+msgstr "item"
 
 msgid "IDS_RARITY_LEGENDARY_DESCRIPTION"
-msgstr "Legendary item"
+msgstr ""
+"Legendary %(entity)s. Ultra-exclusive content granted for extraordinary "
+"effort or dedication."
 
 msgid "IDS_RARITY_RARE_DESCRIPTION"
-msgstr "Rare item"
+msgstr ""
+"Rare %(entity)s. Requires dedicated or focused effort via challenging events"
+" and long-term commitment."
 
 msgid "IDS_RARITY_UNCOMMON_DESCRIPTION"
-msgstr "Uncommon item"
+msgstr ""
+"Uncommon %(entity)s. Requires moderate effort, typically available through "
+"recurring events and steady in-game progress."
 
 msgid "IDS_RASPUTIN"
 msgstr "Rasputin"
@@ -161862,10 +160728,10 @@ msgid "IDS_REWARD_ELITEXP_TITLE"
 msgstr "Elite Commander XP"
 
 msgid "IDS_REWARD_EVENTUM_10_TITLE"
-msgstr "Holiday Convoy Tokens"
+msgstr "Voyage Tokens"
 
 msgid "IDS_REWARD_EVENTUM_11_TITLE"
-msgstr "Colorful Tokens"
+msgstr "GQ Johnny Tokens"
 
 msgid "IDS_REWARD_EVENTUM_12_TITLE"
 msgstr "Memory Notes"
@@ -161892,10 +160758,10 @@ msgid "IDS_REWARD_EVENTUM_5_TITLE"
 msgstr "Wharf Tokens"
 
 msgid "IDS_REWARD_EVENTUM_6_TITLE"
-msgstr "Pan-American Tokens"
+msgstr "Bounty Hunt Tokens"
 
 msgid "IDS_REWARD_EVENTUM_7_TITLE"
-msgstr "Exchange Tokens"
+msgstr "Azur Lane Tokens"
 
 msgid "IDS_REWARD_EVENTUM_8_TITLE"
 msgstr "Summer Tokens"
@@ -166087,14 +164953,6 @@ msgid "IDS_REWARD_LOOTBOX_PCL165_COLORFULEVENT_PREM_SLOT_0_TITLE_FULL"
 msgstr " "
 
 msgid ""
-"IDS_REWARD_LOOTBOX_PCL165_COLORFULEVENT_PREM_SLOT_0_VALUABLE_GROUP_1_TITLE_FULL"
-msgstr "Tier VIII–X ship"
-
-msgid ""
-"IDS_REWARD_LOOTBOX_PCL165_COLORFULEVENT_PREM_SLOT_0_VALUABLE_GROUP_1_TITLE_SHORT"
-msgstr "Tier VIII–X"
-
-msgid ""
 "IDS_REWARD_LOOTBOX_PCL165_COLORFULEVENT_PREM_SLOT_1_COMMON_GROUP_TITLE_FULL"
 msgstr " "
 
@@ -167529,6 +166387,13 @@ msgid ""
 "IDS_REWARD_LOOTBOX_PCL225_TMNT_PREM_SLOT_0_VALUABLE_GROUP_2_TITLE_SHORT"
 msgstr "Camouflage"
 
+msgid "IDS_REWARD_LOOTBOX_PCL225_TMNT_PREM_SLOT_0_VALUABLE_GROUP_3_TITLE_FULL"
+msgstr "Special Tier X ship"
+
+msgid ""
+"IDS_REWARD_LOOTBOX_PCL225_TMNT_PREM_SLOT_0_VALUABLE_GROUP_3_TITLE_SHORT"
+msgstr "Premium ship"
+
 msgid "IDS_REWARD_LOOTBOX_PCL225_TMNT_PREM_TITLE"
 msgstr "Pizza Time Premium container"
 
@@ -168675,27 +167540,6 @@ msgid "IDS_REWARD_LOOTBOX_PCL271_TIER9_PREM_TITLE_SHORT"
 msgstr "Firepower IX"
 
 msgid ""
-"IDS_REWARD_LOOTBOX_PCL272_CUSTOMDEATH_PREM_SLOT_0_COMMON_GROUP_TITLE_FULL"
-msgstr " "
-
-msgid "IDS_REWARD_LOOTBOX_PCL272_CUSTOMDEATH_PREM_SLOT_0_TITLE_FULL"
-msgstr " "
-
-msgid ""
-"IDS_REWARD_LOOTBOX_PCL272_CUSTOMDEATH_PREM_SLOT_0_VALUABLE_GROUP_1_TITLE_FULL"
-msgstr "Effects"
-
-msgid ""
-"IDS_REWARD_LOOTBOX_PCL272_CUSTOMDEATH_PREM_SLOT_0_VALUABLE_GROUP_1_TITLE_SHORT"
-msgstr "Effects"
-
-msgid "IDS_REWARD_LOOTBOX_PCL272_CUSTOMDEATH_PREM_TITLE"
-msgstr "Enemy Destruction Effects Premium container"
-
-msgid "IDS_REWARD_LOOTBOX_PCL272_CUSTOMDEATH_PREM_TITLE_SHORT"
-msgstr "Enemy Destruction Effects"
-
-msgid ""
 "IDS_REWARD_LOOTBOX_PCL273_AZURLANE_SUPER_PREM_SLOT_0_COMMON_GROUP_TITLE_FULL"
 msgstr " "
 
@@ -168805,54 +167649,6 @@ msgstr "Fist Force Onslaught Premium container"
 
 msgid "IDS_REWARD_LOOTBOX_PCL279_KING_OF_FIGHTERS_PREM_TITLE_SHORT"
 msgstr "Fist Force Onslaught"
-
-msgid ""
-"IDS_REWARD_LOOTBOX_PCL280_ESP_LEGENDARY_FREE_SLOT_0_COMMON_GROUP_TITLE_FULL"
-msgstr " "
-
-msgid "IDS_REWARD_LOOTBOX_PCL280_ESP_LEGENDARY_FREE_SLOT_0_TITLE_FULL"
-msgstr " "
-
-msgid "IDS_REWARD_LOOTBOX_PCL280_ESP_LEGENDARY_FREE_TITLE"
-msgstr "Battle of Santiago de Cuba container"
-
-msgid "IDS_REWARD_LOOTBOX_PCL280_ESP_LEGENDARY_FREE_TITLE_SHORT"
-msgstr "Battle of Santiago de Cuba"
-
-msgid ""
-"IDS_REWARD_LOOTBOX_PCL281_ESP_LEGENDARY_PREM_SLOT_0_COMMON_GROUP_TITLE_FULL"
-msgstr " "
-
-msgid "IDS_REWARD_LOOTBOX_PCL281_ESP_LEGENDARY_PREM_SLOT_0_TITLE_FULL"
-msgstr " "
-
-msgid ""
-"IDS_REWARD_LOOTBOX_PCL281_ESP_LEGENDARY_PREM_SLOT_1_COMMON_GROUP_TITLE_FULL"
-msgstr " "
-
-msgid "IDS_REWARD_LOOTBOX_PCL281_ESP_LEGENDARY_PREM_SLOT_1_TITLE_FULL"
-msgstr " "
-
-msgid ""
-"IDS_REWARD_LOOTBOX_PCL281_ESP_LEGENDARY_PREM_SLOT_1_VALUABLE_GROUP_1_TITLE_FULL"
-msgstr "Tier IX ship"
-
-msgid ""
-"IDS_REWARD_LOOTBOX_PCL281_ESP_LEGENDARY_PREM_SLOT_1_VALUABLE_GROUP_1_TITLE_SHORT"
-msgstr "Tier IX ship"
-
-msgid ""
-"IDS_REWARD_LOOTBOX_PCL281_ESP_LEGENDARY_PREM_SLOT_2_COMMON_GROUP_TITLE_FULL"
-msgstr " "
-
-msgid "IDS_REWARD_LOOTBOX_PCL281_ESP_LEGENDARY_PREM_SLOT_2_TITLE_FULL"
-msgstr " "
-
-msgid "IDS_REWARD_LOOTBOX_PCL281_ESP_LEGENDARY_PREM_TITLE"
-msgstr "Battle of Santiago de Cuba Premium container"
-
-msgid "IDS_REWARD_LOOTBOX_PCL281_ESP_LEGENDARY_PREM_TITLE_SHORT"
-msgstr "Battle of Santiago de Cuba"
 
 msgid "IDS_REWARD_METASHOPIUM_1_TITLE"
 msgstr "Alliance Tokens"
@@ -171101,10 +169897,10 @@ msgid "IDS_SET_NOT_READY_TO_BATTLE_IN_FORMATION"
 msgstr "Set status to \"Not ready\""
 
 msgid "IDS_SET_PRIORITY_SECTOR"
-msgstr "Activate AA Defense Priority"
+msgstr "Select priority AA sector"
 
 msgid "IDS_SET_PRIORITY_SECTOR_PREF_TOOLTIP_DESCRIPTION"
-msgstr "Activate enhanced AA defenses."
+msgstr "Select which side of the ship to enhance AA defenses for."
 
 msgid "IDS_SET_READY_TO_BATTLE_IN_FORMATION"
 msgstr "Set status to \"Ready!\""
@@ -171215,9 +170011,6 @@ msgstr "The special will end in a few minutes"
 
 msgid "IDS_SHARE_NICKNAME"
 msgstr "Display username"
-
-msgid "IDS_SHENG_GE"
-msgstr "Sheng Ge"
 
 msgid "IDS_SHIGEKAZU_SHIMAZAKI"
 msgstr "Shigekazu Shimazaki"
@@ -171753,9 +170546,6 @@ msgstr "Low-speed alternative torpedoes"
 
 msgid "IDS_SHIP_FEAT_ASW_FORWARD_DEPTH_CHARGES"
 msgstr "Depth charges are dropped in front of ship"
-
-msgid "IDS_SHIP_FEAT_ATBA_AP_AMMO"
-msgstr "Secondary battery guns armed with AP shells"
 
 msgid "IDS_SHIP_FEAT_ATBA_CS_AMMO"
 msgstr "Secondary battery guns armed with SAP shells"
@@ -172495,8 +171285,8 @@ msgstr "Hybrid ship (torpedo bombers and bombers available)"
 
 msgid "IDS_SHIP_MAIN_SPEC_HYDRO_AND_BARRAGE_GOOD"
 msgstr ""
-"Access to the Hydroacoustic Search and Auxiliary and Torpedo Weaponry "
-"Coordination consumables simultaneously"
+"Access to the Hydroacoustic Search and Defensive AA Fire consumables "
+"simultaneously"
 
 msgid "IDS_SHIP_MAIN_SPEC_HYDRO_AND_FULLSPEED_SMOKE_GOOD"
 msgstr ""
@@ -172829,20 +171619,7 @@ msgstr ""
 "\n"
 "If you receive a similar buff again and its modifiers coincide by type but differ by values, only the higher values are applied. Receiving a buff with identical modifiers and values resets the consumable action timer."
 
-msgid ""
-"IDS_SHIP_MODIFIER_PARAM_DESCRIPTION_PCOM912_SUPPORTHEALCONSUMABLERELOAD"
-msgstr ""
-"Your ship has been reinforced by a consumable from an allied ship.\n"
-"\n"
-"If you receive a similar buff again and its modifiers coincide by type but differ by values, only the higher values are applied. Receiving a buff with identical modifiers and values resets the consumable action timer."
-
-msgid "IDS_SHIP_MODIFIER_PARAM_DESCRIPTION_PCOM913_FIREEXTINGUISHING"
-msgstr ""
-"Your ship has been reinforced by a consumable from an allied ship.\n"
-"\n"
-"If you receive a similar buff again and its modifiers coincide by type but differ by values, only the higher values are applied. Receiving a buff with identical modifiers and values resets the consumable action timer."
-
-msgid "IDS_SHIP_MODIFIER_PARAM_DESCRIPTION_PCOM914_SUPPORTHEAL"
+msgid "IDS_SHIP_MODIFIER_PARAM_DESCRIPTION_PCOM912_SUPPORTHEALCONSUM"
 msgstr ""
 "Your ship has been reinforced by a consumable from an allied ship.\n"
 "\n"
@@ -173196,14 +171973,8 @@ msgstr "Gun Crew Assistance"
 msgid "IDS_SHIP_MODIFIER_PARAM_HEADER_PCOM911_SUPPORTAUXBUFF"
 msgstr "Auxiliary and Torpedo Armament Assistance"
 
-msgid "IDS_SHIP_MODIFIER_PARAM_HEADER_PCOM912_SUPPORTHEALCONSUMABLERELOAD"
+msgid "IDS_SHIP_MODIFIER_PARAM_HEADER_PCOM912_SUPPORTHEALCONSUM"
 msgstr "Engineering Crew Assistance"
-
-msgid "IDS_SHIP_MODIFIER_PARAM_HEADER_PCOM913_FIREEXTINGUISHING"
-msgstr "Firefighting Assistance"
-
-msgid "IDS_SHIP_MODIFIER_PARAM_HEADER_PCOM914_SUPPORTHEAL"
-msgstr "Repair Assistance"
 
 msgid "IDS_SHIP_MODIFIER_PARAM_HEADER_PXOM001_REGENERATION_H2020"
 msgstr "HP Regeneration"
@@ -173733,63 +172504,6 @@ msgstr "Ship parameters improvement"
 msgid "IDS_SHIP_PARAM_AA"
 msgstr "AA Guns"
 
-msgid "IDS_SHIP_PARAM_AA_AIMED_FIRE_ACTIVATION_CONDITIONS"
-msgstr "Activation Conditions"
-
-msgid "IDS_SHIP_PARAM_AA_AIMED_FIRE_ACTIVATION_CONDITIONS_DESCRIPTION"
-msgstr "Fill the progress bar by firing at enemy aircraft with AA guns."
-
-msgid "IDS_SHIP_PARAM_AA_AIMED_FIRE_ACTIVE_EFFECT"
-msgstr "Activated Effect"
-
-msgid "IDS_SHIP_PARAM_AA_AIMED_FIRE_ACTIVE_PROGRESS_RATE"
-msgstr "Progress gain per second"
-
-msgid "IDS_SHIP_PARAM_AA_AIMED_FIRE_AURA_DAMAGE"
-msgstr "Continuous AA damage increase"
-
-msgid "IDS_SHIP_PARAM_AA_AIMED_FIRE_BUBBLE_DAMAGE"
-msgstr "Damage from AA shell explosions increase"
-
-msgid "IDS_SHIP_PARAM_AA_AIMED_FIRE_CONDITION_FAILURE_EFFECT"
-msgstr "Effect When Conditions Are Not Met"
-
-msgid "IDS_SHIP_PARAM_AA_AIMED_FIRE_CONDITION_FAILURE_EFFECT_DESCRIPTION"
-msgstr "After some time, you will start losing progress."
-
-msgid "IDS_SHIP_PARAM_AA_AIMED_FIRE_COOLDOWN"
-msgstr "Cooldown time"
-
-msgid "IDS_SHIP_PARAM_AA_AIMED_FIRE_DECREMENT_DELAY"
-msgstr "Time before you start losing progress"
-
-msgid "IDS_SHIP_PARAM_AA_AIMED_FIRE_DECREMENT_RATE"
-msgstr "Progress loss per second"
-
-msgid "IDS_SHIP_PARAM_AA_AIMED_FIRE_DESCRIPTION"
-msgstr ""
-"Increases AA fire intensity. Deals instantaneous damage to enemy aircraft within the AA fire action zone upon activation and periodically while active.\n"
-"The progress increases when AA guns are firing.\n"
-"\n"
-"Concentrated AA Fire cannot be used while AA Defense Priority is on cooldown or active."
-
-msgid "IDS_SHIP_PARAM_AA_AIMED_FIRE_DESCRIPTION_BATTLE"
-msgstr ""
-"Increases AA fire intensity. Deals instantaneous damage to enemy aircraft within the AA fire action zone upon activation and periodically while active.\n"
-"\n"
-"Concentrated AA Fire cannot be used while AA Defense Priority is on cooldown or active.\n"
-"\n"
-"Press and hold [CMD_SET_PRIORITY_SECTOR] to activate when the progress bar is filled."
-
-msgid "IDS_SHIP_PARAM_AA_AIMED_FIRE_INSTANT_DAMAGE_INTERVAL"
-msgstr "Instantaneous damage interval"
-
-msgid "IDS_SHIP_PARAM_AA_AIMED_FIRE_PROGRESS"
-msgstr "Progress Accumulation and Loss"
-
-msgid "IDS_SHIP_PARAM_AA_AIMED_FIRE_WORK_TIME"
-msgstr "Action time"
-
 msgid "IDS_SHIP_PARAM_AA_AURA"
 msgstr "Efficiency"
 
@@ -173864,18 +172578,6 @@ msgstr "AA Mounts"
 msgid "IDS_SHIP_PARAM_AA_HIT_CHANCE"
 msgstr "Hit Probability"
 
-msgid "IDS_SHIP_PARAM_AA_MANUAL_AA"
-msgstr "AA Defense Priority reinforcement"
-
-msgid "IDS_SHIP_PARAM_AA_MANUAL_AA_DESCRIPTION"
-msgstr ""
-"Increases continuous damage and deals instantaneous damage at the moment of activation.\n"
-"\n"
-"AA Defense Priority cannot be used while Concentrated AA Fire is on cooldown or active."
-
-msgid "IDS_SHIP_PARAM_AA_MANUAL_AA_TITLE"
-msgstr "AA Defense Priority Reinforcement"
-
 msgid "IDS_SHIP_PARAM_AA_MAX_DIST"
 msgstr "Firing Range"
 
@@ -173886,10 +172588,10 @@ msgid "IDS_SHIP_PARAM_AA_MAX_DIST_VALUE"
 msgstr "Maximum Range"
 
 msgid "IDS_SHIP_PARAM_AA_MAX_PRIORITY_SECTOR_AMPLIFICATION"
-msgstr "AA Defense Priority"
+msgstr "Priority Sector"
 
 msgid "IDS_SHIP_PARAM_AA_MAX_PRIORITY_SECTOR_AMPLIFICATION_TITLE"
-msgstr "AA Defense Priority Reinforcement"
+msgstr "Priority Sector Reinforcement"
 
 msgid "IDS_SHIP_PARAM_AA_MEDIUM_HITCHANCE"
 msgstr "Hit Probability"
@@ -173904,7 +172606,7 @@ msgid "IDS_SHIP_PARAM_AA_RANGE"
 msgstr "Firing Range"
 
 msgid "IDS_SHIP_PARAM_AA_SECTOR_COOLDOWN"
-msgstr "Cooldown Time"
+msgstr "Preparation Time"
 
 msgid "IDS_SHIP_PARAM_AA_SECTOR_INCREASED_TIME"
 msgstr "Action Time"
@@ -173920,9 +172622,6 @@ msgid "IDS_SHIP_PARAM_ACTIVE_EFFECT_DESCRIPTION_RAGE_MODE"
 msgstr ""
 "Successful gun adjustment firing temporarily boosted your ship's "
 "characteristics."
-
-msgid "IDS_SHIP_PARAM_ACTIVE_EFFECT_TYPE_AIMED_FIRE"
-msgstr "AA Mode"
 
 msgid "IDS_SHIP_PARAM_ACTIVE_EFFECT_TYPE_BATTERY"
 msgstr "Ship Status"
@@ -174510,9 +173209,6 @@ msgstr "Aircraft on Deck"
 msgid "IDS_SHIP_PARAM_HANGAR_SIZE"
 msgstr "Number of Aircraft on Deck"
 
-msgid "IDS_SHIP_PARAM_HEADER_AA_AIMED_FIRE"
-msgstr "Concentrated AA Fire"
-
 msgid "IDS_SHIP_PARAM_HEADER_BATTERY_STATE_CHARGING"
 msgstr "Dive Capacity Recharging"
 
@@ -174849,7 +173545,7 @@ msgid "IDS_SHIP_PARAM_PREPARE_TIME_FACTOR"
 msgstr "Aircraft servicing speed"
 
 msgid "IDS_SHIP_PARAM_PRIORITY_SECTOR"
-msgstr "AA Defense Priority"
+msgstr "Priority Sector"
 
 msgid "IDS_SHIP_PARAM_PROJECTILE_DAMAGE"
 msgstr "Maximum Damage"
@@ -177196,9 +175892,6 @@ msgstr ""
 "Commanders on your team speak in the selected voiceover language. When using"
 " a Commander with unique phrases, the standard voiceover will be replaced."
 
-msgid "IDS_SOUND_MOD_DE_GRASSE"
-msgstr "François J. P. de Grasse"
-
 msgid "IDS_SOUND_MOD_DIEHARD_CAP"
 msgstr "Johannes Meck-Leyne"
 
@@ -177583,14 +176276,8 @@ msgstr "Namae and Bison Hamster"
 msgid "IDS_SOUND_MOD_PSPLIVE_SEKI"
 msgstr "Seki"
 
-msgid "IDS_SOUND_MOD_PSPLIVE_SHENG_GE"
-msgstr "Sheng Ge"
-
 msgid "IDS_SOUND_MOD_PSPLIVE_SHIRAKAMI_HARUKA"
 msgstr "Shirakami Haruka"
-
-msgid "IDS_SOUND_MOD_PSPLIVE_SUMI"
-msgstr "Sumi"
 
 msgid "IDS_SOUND_MOD_PSPLIVE_TAOMU_Q"
 msgstr "Taomu Q"
@@ -181385,9 +180072,6 @@ msgstr "Bulkhead"
 msgid "IDS_SUCCESS"
 msgstr "Successful raid"
 
-msgid "IDS_SUMI"
-msgstr "Sumi"
-
 msgid "IDS_SUMMER_GIRL_ESP"
 msgstr "Martina Verano"
 
@@ -181718,10 +180402,10 @@ msgid "IDS_SYS_MSG_BOUGHT_EVENTUM_1"
 msgstr "Italian Tokens purchased"
 
 msgid "IDS_SYS_MSG_BOUGHT_EVENTUM_10"
-msgstr "Holiday Convoy Tokens purchased"
+msgstr "Voyage Tokens purchased"
 
 msgid "IDS_SYS_MSG_BOUGHT_EVENTUM_11"
-msgstr "Colorful Tokens purchased"
+msgstr "GQ Johnny Tokens purchased"
 
 msgid "IDS_SYS_MSG_BOUGHT_EVENTUM_12"
 msgstr "Memory Notes purchased"
@@ -181745,10 +180429,10 @@ msgid "IDS_SYS_MSG_BOUGHT_EVENTUM_5"
 msgstr "Wharf Tokens purchased"
 
 msgid "IDS_SYS_MSG_BOUGHT_EVENTUM_6"
-msgstr "Pan-American Tokens purchased"
+msgstr "Bounty Hunt Tokens purchased"
 
 msgid "IDS_SYS_MSG_BOUGHT_EVENTUM_7"
-msgstr "Exchange Tokens purchased"
+msgstr "Azur Lane Tokens purchased"
 
 msgid "IDS_SYS_MSG_BOUGHT_EVENTUM_8"
 msgstr "Summer Tokens purchased"
@@ -182331,10 +181015,10 @@ msgid "IDS_SYS_MSG_RECEIVED_EVENTUM_1"
 msgstr "Italian Tokens received"
 
 msgid "IDS_SYS_MSG_RECEIVED_EVENTUM_10"
-msgstr "Holiday Convoy Tokens received"
+msgstr "Voyage Tokens received"
 
 msgid "IDS_SYS_MSG_RECEIVED_EVENTUM_11"
-msgstr "Colorful Tokens received"
+msgstr "GQ Johnny Tokens received"
 
 msgid "IDS_SYS_MSG_RECEIVED_EVENTUM_12"
 msgstr "Memory Notes received"
@@ -182358,10 +181042,10 @@ msgid "IDS_SYS_MSG_RECEIVED_EVENTUM_5"
 msgstr "Wharf Tokens received"
 
 msgid "IDS_SYS_MSG_RECEIVED_EVENTUM_6"
-msgstr "Pan-American Tokens received"
+msgstr "Bounty Hunt Tokens received"
 
 msgid "IDS_SYS_MSG_RECEIVED_EVENTUM_7"
-msgstr "Exchange Tokens received"
+msgstr "Azur Lane Tokens received"
 
 msgid "IDS_SYS_MSG_RECEIVED_EVENTUM_8"
 msgstr "Summer Tokens received"
@@ -182837,10 +181521,10 @@ msgid "IDS_SYS_MSG_WRITTEN_OFF_EVENTUM_1"
 msgstr "Italian Tokens removed"
 
 msgid "IDS_SYS_MSG_WRITTEN_OFF_EVENTUM_10"
-msgstr "Holiday Convoy Tokens removed"
+msgstr "Voyage Tokens removed"
 
 msgid "IDS_SYS_MSG_WRITTEN_OFF_EVENTUM_11"
-msgstr "Colorful Tokens removed"
+msgstr "GQ Johnny Tokens removed"
 
 msgid "IDS_SYS_MSG_WRITTEN_OFF_EVENTUM_12"
 msgstr "Memory Notes removed"
@@ -182864,10 +181548,10 @@ msgid "IDS_SYS_MSG_WRITTEN_OFF_EVENTUM_5"
 msgstr "Wharf Tokens removed"
 
 msgid "IDS_SYS_MSG_WRITTEN_OFF_EVENTUM_6"
-msgstr "Pan-American Tokens removed"
+msgstr "Bounty Hunt Tokens removed"
 
 msgid "IDS_SYS_MSG_WRITTEN_OFF_EVENTUM_7"
-msgstr "Exchange Tokens removed"
+msgstr "Azur Lane Tokens removed"
 
 msgid "IDS_SYS_MSG_WRITTEN_OFF_EVENTUM_8"
 msgstr "Summer Tokens removed"
@@ -183591,13 +182275,11 @@ msgstr "Emergency Reserve"
 
 msgid "IDS_TALENT_PJW018_2_0_21_DESCRIPTION_BATTLE_GROUP_OPERATIONS"
 msgstr ""
-"Activates if you are the first in battle to destroy or assist in destroying "
-"a ship."
+"Activates if you are the first to destroy or assist in destroying a ship."
 
 msgid "IDS_TALENT_PJW018_2_0_21_DESCRIPTION_BATTLE_GROUP_REGULAR"
 msgstr ""
-"Activates if you are the first in battle to destroy or assist in destroying "
-"a ship."
+"Activates if you are the first to destroy or assist in destroying a ship."
 
 msgid "IDS_TALENT_PRW406_1_1_5_6"
 msgstr "Will for Victory"
@@ -183619,13 +182301,13 @@ msgstr "Emergency Reserve"
 
 msgid "IDS_TALENT_PRW406_2_0_21_DESCRIPTION_BATTLE_GROUP_OPERATIONS"
 msgstr ""
-"Activates if you are the first in battle to destroy or assist in destroying a ship.\n"
+"Activates if you are the first to destroy or assist in destroying a ship.\n"
 "\n"
 "Can be activated once per battle."
 
 msgid "IDS_TALENT_PRW406_2_0_21_DESCRIPTION_BATTLE_GROUP_REGULAR"
 msgstr ""
-"Activates if you are the first in battle to destroy or assist in destroying a ship.\n"
+"Activates if you are the first to destroy or assist in destroying a ship.\n"
 "\n"
 "Can be activated once per battle."
 
@@ -186622,20 +185304,13 @@ msgstr "Damage per second from AA shell explosions"
 msgid "IDS_TOOLTIP_AA_GUN"
 msgstr "Anti-aircraft armament"
 
-msgid "IDS_TOOLTIP_AA_MANUAL_AA"
-msgstr ""
-"Increases continuous damage and deals instantaneous damage at the moment of activation.\n"
-"\n"
-"AA Defense Priority cannot be used while Concentrated AA Fire is on cooldown or active."
-
 msgid "IDS_TOOLTIP_AA_MAX_DIST"
 msgstr "Maximum firing range of AA mounts"
 
 msgid "IDS_TOOLTIP_AA_MAX_PRIORITY_SECTOR_AMPLIFICATION"
 msgstr ""
-"Increases continuous damage and deals instantaneous damage at the moment of activation.\n"
-"\n"
-"AA Defense Priority cannot be used while Concentrated AA Fire is on cooldown or active."
+"Increases continuous damage and deals instantaneous damage after a priority "
+"sector is selected"
 
 msgid "IDS_TOOLTIP_AA_RANGE"
 msgstr "Maximum firing range of AA mounts"
@@ -188268,9 +186943,6 @@ msgstr ""
 msgid "IDS_UNAVAILABLE_EPIC_ECOBOOST_FOR_PURCHASE"
 msgstr "Epic bonuses are not available for purchase"
 
-msgid "IDS_UNAVAILABLE_LEGENDARY_ECOBOOST_FOR_PURCHASE"
-msgstr "Legendary bonuses are not available for purchase."
-
 msgid "IDS_UNAVAILABLE_RARE_ECOBOOST_FOR_PURCHASE"
 msgstr "Rare bonuses are not available for purchase"
 
@@ -188297,9 +186969,6 @@ msgstr "This ship is temporarily unavailable."
 
 msgid "IDS_UNDERWATER"
 msgstr "Info: Shell went underwater."
-
-msgid "IDS_UNDER_ANTI_AIR_AIMED_FIRE_ATTACK"
-msgstr "CONCENTRATED AA FIRE"
 
 msgid "IDS_UNDER_ANTI_AIR_ATTACK"
 msgstr "AA FIRE"
@@ -189607,7 +188276,7 @@ msgid "IDS_WAREHOUSE_NOTHING_MATCHING_CRITERIA"
 msgstr "No results"
 
 msgid "IDS_WAREHOUSE_NOT_COMPATIBLE_WITH_MY_SHIPS"
-msgstr "Cannot be mounted on my ships"
+msgstr "Cannot be mounted on your ships"
 
 msgid "IDS_WAREHOUSE_NO_ITEMS"
 msgstr "You do not have any items to display yet."
