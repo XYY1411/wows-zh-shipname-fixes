@@ -12,8 +12,10 @@
     (sparse checkout 在 partial clone 环境下不可靠, 已弃用)
   - ModSDK 实际语言目录: zh / zh_sg / en (注意 zh_sg 是下划线!)
 """
+import csv
 import json
 import os
+import re
 import shutil
 import struct
 import sys
@@ -178,7 +180,35 @@ def fetch_mo(tag: str, out_dir: Path) -> dict[str, Path]:
     return result
 
 
-def decompile(mo_path: Path, po_path: Path) -> None:
+# 舰船名词条键: IDS_P?S???? 或 IDS_P?S????_FULL (无其他后缀)
+SHIP_KEY_RE = re.compile(r"^IDS_P[A-Z]S[A-Z]\d{3}(?:_FULL)?$")
+
+
+def po_to_csv(po, csv_path: Path) -> None:
+    """把 polib PO 对象导出为 csv (键值, 翻译)"""
+    with open(csv_path, "w", newline="", encoding="utf-8-sig") as f:
+        w = csv.writer(f)
+        w.writerow(["键值(key)", "翻译(msgstr)"])
+        for entry in po:
+            if entry.msgid == "":
+                continue  # 跳过文件头元数据条目
+            w.writerow([entry.msgid, entry.msgstr])
+
+
+def extract_ship_csv(po, ship_path: Path) -> None:
+    """从 po 中提取舰船名键 (IDS_P?S???? / IDS_P?S????_FULL) 到 ship.csv"""
+    count = 0
+    with open(ship_path, "w", newline="", encoding="utf-8-sig") as f:
+        w = csv.writer(f)
+        w.writerow(["键值(key)", "翻译(msgstr)"])
+        for entry in po:
+            if SHIP_KEY_RE.match(entry.msgid or ""):
+                w.writerow([entry.msgid, entry.msgstr])
+                count += 1
+    print(f"  [CSV] {ship_path.name}: 提取舰船名词条 {count} 条")
+
+
+def decompile(mo_path: Path, po_path: Path) -> object:
     """修复文件头并用 polib 反编译 .mo -> .po"""
     data = mo_path.read_bytes()
     data = fix_mo_header(data)
@@ -188,6 +218,7 @@ def decompile(mo_path: Path, po_path: Path) -> None:
         po = polib.mofile(str(tmp_mo))
         po.save_as_pofile(str(po_path))
         print(f"  [反编译] {mo_path.name} -> {po_path.name} ({len(po)} 条)")
+        return po
     except Exception as e:
         raise RuntimeError(f"反编译失败 {mo_path}: {e}") from e
     finally:
@@ -216,7 +247,9 @@ def main() -> int:
         print("没有获取到任何 mo 文件，终止")
         return 1
     for lang, mo_path in mos.items():
-        decompile(mo_path, mo_path.parent / "global.po")
+        po = decompile(mo_path, mo_path.parent / "global.po")
+        po_to_csv(po, mo_path.parent / "global.csv")
+        extract_ship_csv(po, mo_path.parent / "ship.csv")
 
     (out_dir / "README.md").write_text(
         f"# 版本 {tag}\n\n"
