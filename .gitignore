@@ -1,0 +1,30 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# ===== 临时 / 中间文件 =====
+*.tmp
+*.bak
+*.fixed.mo
+modsdk_tmp/
+.tmp/
+
+# ===== 系统文件 =====
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ===== IDE / 编辑器 =====
+.vscode/
+.idea/
+*.swp
+
+# ===== 日志 =====
+*.log
+
+# 注意: translations/ 目录必须提交（这是本仓库的产物），不要忽略
