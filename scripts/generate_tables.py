@@ -177,11 +177,15 @@ def make_ship_xlsm(version_dir: Path, data: dict, template: Path, carry_from: Pa
     新增行(旧版本没有的键)的最终翻译留空。
     """
     ship_data = {k: d for k, d in data.items() if SHIP_KEY_RE.match(k)}
-    trans = {}
-    if carry_from is not None and carry_from.exists():
-        trans = read_translations(carry_from)
-        print(f"  [迁移] 从 {carry_from.parent.name}/ship.xlsm 读取最终翻译 {len(trans)} 条")
     dst = version_dir / "ship.xlsm"
+    trans = {}
+    if dst.exists():  # 目标文件自身翻译优先(防止重建时丢失人工翻译)
+        trans.update(read_translations(dst))
+        print(f"  [保留] 从 {version_dir.name}/ship.xlsm 读取现有翻译 {len(trans)} 条")
+    if carry_from is not None and carry_from.exists():  # 旧版本补漏, 不覆盖已有
+        for k, v in read_translations(carry_from).items():
+            trans.setdefault(k, v)
+        print(f"  [迁移] 从 {carry_from.parent.name}/ship.xlsm 补齐翻译")
     shutil.copy2(template, dst)
     wb = load_workbook(dst, keep_vba=True)
     ws = wb.active
@@ -281,9 +285,11 @@ def find_latest_versions(repo: Path) -> tuple:
 def main():
     repo = Path(__file__).resolve().parent.parent
     template = repo / "templates" / "ship_template.xlsm"
+    force = "--force" in sys.argv
+    args = [a for a in sys.argv[1:] if a != "--force"]
 
-    if len(sys.argv) >= 3:
-        new_ver, old_ver = sys.argv[1], sys.argv[2]
+    if len(args) >= 2:
+        new_ver, old_ver = args[0], args[1]
     else:
         new_ver, old_ver = find_latest_versions(repo)
         print(f"自动检测版本: 新={new_ver} 旧={old_ver}")
@@ -298,26 +304,38 @@ def main():
     print(f"合并 {old_ver} 三语言 CSV ...")
     old_data = merge_langs(old_dir)
 
+    def want(path: Path) -> bool:
+        """增量生成: 文件已存在则跳过(保护人工修改), --force 强制重建"""
+        if path.exists() and not force:
+            print(f"  [跳过] {path.name} 已存在, 保留不动 (强制重建加 --force)")
+            return False
+        return True
+
     if template.exists():
-        print(f"生成 {new_ver} 的表格:")
-        make_global_xlsx(new_dir, new_data)
-        make_ship_xlsm(new_dir, new_data, template, carry_from=old_dir / "ship.xlsm")
-        print(f"生成 {old_ver} 的表格:")
-        make_global_xlsx(old_dir, old_data)
-        if (old_dir / "ship.xlsm").exists():
-            print(f"  [跳过] {old_ver}/ship.xlsm 已存在(含人工翻译), 保留不动")
-        else:
+        print(f"检查 {new_ver} 的表格:")
+        if want(new_dir / "global.xlsx"):
+            make_global_xlsx(new_dir, new_data)
+        if want(new_dir / "ship.xlsm"):
+            make_ship_xlsm(new_dir, new_data, template, carry_from=old_dir / "ship.xlsm")
+        print(f"检查 {old_ver} 的表格:")
+        if want(old_dir / "global.xlsx"):
+            make_global_xlsx(old_dir, old_data)
+        if want(old_dir / "ship.xlsm"):
             make_ship_xlsm(old_dir, old_data, template)
     else:
         print(f"[警告] 模板不存在 {template}, 只生成 xlsx 表格")
-        print(f"生成 {new_ver} 的表格:")
-        make_global_xlsx(new_dir, new_data)
-        print(f"生成 {old_ver} 的表格:")
-        make_global_xlsx(old_dir, old_data)
+        print(f"检查 {new_ver} 的表格:")
+        if want(new_dir / "global.xlsx"):
+            make_global_xlsx(new_dir, new_data)
+        print(f"检查 {old_ver} 的表格:")
+        if want(old_dir / "global.xlsx"):
+            make_global_xlsx(old_dir, old_data)
 
-    print(f"生成 {new_ver} 相对 {old_ver} 的差异:")
-    make_diff_xlsx(new_dir, old_data, new_data)
-    make_ship_diff_xlsx(new_dir, old_data, new_data)
+    print(f"检查 {new_ver} 相对 {old_ver} 的差异:")
+    if want(new_dir / "global_diff.xlsx"):
+        make_diff_xlsx(new_dir, old_data, new_data)
+    if want(new_dir / "ship_diff.xlsx"):
+        make_ship_diff_xlsx(new_dir, old_data, new_data)
     return 0
 
 
