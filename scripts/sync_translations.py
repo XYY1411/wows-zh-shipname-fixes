@@ -192,7 +192,12 @@ def po_to_csv(po, csv_path: Path) -> None:
         for entry in po:
             if entry.msgid == "":
                 continue  # 跳过文件头元数据条目
-            w.writerow([entry.msgid, entry.msgstr])
+            if entry.msgid_plural and entry.msgstr_plural:
+                # 复数条目: 翻译存在 msgstr_plural, 取第一个形式 (zh/zh_sg nplurals=1)
+                msgstr = entry.msgstr_plural.get(0, "") or ""
+            else:
+                msgstr = entry.msgstr or ""
+            w.writerow([entry.msgid, msgstr])
 
 
 def extract_ship_csv(po, ship_path: Path) -> None:
@@ -208,8 +213,35 @@ def extract_ship_csv(po, ship_path: Path) -> None:
     print(f"  [CSV] {ship_path.name}: 提取舰船名词条 {count} 条")
 
 
-def decompile(mo_path: Path, po_path: Path) -> object:
-    """修复文件头并用 polib 反编译 .mo -> .po"""
+def ensure_csvs(version_dir: Path) -> None:
+    """确保版本目录下三语言的 global.csv / ship.csv 齐全。
+
+    早期同步的版本可能没有 CSV(导出功能后加), 从已有 global.po 补生成。
+    若 po 也不存在则跳过(该语言可能下载失败)。
+    """
+    for lang in LANGS:
+        po_path = version_dir / lang / "global.po"
+        if not po_path.exists():
+            continue
+        g_csv = version_dir / lang / "global.csv"
+        s_csv = version_dir / lang / "ship.csv"
+        if g_csv.exists() and s_csv.exists():
+            continue
+        po = polib.pofile(str(po_path))
+        if not g_csv.exists():
+            po_to_csv(po, g_csv)
+            print(f"  [补生成] {lang}/global.csv")
+        if not s_csv.exists():
+            extract_ship_csv(po, s_csv)
+            print(f"  [补生成] {lang}/ship.csv")
+
+
+def decompile(mo_path: Path, po_path: Path) -> polib.POFile:
+    """修复文件头并用 polib 反编译 .mo -> .po
+
+    注意: wgmods 的 mo 元数据换行符丢失, 必须先 fix_mo_header,
+    否则 polib 无法解析 charset 会抛 UnicodeDecodeError。
+    """
     data = mo_path.read_bytes()
     data = fix_mo_header(data)
     tmp_mo = mo_path.with_suffix(".fixed.mo")
@@ -237,17 +269,8 @@ def main() -> int:
 
     out_dir = TRANSLATIONS_DIR / tag
     if out_dir.exists():
-        print(f"版本 {tag} 已同步过，检查 CSV ...")
-        for lang in LANGS:
-            po_path = out_dir / lang / "global.po"
-            if po_path.exists():
-                g_csv = out_dir / lang / "global.csv"
-                s_csv = out_dir / lang / "ship.csv"
-                if not g_csv.exists() or not s_csv.exists():
-                    po = polib.pofile(str(po_path))
-                    po_to_csv(po, g_csv)
-                    extract_ship_csv(po, s_csv)
-                    print(f"  [补生成] {lang} 的 CSV")
+        # 已同步过的版本: 若 CSV 缺失(早期版本没有导出功能), 从 po 补生成
+        ensure_csvs(out_dir)
         return 0
 
     print(f"拉取版本 {tag} 的翻译文件 ...")

@@ -1657,10 +1657,10 @@ IDS_ADECK_CHANCE_TITLE,Chance of Victory
 IDS_ADECK_CONFIRM,Close
 IDS_ADECK_CURRENCY,Support Tokens
 IDS_ADECK_DIFFICULTY,Difficulty
-IDS_ADECK_EASY_KEY_MISSIONS_AMOUNT,
-IDS_ADECK_EASY_SUPPLY_MISSIONS_AMOUNT,
+IDS_ADECK_EASY_KEY_MISSIONS_AMOUNT,%(amount)s easy key mission
+IDS_ADECK_EASY_SUPPLY_MISSIONS_AMOUNT,%(amount)s easy supply mission
 IDS_ADECK_EVACUATION_POINTS_PROGRESS,Missions guaranteed to provide Evacuation Points
-IDS_ADECK_EVACUATION_POINTS_TEXT,
+IDS_ADECK_EVACUATION_POINTS_TEXT,"In addition to completing key missions, you can also earn Evacuation Points every day from three missions of any type. Regardless of the mission outcome, you will receive %(pointsAmount)s Evacuation Point."
 IDS_ADECK_EVACUATION_POINTS_TITLE,Mission That Guarantees Points
 IDS_ADECK_EVACUATION_POINTS_UPDATE,Missions that guarantee Evacuation Points available in:
 IDS_ADECK_EVENT_INFO,Learn more about the minigame.
@@ -1680,7 +1680,9 @@ IDS_ADECK_FLEET_TITLE,Obtain new card
 IDS_ADECK_FREE_FLEET_SUPPORT_REQUEST,Free Draw
 IDS_ADECK_GAME_START,Start
 IDS_ADECK_GENERAL_ERROR,An error occurred. Please try again later.
-IDS_ADECK_GUIDE_EVACUATION_TEXT,
+IDS_ADECK_GUIDE_EVACUATION_TEXT,"Evacuation progress shows how far you've advanced in the operation. The bar fills with Evacuation Points earned by defeating the enemy in key missions.
+
+You can earn %(pointsAmount)s Evacuation Point daily by completing three missions of any type."
 IDS_ADECK_GUIDE_EVACUATION_TITLE,Evacuation Progress
 IDS_ADECK_GUIDE_FLEET_TITLE,Get a New Card
 IDS_ADECK_GUIDE_GAME_AFFECTS_TEXT,"All enemy cards have vulnerabilities. Your card becomes effective against a specific enemy if its debuff matches the enemy's vulnerability.
@@ -1704,9 +1706,9 @@ IDS_ADECK_GUIDE_MISSION_ENEMIES_TEXT,"In the upper part of the screen, you'll fi
 IDS_ADECK_GUIDE_MISSION_ENEMIES_TITLE,Enemy
 IDS_ADECK_GUIDE_MISSION_SUPPORT_TEXT,"Supply missions grant Support Tokens, which you can spend on new cards and modifiers that provide advantages in key missions."
 IDS_ADECK_GUIDE_MISSION_SUPPORT_TITLE,Supply Mission
-IDS_ADECK_HARD_KEY_MISSIONS_AMOUNT,
-IDS_ADECK_HARD_SUPPLY_MISSIONS_AMOUNT,
-IDS_ADECK_HEALTHPOINTS,
+IDS_ADECK_HARD_KEY_MISSIONS_AMOUNT,%(amount)s hard key mission
+IDS_ADECK_HARD_SUPPLY_MISSIONS_AMOUNT,%(amount)s hard supply mission
+IDS_ADECK_HEALTHPOINTS,%(points)s segment
 IDS_ADECK_HEALTHPOINTS_PERCENT_PARAMS,%(health)s — %(points)s
 IDS_ADECK_INVENTORY_CARDS,Cards
 IDS_ADECK_INVENTORY_MODIFICATORS,Modifiers
@@ -1718,8 +1720,8 @@ IDS_ADECK_LEVEL_3_TEXT,"The pressure intensified with each passing day. Luftwaff
 IDS_ADECK_LEVEL_3_TITLE,The Miracle of Dunkirk
 IDS_ADECK_MAIN_REWARD_CLAIMED_TEXT,You have successfully completed the evacuation! Here is your final reward.
 IDS_ADECK_MAIN_REWARD_CLAIMED_TITLE,Congratulations!
-IDS_ADECK_MEDIUM_KEY_MISSIONS_AMOUNT,
-IDS_ADECK_MEDIUM_SUPPLY_MISSIONS_AMOUNT,
+IDS_ADECK_MEDIUM_KEY_MISSIONS_AMOUNT,%(amount)s medium key mission
+IDS_ADECK_MEDIUM_SUPPLY_MISSIONS_AMOUNT,%(amount)s medium supply mission
 IDS_ADECK_MISSION_COMBAT_INFO,Key missions help you advance through the minigame. Defeating the enemy in a key mission grants Evacuation Points.
 IDS_ADECK_MISSION_COMBAT_TITLE,Key Mission
 IDS_ADECK_MISSION_SUPPORT_INFO,"If you defeat the enemy in supply missions, you receive modifiers that can boost you in key missions. You can also get Support Tokens, which can be spent to purchase modifiers, cards, and other rewards."
@@ -1778,7 +1780,7 @@ IDS_ADECK_POWER_TEXT,"Total power is the primary indicator of your ship's streng
 
 You can increase total power by deploying other cards with buffs on your playfield."
 IDS_ADECK_POWER_TITLE,Total Power
-IDS_ADECK_PROGRESS_POINTS,
+IDS_ADECK_PROGRESS_POINTS,%(points)s Evacuation Point
 IDS_ADECK_PURCHASE_SUCCESS_TEXT,New item received.
 IDS_ADECK_PURCHASE_SUCCESS_TITLE,Congratulations
 IDS_ADECK_RESULT_CHANCE,%(percent)s% win
@@ -1844,7 +1846,7 @@ IDS_ADRESS_PLAYER,Address Player by Name
 IDS_ADRIEN_DE_GERLACHE,Adrien de Gerlache
 IDS_ADVANCED_CREW_STATUS,Seasoned Commander
 IDS_ADVENT_AVAILABLE_IN,Available in
-IDS_ADVENT_AVAILABLE_REWARD_IN,
+IDS_ADVENT_AVAILABLE_REWARD_IN,Will be available in %(days)s day
 IDS_ADVENT_AVAILABLE_SOON,Available soon
 IDS_ADVENT_CLAIM_HIDDEN_REWARD,Claim Special Reward
 IDS_ADVENT_CLAIM_REWARD,Claim Reward
@@ -2102,7 +2104,7 @@ IDS_AMMUNITION_AND_CONSUMABLES,AMMUNITION & CONSUMABLES
 IDS_AMMUNITION_RECHARGE,Ammunition resupply:
 IDS_AND,and
 IDS_ANDRE_LEMONNIER,André Lemonnier
-IDS_AND_OTHER_SHIPS,
+IDS_AND_OTHER_SHIPS,And %(count)s more ship
 IDS_ANGELALUTTI,Angela Lutti
 IDS_ANGLE_LEFT,Hold turn to port
 IDS_ANGLE_LEFT_PREF_TOOLTIP_DESCRIPTION,Press key to lock the rudder-turn angle to the left.
@@ -2125,7 +2127,7 @@ IDS_AOGAS_CREDITS_EXP_FULLPENALTY,You will no longer earn any Credits and XP in 
 IDS_AOGAS_CREDITS_EXP_PENALTY,The amount of Credits and XP you will earn per battle is decreased by %(penalty)s%%
 IDS_AOGAS_FACTOR,AOGAS
 IDS_AOGAS_FACTOR_HINT,XP and Credits received in battle reduced
-IDS_AOGAS_RESET_PENALTY,
+IDS_AOGAS_RESET_PENALTY,It has been more than %(hours)s hour since the last time you logged in to the game. You can now earn the full amount of Credits and XP again.
 IDS_APPLY,Apply
 IDS_APPLY_CHANGES_QUESTION,Apply changes?
 IDS_APPLY_DEFAULT,Default
@@ -2227,8 +2229,8 @@ IDS_ARC_EVENT_MAIN_SCREEN_TASK_TOOLTIP_PROGRESS_BAR_COMPLETED_DESCRIPTION,For re
 IDS_ARC_EVENT_MAIN_SCREEN_TASK_TOOLTIP_PROGRESS_BAR_CUTOFF_DESCRIPTION,For reaching each mark
 IDS_ARC_EVENT_MODAL_WINDOW_RECRUITER,Offer
 IDS_ARC_EVENT_PLAYED_FOR_SIDE,Team you played for
-IDS_ARC_EVENT_POINTS_COST,
-IDS_ARC_EVENT_POINTS_LEFT,
+IDS_ARC_EVENT_POINTS_COST,%(points)s point required
+IDS_ARC_EVENT_POINTS_LEFT,%(points)s point remaining
 IDS_ARC_EVENT_PORT_BANNER_TOOLTIP_HINT,Go to the Carol Clash event screen
 IDS_ARC_EVENT_PORT_NOTIFICATION_CHOOSE_SIDE,You have joined the %(_sideName)s team
 IDS_ARC_EVENT_PORT_TOOLTIP_NEXT_REWARD,Next reward
@@ -2846,7 +2848,7 @@ IDS_BATTLEPASS_CARD_TEXT_1,"Premium Pass
 Reward"
 IDS_BATTLEPASS_CHAPTER_STATUS_COMPLETE,Chapter complete
 IDS_BATTLEPASS_COMMON_EVENT_TITLE,Battle Pass
-IDS_BATTLEPASS_CREDITS_EXCHANGE_SALE,
+IDS_BATTLEPASS_CREDITS_EXCHANGE_SALE,Ends in: %(_days)s day
 IDS_BATTLEPASS_FAST_REWARDS_SALE_SUBHEADER,Premium Pass rewards for levels you already reached:
 IDS_BATTLEPASS_FAST_REWARDS_SALE_TEXT_COLON,Rewards for purchasing the Premium Pass:
 IDS_BATTLEPASS_FEATURED_REWARD_BANNER_RECEIVED,Claimed
@@ -2990,7 +2992,7 @@ IDS_BATTLES_AT_USA,%s with U.S. ships
 IDS_BATTLES_PER_LEVEL,%s with Tier %s ships
 IDS_BATTLES_PER_SUPER_SHIPS,%s with superships
 IDS_BATTLES_TO_CLEAN_ABUSE_STATUS,Battles without violations until the penalty is lifted
-IDS_BATTLES_TO_NEXT_STEP,
+IDS_BATTLES_TO_NEXT_STEP,%(battles)s battle left
 IDS_BATTLETYPE_TOOLTIP_PORTAL,"Strike up alliances with other players, destroy enemies, earn Battle Points, and hurry to exit via the Portal with your haul!"
 IDS_BATTLETYPE_TOOLTIP_PORTAL_HARD,"Strike up alliances with other players, destroy enemies, earn Battle Points, and hurry to exit via the Portal with your haul!"
 IDS_BATTLETYPE_TOOLTIP_PORTAL_NIGHTMARE,"Strike up alliances with other players, destroy enemies, earn Battle Points, and hurry to exit via the Portal with your haul!"
@@ -3146,12 +3148,12 @@ IDS_BATTLE_STATS_COASTALARTILLERY_BUILDING_DAMAGE_HINT,Damage you caused to this
 IDS_BATTLE_STATS_COMMAND_RESULTS,Team Play
 IDS_BATTLE_STATS_COMMAND_RESULTS_HINT,Indicators reflecting your contribution to your team results and assistance to allies
 IDS_BATTLE_STATS_COMPLEX_BUILDING_DAMAGE_HINT,Damage you caused to this Fort
-IDS_BATTLE_STATS_COUNT_DAMAGED_SHIPS,
-IDS_BATTLE_STATS_COUNT_ENEMY_FIND,
-IDS_BATTLE_STATS_COUNT_HELP_KILL,
-IDS_BATTLE_STATS_COUNT_HL_OUTOFACTION,
-IDS_BATTLE_STATS_COUNT_KILLED_SHIPS,
-IDS_BATTLE_STATS_COUNT_PLANE_KILLED,
+IDS_BATTLE_STATS_COUNT_DAMAGED_SHIPS,warship damaged
+IDS_BATTLE_STATS_COUNT_ENEMY_FIND,enemy spotted
+IDS_BATTLE_STATS_COUNT_HELP_KILL,destroyed with your assistance
+IDS_BATTLE_STATS_COUNT_HL_OUTOFACTION,module incapacitated
+IDS_BATTLE_STATS_COUNT_KILLED_SHIPS,warship destroyed
+IDS_BATTLE_STATS_COUNT_PLANE_KILLED,aircraft destroyed
 IDS_BATTLE_STATS_CREDITS_AND_EXP,Credits and XP
 IDS_BATTLE_STATS_CREDITS_HINT,Main in-game currency
 IDS_BATTLE_STATS_CREW_EXP_HINT,Commander XP which allows for mastering and using skills that improve ship parameters
@@ -4357,7 +4359,8 @@ IDS_CHOOSE_STATIC_CROSSHAIR,Select a static crosshair
 IDS_CHOOSE_SUITABLE_SHIP,Select a suitable ship and start completion
 IDS_CHOOSE_TASKS_INFO,"To accomplish a mission, select your preferred tasks. Several tasks can be carried out concurrently.
 The mission is accomplished after the final task has been completed."
-IDS_CHOOSE_TASK_DESCR,
+IDS_CHOOSE_TASK_DESCR,"<body>Collect %(count)s star to unlock the final task.
+The remaining required <h3>stars</h3> can be collected by completing tasks again.</body>"
 IDS_CHOOSE_TRAININGBATTLE,Select Training Battle
 IDS_CHOOSE_WOWS_NAME,"Select a username.
 You will not be able to change it once you enter the game."
@@ -4973,7 +4976,7 @@ When you receive a certain number of duplicates, they are converted into a Colle
 IDS_COLLECTION_DISCONTINUED_CANNOT_RECEIVE,Elements in this collection are not issued.
 IDS_COLLECTION_DUPLICATES_IN_COLLECTION_COLON,Duplicates:
 IDS_COLLECTION_EXCHANGE_ALL,Exchange all
-IDS_COLLECTION_EXCHANGE_FOR_UNIVERSAL_ELEMENTS_QUESTION,
+IDS_COLLECTION_EXCHANGE_FOR_UNIVERSAL_ELEMENTS_QUESTION,Obtain for %(amount)s Collection Token?
 IDS_COLLECTION_ITEM_EXCHANGE_AVAILABLE_COLON,Collection Tokens:
 IDS_COLLECTION_ITEM_TOOLTIP_ACHIEVED,Received
 IDS_COLLECTION_ITEM_TOOLTIP_DUPLICATE_PRICE_COLON,Duplicates required: %(amount)s
@@ -4982,7 +4985,7 @@ IDS_COLLECTION_MODAL_DESCRIPTION_REWARD,Reward for a complete collection:
 IDS_COLLECTION_MODAL_DESCRIPTION_REWARD_RECEIVED,Reward received
 IDS_COLLECTION_NAME,%(_collectionName)s Collection
 IDS_COLLECTION_NAME_NO_ENTER,%(_collectionName)s Collection
-IDS_COLLECTION_NEED_UNIVERSAL_ELEMENTS_FOR_EXCHANGE,
+IDS_COLLECTION_NEED_UNIVERSAL_ELEMENTS_FOR_EXCHANGE,%(amount)s Collection Token required
 IDS_COLLECTION_NEXT_UNIVERSAL_ELEMENT,Duplicates:
 IDS_COLLECTION_NOT_COLLECTING_TOOLTIP_DESCRIPTION,Daily containers do not currently hold elements from this collection.
 IDS_COLLECTION_PLAYER_POINTS_COUNTER,Items received
@@ -5065,7 +5068,7 @@ IDS_COMMON_MOUNTED,Mounted
 IDS_COMMON_PRICE_FOR_ALL_FREE_EXP,Cost of converting XP from all ships:
 IDS_COMMON_TEAM_VICTORY_DAYS_TOOLTIP,Number of your team's victories during the entire competition
 IDS_COMPENSATION,Compensation
-IDS_COMPENSATION_DAYS,
+IDS_COMPENSATION_DAYS,%(days)s day
 IDS_COMPENSATION_DESCR,Compensation is paid when you purchase Warships Premium Account and have an active Wargaming Premium Account. The refund amount depends on the number of days the two Premium Accounts overlap.
 IDS_COMPENSATION_INTERSECTION,Premium Accounts overlapping
 IDS_COMPENSATION_PRICE,Refund amount
@@ -5542,7 +5545,7 @@ IDS_CP_DEFEAT_CONDITION,A team loses if its score reaches %s %s.
 IDS_CP_GET,Capturing:
 IDS_CP_HOLD,Holding:
 IDS_CP_REWARD_FOR_CAPTURING,+ %s
-IDS_CP_REWARD_FOR_HOLDING,
+IDS_CP_REWARD_FOR_HOLDING,+ %s every %s %s
 IDS_CP_REWARD_INSTANT_VICTORY,Victory
 IDS_CP_VICTORY_CONDITION,Score %s %s before the enemy team.
 IDS_CRASH_CREW_CHANGED,Repairs in progress
@@ -5561,7 +5564,8 @@ IDS_CREDITS_DESCRIPTION,"Use Credits to buy ships, ship modules, and other in-ga
 IDS_CREW,Commander
 IDS_CREW_ALL_SKILLS_BUTTON_UPPER,ALL SKILLS
 IDS_CREW_ASSIGNED_TO_SELECT_SHIP,Assigned to:
-IDS_CREW_BASKET_DESCRIPTION,
+IDS_CREW_BASKET_DESCRIPTION,"Dismissal can be canceled within %(minutes)s minute.
+To cancel dismissal, navigate to the Commanders list in the Reserve."
 IDS_CREW_CAN_NOT_BE_DEMOBOLIZED,This Commander cannot be dismissed
 IDS_CREW_DEMOBILIZE_CONVERT_CREDITS,Dismiss Commander: +25% XP
 IDS_CREW_DEMOBILIZE_CONVERT_CREDITS_TOOLTIP,The Commander will be dismissed with 25% XP converted into Elite Commander XP
@@ -6487,7 +6491,7 @@ IDS_CREW_HIRE_CREW_DESCRIPTION_1,"Assign a Commander from the Reserve, transfer 
 IDS_CREW_HIRE_LAST_CREW,Recall Commander
 IDS_CREW_HIRE_LAST_IS_IN_BASKET,Commander is undergoing dismissal
 IDS_CREW_HIRE_LAST_IS_IN_BATTLE,Commander is in battle
-IDS_CREW_HIRE_TYPE_DESCRIPTION_PAID_PL,
+IDS_CREW_HIRE_TYPE_DESCRIPTION_PAID_PL,+%(_amount)s skill point</body>
 IDS_CREW_HIRE_TYPE_HEADER_0,Basic Training
 IDS_CREW_HIRE_TYPE_HEADER_1,Naval Academy
 IDS_CREW_HIRE_TYPE_HEADER_2,Senior Command Course
@@ -7804,13 +7808,13 @@ IDS_CREW_SKILLS_FREE_RETRAINING_PENALTY_INFO,Skills will have no effect until re
 IDS_CREW_SKILLS_UNAVAILABLE,This Commander cannot master skills
 IDS_CREW_SKILLS_UNAVAILABLE_FOR_THAT_SHIP,Commanders cannot master skills on this ship
 IDS_CREW_SKILL_ALL_POINTS_DISTRIBUTED_INSTRUCTION,You have redistributed the maximum number of skill points
-IDS_CREW_SKILL_MEASURE_BOMBER,
-IDS_CREW_SKILL_MEASURE_CHARGE,
+IDS_CREW_SKILL_MEASURE_BOMBER, bomber
+IDS_CREW_SKILL_MEASURE_CHARGE, additional charge
 IDS_CREW_SKILL_MEASURE_DEGREE_SECOND, °/s
-IDS_CREW_SKILL_MEASURE_FIGHTER,
-IDS_CREW_SKILL_MEASURE_SMOKE_CHARGE,
-IDS_CREW_SKILL_MEASURE_TORPEDO_BOMBER,
-IDS_CREW_SKILL_POINTS,
+IDS_CREW_SKILL_MEASURE_FIGHTER, attack aircraft
+IDS_CREW_SKILL_MEASURE_SMOKE_CHARGE, smoke charge
+IDS_CREW_SKILL_MEASURE_TORPEDO_BOMBER, torpedo bomber
+IDS_CREW_SKILL_POINTS,point
 IDS_CREW_SKILL_SELECT_INSTRUCTION,Select the skill for mastering
 IDS_CREW_SKILL_UNSELECT_INSTRUCTION,Cancel skill selection
 IDS_CREW_SPECIALIZATION_TO_SELECT_SHIP,Trained for:
@@ -8249,7 +8253,7 @@ IDS_DESCRIPTION_CLASS_PREMIUM,Non-researchable ships of various types. Provide m
 IDS_DESCRIPTION_CLASS_SUBMARINE,"Ships capable of submerging underwater for a period of time that is restricted by their dive capacity. Carry out torpedo attacks against hostile ships.
 
 Effective against all ship types, but are extremely vulnerable when spotted by enemies."
-IDS_DESCRIPTION_DAMAGE_SHIPS,
+IDS_DESCRIPTION_DAMAGE_SHIPS,damage of any kind to enemy ships
 IDS_DESCRIPTION_PCZA002_BISMARK,"The Hunt for Bismarck turned out to be one of the most ambitious naval operations in the North Atlantic. Incensed by the loss of Hood, a large British force comprising numerous warships of all types, as well as a number of aircraft formations, pursued Bismarck. Cruisers, battleships, an aircraft carrier and a frenzy of destroyers.
 
 ""The Hunt for Bismarck"" collection consists of the badges of all major participants of the grand naval operation aimed at destroying the German navy's most powerful raider."
@@ -11141,7 +11145,7 @@ IDS_EACH_LOOTBOX_HAS_ONE_ITEM_FROM_LIST,Each %(container)s container includes on
 IDS_EACH_LOOTBOX_HAS_SOMETHING,Each %(container)s container includes:
 IDS_EACH_LOOTBOX_HAS_THREE_ITEMS,Each %(container)s container includes three items.
 IDS_EACH_LOOTBOX_HAS_TWO_ITEMS,Each %(container)s container includes two items.
-IDS_EACH_LOOTBOX_NUMBER_ITEMS,
+IDS_EACH_LOOTBOX_NUMBER_ITEMS,Each %(container)s container includes %(count)s item.
 IDS_EARLY_ACCESS,Early access
 IDS_EARLY_ACCESS_STATUS,Early Access ship
 IDS_EARLY_ACCESS_STATUS_INFO,An Early Access ship that has special advantages until she becomes available to research and purchase.
@@ -12847,7 +12851,7 @@ IDS_FROM_SHIPS,From ships
 IDS_FSNOWGIANT2022,Félicien Leblanc
 IDS_FUBUKI_SHIRAKAMI,Shirakami Fubuki
 IDS_FULLSCREEN,Full-screen
-IDS_FULL_MSG_TIME_SPENT_IN_GAME,
+IDS_FULL_MSG_TIME_SPENT_IN_GAME,You have been logged in for %(hours)s hour. Excessive gaming may interfere with your daily life.
 IDS_GAMELOGIC_PRESET,Animate small objects
 IDS_GAMELOGIC_PRESET_DESCRIPTION,Increases detail of ships and the environment.
 IDS_GAMEMODE_ANTI_STANDARD_DESCRIPTION,Score %(score_count)s %(score_plural)s before the enemy team by capturing control points and destroying their ships.
@@ -13066,7 +13070,9 @@ IDS_GRAND_STRATEGY_PASS_BANNER_HEADER,BATTLE PASS
 IDS_GRAND_STRATEGY_PASS_BANNER_TOOLTIP_CURRENT_CURRENCY,Battle Pass Points
 IDS_GRAND_STRATEGY_PASS_BANNER_TOOLTIP_HEADER,Battle Pass
 IDS_GRAND_STRATEGY_PASS_BUTTON_BACK_TO_EVENT,Back
-IDS_GRAND_STRATEGY_PASS_EXTRA_PROVINCE_TOKEN_TOOLTIP_FINITE,
+IDS_GRAND_STRATEGY_PASS_EXTRA_PROVINCE_TOKEN_TOOLTIP_FINITE,"You can receive
+extra rewards
+%(_claims)d time"
 IDS_GRAND_STRATEGY_PASS_EXTRA_PROVINCE_TOKEN_TOOLTIP_FINITE_CLAIMED,All extra rewards received
 IDS_GRAND_STRATEGY_PASS_EXTRA_PROVINCE_TOKEN_TOOLTIP_INFINITE,"You can receive
 extra rewards
@@ -13098,7 +13104,8 @@ IDS_GRAND_STRATEGY_PASS_ON_MAP_ACTION_DETECTION_SYSTEM_TOOLTIP_FAILED,Linked sec
 IDS_GRAND_STRATEGY_PASS_ON_MAP_ACTION_DETECTION_SYSTEM_TOOLTIP_PASSED,"Claimed.
 Linked sector
 cost reduced."
-IDS_GRAND_STRATEGY_PASS_ON_MAP_ACTION_ENEMY_ARMADA_TOOLTIP_DEFAULT,
+IDS_GRAND_STRATEGY_PASS_ON_MAP_ACTION_ENEMY_ARMADA_TOOLTIP_DEFAULT,"Claim %(_count)d more sector
+to unlock this sector"
 IDS_GRAND_STRATEGY_PASS_ON_MAP_ACTION_ENEMY_ARMADA_TOOLTIP_PASSED,"Unlocked.
 You have claimed
 enough sectors!"
@@ -13133,16 +13140,16 @@ IDS_GRAND_STRATEGY_PASS_PROVINCE_CARD_INSTRUCTION,"Hover over a sector
 to see the available rewards"
 IDS_GRAND_STRATEGY_PASS_PROVINCE_CARD_NOT_ENOUGH_CURRENCY,"Insufficient Points
 to claim this sector"
-IDS_GRAND_STRATEGY_PASS_PROVINCE_CARD_PRICE,
+IDS_GRAND_STRATEGY_PASS_PROVINCE_CARD_PRICE,%(_price)d Point
 IDS_GRAND_STRATEGY_PASS_PROVINCE_CARD_PRICE_FREE,Free
 IDS_GRAND_STRATEGY_PASS_PROVINCE_CARD_REWARD_LOCKED_TOOLTIP,"Upgrade area
 to receive additional reward"
 IDS_GRAND_STRATEGY_PASS_PROVINCE_CLAIMING_COST,Claim sector for
-IDS_GRAND_STRATEGY_PASS_PROVINCE_TOOLTIP_CLAIM,
+IDS_GRAND_STRATEGY_PASS_PROVINCE_TOOLTIP_CLAIM,Claim for %(_price)d Point
 IDS_GRAND_STRATEGY_PASS_PROVINCE_TOOLTIP_CLAIMED,Claimed sector
 IDS_GRAND_STRATEGY_PASS_PROVINCE_TOOLTIP_CLAIM_FREE,Claim for free
 IDS_GRAND_STRATEGY_PASS_PROVINCE_TOOLTIP_SELECT,Click to select the sector
-IDS_GRAND_STRATEGY_PASS_PROVINCE_TOOLTIP_WAIT,
+IDS_GRAND_STRATEGY_PASS_PROVINCE_TOOLTIP_WAIT,Available in %(_days)d day
 IDS_GRAND_STRATEGY_PASS_PROVINCE_TOOLTIP_WAIT_CLOCK,This region will be available in
 IDS_GRAND_STRATEGY_PASS_SPLASH_SCREEN_UPGRADE_STATUS,Additional rewards unlocked
 IDS_GRAND_STRATEGY_PASS_SPLASH_SCREEN_UPGRADE_TITLE,Area Upgraded
@@ -13152,7 +13159,8 @@ areas"
 IDS_GRAND_STRATEGY_PASS_UPGRADE_REGION_BUTTON_TOOLTIP_DEFAULT,"Upgrading increases rewards
 for claiming sectors"
 IDS_GRAND_STRATEGY_PASS_UPGRADE_REGION_BUTTON_TOOLTIP_UPGRADED,Upgraded
-IDS_GRAND_STRATEGY_PASS_UPGRADE_REGION_BUTTON_TOOLTIP_WAIT,
+IDS_GRAND_STRATEGY_PASS_UPGRADE_REGION_BUTTON_TOOLTIP_WAIT,"This area can be upgraded
+in %(_days)d day"
 IDS_GRAND_STRATEGY_PASS_UPGRADE_REGION_BUTTON_TOOLTIP_WAIT_CLOCK,"This area will be available
 to upgrade in"
 IDS_GRAPHICS_API,Graphics API
@@ -14030,7 +14038,7 @@ IDS_HOTKEY_RESERVED,Hotkey reserved
 IDS_HOT_ROD,Hot Rod
 IDS_HOUR,h
 IDS_HOUYI,Hou Yi
-IDS_HP_SECOND,
+IDS_HP_SECOND, HP per second
 IDS_HUA_HU,Hua Hu
 IDS_HUA_QING,Hua Qing
 IDS_HULL_1,Midship
@@ -14063,7 +14071,7 @@ IDS_INCREASE_BARRACKS_CAPACITY,Expand
 IDS_INFORMER_TIME_LEFT,Remaining: %(_timeLeft)s
 IDS_INFOTIP_ALMANAC,DAILY REWARDS
 IDS_INFOTIP_SPECIFIC_SHIPS_DESCRIPTION,This battle type has a list of available and restricted ships.
-IDS_INFOTIP_SPECIFIC_SHIPS_EXACT_LIMIT,
+IDS_INFOTIP_SPECIFIC_SHIPS_EXACT_LIMIT,No more than <b>%(limit)s</b> ship per Division:
 IDS_INFOTIP_SPECIFIC_SHIPS_EXCLUDED_TAB,Restricted
 IDS_INFOTIP_SPECIFIC_SHIPS_HEADER,Battle Restrictions
 IDS_INFOTIP_SPECIFIC_SHIPS_INCLUDED_TAB,Available
@@ -15248,10 +15256,10 @@ IDS_LOOTBOX_SAVE_POINT_TEXT_1,You are guaranteed to find an item from the %(grou
 IDS_LOOTBOX_SAVE_POINT_TEXT_2,You are guaranteed to find an item from the %(group_name)s group in the %(save_point)snd container if this does not occur after you open the previous %(count_lootbox)s containers.
 IDS_LOOTBOX_SEARCH_PLACEHOLDER,Search by name
 IDS_LOOTBOX_TITLE,Containers
-IDS_LOOTBOX_TOTAL_CAMO,
-IDS_LOOTBOX_TOTAL_CREWS,
-IDS_LOOTBOX_TOTAL_ITEMS,
-IDS_LOOTBOX_TOTAL_SHIPS,
+IDS_LOOTBOX_TOTAL_CAMO,%(count)s camouflage in total
+IDS_LOOTBOX_TOTAL_CREWS,%(count)s Commander in total
+IDS_LOOTBOX_TOTAL_ITEMS,%(count)s item in total
+IDS_LOOTBOX_TOTAL_SHIPS,%(count)s ship in total
 IDS_LOSE_ALLIES,Losing Allied Ships
 IDS_LOW,Low
 IDS_LOW_ACCESS_LEVEL,Containers will become available at a higher Access Level.
@@ -16811,7 +16819,7 @@ IDS_NARRATIVE_CAMPAIGN_BUTTON_BACK_TO_HUB,Back to chapters
 IDS_NARRATIVE_CAMPAIGN_BUTTON_OPEN_SSE,GO TO COMBAT MISSIONS
 IDS_NARRATIVE_CAMPAIGN_CHAPTER_BLOCKER_PROGRESS,Complete the previous chapter to proceed
 IDS_NARRATIVE_CAMPAIGN_CHAPTER_BLOCKER_STAGE_COUNTER,Earn additional {%(points)s} to unlock entry.
-IDS_NARRATIVE_CAMPAIGN_CHAPTER_BLOCKER_STAGE_POINTS,
+IDS_NARRATIVE_CAMPAIGN_CHAPTER_BLOCKER_STAGE_POINTS,Earn %(points)s more Progress Token to unlock entry
 IDS_NARRATIVE_CAMPAIGN_CHAPTER_BLOCKER_TIME,Available in
 IDS_NARRATIVE_CAMPAIGN_CHAPTER_BLOCKER_TIME_FULL,"When the chapter becomes available, you will be able to unlock its entries."
 IDS_NARRATIVE_CAMPAIGN_CHAPTER_CARD_SUBTITLE_C0,1775–1777
@@ -17265,7 +17273,7 @@ IDS_NAVAL_BASE_AREA_EXPEDITIONS_CONSTRUCTION,"Here, you can dispatch your ships 
 When you send ships, they become temporarily unavailable for other expeditions, but you can still take them into battle."
 IDS_NAVAL_BASE_AREA_EXPEDITIONS_DESCRIPTION,Dispatch ships on expeditions.
 IDS_NAVAL_BASE_AREA_EXPEDITIONS_FLEET_POWER_METER,Fleet Power:
-IDS_NAVAL_BASE_AREA_EXPEDITIONS_OVERCHARGE_AMOUNT,
+IDS_NAVAL_BASE_AREA_EXPEDITIONS_OVERCHARGE_AMOUNT,Unlock %(amount)s extra expedition in the Military Port area.
 IDS_NAVAL_BASE_AREA_EXPEDITIONS_OVERCHARGE_TEXT,Boost Military Port to unlock the following temporarily available expeditions:
 IDS_NAVAL_BASE_AREA_EXPEDITIONS_OVERCHARGE_TITLE,Boost Military Port
 IDS_NAVAL_BASE_AREA_EXPEDITIONS_SELECT_VEHICLE,Select ship
@@ -17307,7 +17315,7 @@ IDS_NAVAL_BASE_AREA_PHOTO_ALBUM_DESCRIPTION,Progress through stages and claim re
 IDS_NAVAL_BASE_AREA_PHOTO_ALBUM_TITLE,Memory Box
 IDS_NAVAL_BASE_AREA_PVEMISSIONS_CONSTRUCTION,"Here, you can accept missions that can be completed in Co-op Battles, Operations, and temporary battle types."
 IDS_NAVAL_BASE_AREA_PVEMISSIONS_DESCRIPTION,"Accept combat missions that can be completed in Co-op Battles, Operations, and temporary battle types."
-IDS_NAVAL_BASE_AREA_PVEMISSIONS_OVERCHARGE_AMOUNT,
+IDS_NAVAL_BASE_AREA_PVEMISSIONS_OVERCHARGE_AMOUNT,Unlock %(amount)s extra combat mission in the Operational Command area.
 IDS_NAVAL_BASE_AREA_PVEMISSIONS_OVERCHARGE_TEXT,Boost Operational Command to unlock the following temporarily available missions:
 IDS_NAVAL_BASE_AREA_PVEMISSIONS_OVERCHARGE_TITLE,Boost Operational Command
 IDS_NAVAL_BASE_AREA_PVEMISSIONS_TITLE,Operational Command
@@ -17315,7 +17323,7 @@ IDS_NAVAL_BASE_AREA_PVEMISSIONS_UPGRADE,"Upgrade the Operational Command area to
 IDS_NAVAL_BASE_AREA_PVEMISSIONS_UPGRADE_TOOLTIP,Upgrade Operational Command to the next level to unlock more missions.
 IDS_NAVAL_BASE_AREA_PVPMISSIONS_CONSTRUCTION,"Here, you can accept missions that can be completed in Random, Ranked, and Brawl Battles."
 IDS_NAVAL_BASE_AREA_PVPMISSIONS_DESCRIPTION,"Accept combat missions that can be completed in Random, Ranked, and Brawl Battles."
-IDS_NAVAL_BASE_AREA_PVPMISSIONS_OVERCHARGE_AMOUNT,
+IDS_NAVAL_BASE_AREA_PVPMISSIONS_OVERCHARGE_AMOUNT,Unlock %(amount)s extra combat mission in the Naval Command area.
 IDS_NAVAL_BASE_AREA_PVPMISSIONS_OVERCHARGE_TEXT,Boost Naval Command to unlock the following temporarily available missions:
 IDS_NAVAL_BASE_AREA_PVPMISSIONS_OVERCHARGE_TITLE,Boost Naval Command
 IDS_NAVAL_BASE_AREA_PVPMISSIONS_TITLE,Naval Command
@@ -17348,7 +17356,7 @@ IDS_NAVAL_BASE_BANNER_STATUS_LOCKED,Unlock Access Level 10
 IDS_NAVAL_BASE_BANNER_TITLE,Liberty Harbor
 IDS_NAVAL_BASE_BANNER_TOOLTIP_DESCRIPTION,Relive the childhood memories of a newly promoted U.S. Navy officer by rebuilding a toy naval base!
 IDS_NAVAL_BASE_BANNER_TOOLTIP_HEADER,Liberty Harbor
-IDS_NAVAL_BASE_BUILD_REWARDS_TITLE,
+IDS_NAVAL_BASE_BUILD_REWARDS_TITLE,Reward:
 IDS_NAVAL_BASE_COLLECT_REWARDS_FAILED,Failed to collect rewards.
 IDS_NAVAL_BASE_CONSTRUCTION_FAILED,Failed to construct area.
 IDS_NAVAL_BASE_CONSTRUCT_GOLD,Construct for Doubloons
@@ -17508,7 +17516,7 @@ IDS_NAVAL_BASE_TASK_STATUS_NO_SHIPS_LABEL,You don't have any ships that meet the
 IDS_NAVAL_BASE_TASK_STATUS_OVERCHARGED,Unlocked
 IDS_NAVAL_BASE_TASK_STATUS_OVERCHARGE_NEEDED,Boost required
 IDS_NAVAL_BASE_TASK_STATUS_RESERVED_SHIPS,Ships on Expedition:
-IDS_NAVAL_BASE_UPGRADES,
+IDS_NAVAL_BASE_UPGRADES,%(amount)s upgrade
 IDS_NAVAL_BASE_UPGRADES_PRICE,Upgrade for %(price)s?
 IDS_NAVAL_BASE_UPGRADE_FAILED,Failed to upgrade area.
 IDS_NAVAL_BASE_UPGRADE_GOLD,Upgrade for Doubloons
@@ -17844,7 +17852,7 @@ IDS_ONLY_FOR_PREM,Available with Premium Account only
 IDS_ON_SHIP,With ship:
 IDS_ON_SHIP_STATS,With ship
 IDS_OP14_WW2_CSM_004_SAN_DIEGO_HEALTH,Prevent San Diego from sustaining critical damage!
-IDS_OPENED_LOOTBOXES,
+IDS_OPENED_LOOTBOXES,%(count)d container opened
 IDS_OPENINGS_UNTIL_VALUABLE_REWARDS,Guaranteed drop in: %(number)s
 IDS_OPEN_ALL_LOOTBOXES,Open all containers
 IDS_OPEN_ALL_LOOTBOXES_CONFIRMATION,Open all containers at once?
@@ -19382,7 +19390,7 @@ IDS_OUT_OF_ORDER,Damaged
 IDS_OUT_OF_STOCK,Not available
 IDS_OVERALL_SOUND_EFFECTS_VOLUME,General volume level
 IDS_OVERALL_SOUND_EFFECTS_VOLUME_PREF_TOOLTIP_DESCRIPTION,Volume of all sound effects.
-IDS_OWNED_LOOTBOXES,
+IDS_OWNED_LOOTBOXES,You have %(lootboxesCount)d container
 IDS_OWN_SHIP_IN_COMPARE_OFF,Disable display of my ship
 IDS_OWN_SHIP_IN_COMPARE_ON,Enable display of my ship
 IDS_PAAB001_DOUGLAS_TBD,Douglas TBD
@@ -27901,313 +27909,313 @@ The most massively produced surface ships of the World War II period were destr
 The era when steam turbine-driven warships dominated the seas extended over a short period by historical measures—only about half a century, almost coinciding in time with the first half of the 20th century. However, despite being short, it encompassed as many as several different epochs."
 IDS_PCQT001_1,Cause %(count)s HP of damage to enemy ships with the main battery guns.
 IDS_PCQT002_1,Destroy an enemy ship with the main battery guns.
-IDS_PCQT003_1,
+IDS_PCQT003_1,Hit enemy ships with ship torpedoes %(count)s time.
 IDS_PCQT004_1,Cause %(count)s HP of damage to enemy ships with ship torpedoes.
 IDS_PCQT005_1,Win and survive a battle.
 IDS_PCQT006_1,Win a battle.
-IDS_PCQT007_1,
+IDS_PCQT007_1,Destroy %(count)s enemy ship.
 IDS_PCQT008_1,Earn %(count)s XP.
 IDS_PCQT009_1,Fight a battle.
-IDS_PCQT011_1,
-IDS_PCQT012_1,
+IDS_PCQT011_1,Set enemy ships on fire %(count)s time.
+IDS_PCQT012_1,Incapacitate %(count)s module on an enemy ship.
 IDS_PCQT013_1,Hit the citadel of an enemy ship.
-IDS_PCQT014_1,
+IDS_PCQT014_1,Destroy %(count)s ship.
 IDS_PCQT015_1,Cause %(count)s HP of damage to enemy ships by fire.
-IDS_PCQT016_1,
+IDS_PCQT016_1,Cause %(count)s flooding to an enemy ship.
 IDS_PCQT017_1,Cause %(count)s HP of damage to enemy ships by flooding.
 IDS_PCQT018_1,"Earn an ""Arsonist"" achievement."
 IDS_PCQT019_1,Earn %(count)s Free XP.
 IDS_PCQT020_1,Enter a battle with a Commander that has at least 3 skill points.
 IDS_PCQT031_1,Destroy an enemy ship with ship torpedoes.
 IDS_PCQT032_1,Cause %(count)s HP of damage to enemy ships with the main or secondary battery guns.
-IDS_PCQT033_1,
+IDS_PCQT033_1,Hit enemy ships %(count)s time with the secondary battery guns.
 IDS_PCQT034_1,Destroy an enemy ship with ship torpedoes.
-IDS_PCQT035_1,
+IDS_PCQT035_1,Hit the citadel of an enemy ship %(count)s time.
 IDS_PCQT036_1,"Earn a ""Captured"" or ""Assisted in capture"" ribbon."
-IDS_PCQT037_1,
+IDS_PCQT037_1,Hit enemy ships %(count)s time with the main or secondary battery guns.
 IDS_PCQT038_1,"Earn a ""Dreadnought"" achievement."
-IDS_PCQT039_1,
+IDS_PCQT039_1,Incapacitate %(count)s main battery mount on an enemy ship.
 IDS_PCQT040_1,Earn %(count)s Free XP.
 IDS_PCQT041_1,Enter a battle with at least one signal flag mounted on your ship.
-IDS_PCQT045_1,
+IDS_PCQT045_1,"Earn %(count)s ""Spotted"" ribbon."
 IDS_PCQT046_1,Be the first to detect an enemy torpedo.
 IDS_PCQT047_1,Earn any achievement.
-IDS_PCQT048_1,
-IDS_PCQT049_1,
-IDS_PCQT050_1,
-IDS_PCQT051_1,
+IDS_PCQT048_1,Destroy %(count)s enemy destroyer.
+IDS_PCQT049_1,Destroy %(count)s enemy cruiser.
+IDS_PCQT050_1,Destroy %(count)s enemy battleship.
+IDS_PCQT051_1,Shoot down %(count)s enemy aircraft.
 IDS_PCQT052_1,"Earn a ""Confederate"" achievement."
-IDS_PCQT053_1,
+IDS_PCQT053_1,Hit enemy ships %(count)s time with any armament.
 IDS_PCQT054_1,Earn %(count)s Commander XP.
 IDS_PCQT055_1,Enter a battle with any camouflage applied to your ship.
 IDS_PCQT061_1,Shoot down an enemy aircraft.
-IDS_PCQT062_1,
+IDS_PCQT062_1,Destroy %(count)s ship of Tier V or above.
 IDS_PCQT063_1,Cause %(count)s HP of damage to enemy ships.
-IDS_PCQT064_1,
-IDS_PCQT065_1,
-IDS_PCQT066_1,
-IDS_PCQT067_1,
-IDS_PCQT068_1,
+IDS_PCQT064_1,Destroy %(count)s enemy ship.
+IDS_PCQT065_1,"Hit enemy ships %(count)s time with rockets, aerial bombs, or aerial torpedoes."
+IDS_PCQT066_1,Earn %(count)s individual heroic achievement.
+IDS_PCQT067_1,"Earn %(count)s ""Defended"" ribbon."
+IDS_PCQT068_1,Destroy %(count)s enemy ship.
 IDS_PCQT069_1,Win and survive a battle.
 IDS_PCQT070_1,Earn %(count)s Commander XP.
 IDS_PCQT071_1,Fight a battle.
-IDS_PCQT075_1,
-IDS_PCQT076_1,
+IDS_PCQT075_1,"Earn %(count)s ""Spotted"" ribbon."
+IDS_PCQT076_1,Hit enemy ships with the main or secondary battery guns %(count)s time.
 IDS_PCQT077_1,Hit an enemy ship with a ship torpedo or an aerial torpedo.
-IDS_PCQT078_1,
-IDS_PCQT079_1,
+IDS_PCQT078_1,Hit the citadel of an enemy ship %(count)s time.
+IDS_PCQT079_1,Incapacitate %(count)s module on an enemy ship.
 IDS_PCQT080_1,Destroy an enemy ship with the secondary battery guns.
-IDS_PCQT081_1,
+IDS_PCQT081_1,Destroy %(count)s enemy ship with the main or secondary battery guns.
 IDS_PCQT082_1,Earn any achievement.
 IDS_PCQT083_1,Cause %(count)s HP of damage with the main or secondary battery guns.
-IDS_PCQT084_1,
+IDS_PCQT084_1,Shoot down %(count)s enemy aircraft.
 IDS_PCQT085_1,Cause %(count)s HP of damage to enemy ships.
-IDS_PCQT086_1,
+IDS_PCQT086_1,Earn %(count)s Credit.
 IDS_PCQT087_1,Enter a battle with at least one upgrade mounted on your ship.
 IDS_PCQT091_1,Cause %(count)s HP of damage to enemy ships.
 IDS_PCQT092_1,Cause %(count)s HP of damage to enemy ships with ship torpedoes or aerial torpedoes.
-IDS_PCQT093_1,
-IDS_PCQT094_1,
-IDS_PCQT095_1,
-IDS_PCQT096_1,
-IDS_PCQT097_1,
+IDS_PCQT093_1,Cause %(count)s flooding to enemy battleships.
+IDS_PCQT094_1,Destroy %(count)s enemy ship with the main or secondary battery guns.
+IDS_PCQT095_1,Critically damage %(count)s module on an enemy destroyer or cruiser.
+IDS_PCQT096_1,Set an enemy battleship or aircraft carrier on fire %(count)s time.
+IDS_PCQT097_1,Hit the citadel of an enemy cruiser or battleship %(count)s time.
 IDS_PCQT098_1,Incapacitate the engine or steering gears of an enemy destroyer.
 IDS_PCQT099_1,Cause %(count)s HP of damage to enemy ships with ship torpedoes.
 IDS_PCQT100_1,"Earn a ""High Caliber"" achievement."
-IDS_PCQT101_1,
+IDS_PCQT101_1,Destroy %(count)s enemy ship.
 IDS_PCQT102_1,Earn %(count)s Credits.
 IDS_PCQT103_1,Enter a battle with a Commander that has at least 5 skill points.
-IDS_PCQT105_1,
-IDS_PCQT106_1,
+IDS_PCQT105_1,Destroy %(count)s enemy ship and survive the battle.
+IDS_PCQT106_1,Incapacitate %(count)s module on an enemy ship.
 IDS_PCQT107_1,Cause %(count)s HP of damage to enemy ships by fire.
 IDS_PCQT108_1,Cause %(count)s HP of damage to enemy destroyers.
 IDS_PCQT109_1,"Earn a ""Captured"" ribbon."
 IDS_PCQT110_1,Cause %(count)s HP of damage to enemy ships by flooding.
 IDS_PCQT111_1,"Earn a ""First Blood"" achievement."
-IDS_PCQT112_1,
-IDS_PCQT113_1,
-IDS_PCQT114_1,
-IDS_PCQT115_1,
+IDS_PCQT112_1,Hit enemy ships with the main or secondary battery guns %(count)s time.
+IDS_PCQT113_1,Set an enemy ship on fire %(count)s time.
+IDS_PCQT114_1,Critically damage %(count)s AA mount on an enemy ship.
+IDS_PCQT115_1,Destroy %(count)s enemy ship.
 IDS_PCQT116_1,Earn %(count)s XP.
 IDS_PCQT117_1,Enter a battle with a Commander who has at least 6 skill points.
 IDS_PCQT121_1,Earn a heroic achievement.
-IDS_PCQT122_1,
-IDS_PCQT123_1,
-IDS_PCQT124_1,
+IDS_PCQT122_1,"Earn %(count)s ""Captured,"" ""Assisted in capture,"" or ""Defended"" ribbon."
+IDS_PCQT123_1,Hit the citadel of an enemy ship %(count)s time.
+IDS_PCQT124_1,Win %(count)s battle in which you were among the top 3 XP earners on your team.
 IDS_PCQT125_1,Cause %(count)s HP of damage to enemy destroyers.
-IDS_PCQT126_1,
-IDS_PCQT127_1,
-IDS_PCQT128_1,
-IDS_PCQT129_1,
-IDS_PCQT130_1,
+IDS_PCQT126_1,Destroy %(count)s enemy battleship.
+IDS_PCQT127_1,Hit enemy cruisers %(count)s time with any armament.
+IDS_PCQT128_1,"Earn %(count)s ""Spotted"" ribbon."
+IDS_PCQT129_1,"Earn %(count)s ""Spotted"" ribbon."
+IDS_PCQT130_1,Hit enemy ships %(count)s time with ship torpedoes or aerial torpedoes.
 IDS_PCQT131_1,Cause %(count)s HP of damage to enemy ships with the main or secondary battery guns.
-IDS_PCQT132_1,
+IDS_PCQT132_1,"Destroy %(count)s enemy ship with rockets, aerial bombs, or aerial torpedoes."
 IDS_PCQT133_1,Earn %(count)s Free XP.
 IDS_PCQT134_1,Enter a battle with a Commander who has at least 7 skill points.
 IDS_PCQT135_1,Cause %(count)s HP of damage to enemy ships.
-IDS_PCQT136_1,
-IDS_PCQT137_1,
-IDS_PCQT138_1,
-IDS_PCQT139_1,
-IDS_PCQT140_1,
-IDS_PCQT141_1,
-IDS_PCQT142_1,
-IDS_PCQT143_1,
-IDS_PCQT144_1,
-IDS_PCQT145_1,
-IDS_PCQT146_1,
+IDS_PCQT136_1,Destroy %(count)s enemy ship.
+IDS_PCQT137_1,Shoot down %(count)s enemy aircraft.
+IDS_PCQT138_1,Hit enemy ships %(count)s time with any armament.
+IDS_PCQT139_1,Earn %(count)s heroic achievement.
+IDS_PCQT140_1,"Earn %(count)s ""Captured"" or ""Assisted in capture"" ribbon."
+IDS_PCQT141_1,"Earn %(count)s ""Defended"" ribbon."
+IDS_PCQT142_1,Set enemy ships on fire %(count)s time.
+IDS_PCQT143_1,Cause %(count)s flooding to an enemy ship.
+IDS_PCQT144_1,Destroy or damage %(count)s module on an enemy ship.
+IDS_PCQT145_1,Hit the citadel of an enemy ship %(count)s time.
+IDS_PCQT146_1,"Earn %(count)s ""Spotted"" ribbon."
 IDS_PCQT147_1,Earn %(count)s Free XP.
 IDS_PCQT148_1,Fight a battle.
-IDS_PCQT151_CAMPAIGNSB_MISSION01_TASK01_1,
-IDS_PCQT152_CAMPAIGNSB_MISSION01_TASK02_1,
-IDS_PCQT153_CAMPAIGNSB_MISSION01_TASK03_1,
+IDS_PCQT151_CAMPAIGNSB_MISSION01_TASK01_1,Cause %(count)s HP of damage to Japanese ships.
+IDS_PCQT152_CAMPAIGNSB_MISSION01_TASK02_1,Hit enemy ships with main battery shells %(count)s time.
+IDS_PCQT153_CAMPAIGNSB_MISSION01_TASK03_1,Incapacitate %(count)s main battery mount on an enemy ship.
 IDS_PCQT154_CAMPAIGNSB_MISSION01_TASK04_1,Sink an enemy destroyer and win the battle.
-IDS_PCQT155_CAMPAIGNSB_MISSION01_TASK05_1,
-IDS_PCQT156_CAMPAIGNSB_MISSION01_TASK06_1,
-IDS_PCQT157_CAMPAIGNSB_MISSION01_TASK07_1,
-IDS_PCQT158_CAMPAIGNSB_MISSION01_TASK08_KEY_1,
-IDS_PCQT161_CAMPAIGNSB_MISSION02_TASK01_1,
-IDS_PCQT162_CAMPAIGNSB_MISSION02_TASK02_1,
-IDS_PCQT163_CAMPAIGNSB_MISSION02_TASK03_1,
-IDS_PCQT164_CAMPAIGNSB_MISSION02_TASK04_1,
+IDS_PCQT155_CAMPAIGNSB_MISSION01_TASK05_1,"Earn %(count)s ""Dreadnought"" achievement."
+IDS_PCQT156_CAMPAIGNSB_MISSION01_TASK06_1,Win %(count)s battle in which you were among the top 7 XP earners on your team.
+IDS_PCQT157_CAMPAIGNSB_MISSION01_TASK07_1,Destroy %(count)s battleship.
+IDS_PCQT158_CAMPAIGNSB_MISSION01_TASK08_KEY_1,Earn %(count)s Credit.
+IDS_PCQT161_CAMPAIGNSB_MISSION02_TASK01_1,Cause %(count)s HP of damage to U.S. ships.
+IDS_PCQT162_CAMPAIGNSB_MISSION02_TASK02_1,"Earn %(count)s ""Captured"" or ""Assisted in capture"" ribbon."
+IDS_PCQT163_CAMPAIGNSB_MISSION02_TASK03_1,Incapacitate %(count)s Secondary Battery module on an enemy ship.
+IDS_PCQT164_CAMPAIGNSB_MISSION02_TASK04_1,Hit the citadel of an enemy ship %(count)s time.
 IDS_PCQT165_CAMPAIGNSB_MISSION02_TASK05_1,"Earn a ""Witherer"" achievement."
-IDS_PCQT166_CAMPAIGNSB_MISSION02_TASK06_1,
-IDS_PCQT167_CAMPAIGNSB_MISSION02_TASK07_1,
-IDS_PCQT168_CAMPAIGNSB_MISSION02_TASK08_KEY_1,
-IDS_PCQT171_CAMPAIGNSB_MISSION03_TASK01_1,
-IDS_PCQT172_CAMPAIGNSB_MISSION03_TASK02_1,
-IDS_PCQT173_CAMPAIGNSB_MISSION03_TASK03_1,
+IDS_PCQT166_CAMPAIGNSB_MISSION02_TASK06_1,Win %(count)s battle in which you were among the top 3 XP earners on your team.
+IDS_PCQT167_CAMPAIGNSB_MISSION02_TASK07_1,Destroy %(count)s destroyer.
+IDS_PCQT168_CAMPAIGNSB_MISSION02_TASK08_KEY_1,Earn %(count)s Commander XP.
+IDS_PCQT171_CAMPAIGNSB_MISSION03_TASK01_1,Cause %(count)s HP of damage to Soviet ships.
+IDS_PCQT172_CAMPAIGNSB_MISSION03_TASK02_1,"Earn %(count)s ""Defended"" ribbon."
+IDS_PCQT173_CAMPAIGNSB_MISSION03_TASK03_1,"Incapacitate %(count)s ""Engine"" module on an enemy ship."
 IDS_PCQT174_CAMPAIGNSB_MISSION03_TASK04_1,"Earn a ""High Caliber"" achievement."
-IDS_PCQT175_CAMPAIGNSB_MISSION03_TASK05_1,
-IDS_PCQT176_CAMPAIGNSB_MISSION03_TASK06_1,
-IDS_PCQT177_CAMPAIGNSB_MISSION03_TASK07_1,
-IDS_PCQT178_CAMPAIGNSB_MISSION03_TASK08_KEY_1,
-IDS_PCQT181_CAMPAIGNSB_MISSION04_TASK01_1,
-IDS_PCQT182_CAMPAIGNSB_MISSION04_TASK02_1,
-IDS_PCQT183_CAMPAIGNSB_MISSION04_TASK03_1,
-IDS_PCQT184_CAMPAIGNSB_MISSION04_TASK04_1,
-IDS_PCQT185_CAMPAIGNSB_MISSION04_TASK05_1,
-IDS_PCQT186_CAMPAIGNSB_MISSION04_TASK06_1,
-IDS_PCQT187_CAMPAIGNSB_MISSION04_TASK07_1,
-IDS_PCQT188_CAMPAIGNSB_MISSION04_TASK08_KEY_1,
-IDS_PCQT191_CAMPAIGNSB_MISSION05_TASK01_1,
-IDS_PCQT192_CAMPAIGNSB_MISSION05_TASK02_1,
-IDS_PCQT193_CAMPAIGNSB_MISSION05_TASK03_1,
-IDS_PCQT194_CAMPAIGNSB_MISSION05_TASK04_1,
+IDS_PCQT175_CAMPAIGNSB_MISSION03_TASK05_1,Shoot down %(count)s enemy aircraft.
+IDS_PCQT176_CAMPAIGNSB_MISSION03_TASK06_1,Win %(count)s battle in which you were the top XP earner on your team.
+IDS_PCQT177_CAMPAIGNSB_MISSION03_TASK07_1,Destroy %(count)s cruiser.
+IDS_PCQT178_CAMPAIGNSB_MISSION03_TASK08_KEY_1,Earn %(count)s Free XP.
+IDS_PCQT181_CAMPAIGNSB_MISSION04_TASK01_1,Cause %(count)s HP of damage to German ships.
+IDS_PCQT182_CAMPAIGNSB_MISSION04_TASK02_1,Destroy %(count)s aircraft.
+IDS_PCQT183_CAMPAIGNSB_MISSION04_TASK03_1,"Incapacitate %(count)s ""Steering Gear"" module on an enemy ship."
+IDS_PCQT184_CAMPAIGNSB_MISSION04_TASK04_1,Be the first to spot %(count)s enemy ship.
+IDS_PCQT185_CAMPAIGNSB_MISSION04_TASK05_1,"Earn %(count)s ""Fireproof"" achievement."
+IDS_PCQT186_CAMPAIGNSB_MISSION04_TASK06_1,Win and survive %(count)s battle in which you were the top XP earner on your team.
+IDS_PCQT187_CAMPAIGNSB_MISSION04_TASK07_1,Shoot down %(count)s enemy aircraft.
+IDS_PCQT188_CAMPAIGNSB_MISSION04_TASK08_KEY_1,Earn %(count)s XP.
+IDS_PCQT191_CAMPAIGNSB_MISSION05_TASK01_1,Cause %(count)s HP of damage to enemy ships.
+IDS_PCQT192_CAMPAIGNSB_MISSION05_TASK02_1,Earn %(count)s XP.
+IDS_PCQT193_CAMPAIGNSB_MISSION05_TASK03_1,Incapacitate %(count)s module on an enemy ship.
+IDS_PCQT194_CAMPAIGNSB_MISSION05_TASK04_1,"Earn %(count)s ""Spotted"" ribbon."
 IDS_PCQT195_CAMPAIGNSB_MISSION05_TASK05_1,"Earn a ""High Caliber"" achievement."
 IDS_PCQT196_CAMPAIGNSB_MISSION05_TASK06_1,Win a battle in which you were the top XP earner on your team.
-IDS_PCQT197_CAMPAIGNSB_MISSION05_TASK07_1,
+IDS_PCQT197_CAMPAIGNSB_MISSION05_TASK07_1,Destroy %(count)s enemy ship.
 IDS_PCQT198_CAMPAIGNSB_MISSION05_TASK08_KEY_1,Fight a battle.
-IDS_PCQT371_1,
-IDS_PCQT372_1,
+IDS_PCQT371_1,Earn the most XP on your team %(count)s time.
+IDS_PCQT372_1,Receive %(count)s HP of potential damage and survive the battle.
 IDS_PCQT373_1,Sink an enemy destroyer and survive the battle.
-IDS_PCQT374_1,
-IDS_PCQT375_1,
+IDS_PCQT374_1,Incapacitate %(count)s module on an enemy ship.
+IDS_PCQT375_1,Hit the citadel of an enemy ship %(count)s time.
 IDS_PCQT376_1,Cause %(count)s HP of damage to enemy ships with the main battery guns.
 IDS_PCQT377_1,Cause %(count)s HP of damage to enemy ships by fire.
 IDS_PCQT378_1,Earn %(count)s XP (after modifiers are applied).
-IDS_PCQT379_1,
+IDS_PCQT379_1,Earn %(count)s Credit.
 IDS_PCQT380_1,Earn %(count)s XP (after modifiers are applied).
 IDS_PCQT381_1,Earn the most XP on your team.
-IDS_PCQT382_1,
-IDS_PCQT383_1,
-IDS_PCQT384_1,
-IDS_PCQT385_1,
-IDS_PCQT386_1,
-IDS_PCQT387_1,
+IDS_PCQT382_1,Help your team inflict %(count)s spotting damage.
+IDS_PCQT383_1,Hit enemy ships with aerial torpedoes %(count)s time.
+IDS_PCQT384_1,"Earn %(count)s ""High Caliber"" or ""Confederate"" achievement."
+IDS_PCQT385_1,"Earn %(count)s ""Spotted"" ribbon."
+IDS_PCQT386_1,Earn any %(count)s achievement.
+IDS_PCQT387_1,Shoot down %(count)s enemy aircraft.
 IDS_PCQT388_1,Earn %(count)s XP (after modifiers are applied).
-IDS_PCQT389_1,
+IDS_PCQT389_1,Earn %(count)s Credit.
 IDS_PCQT390_1,Earn %(count)s XP (after modifiers are applied).
-IDS_PCQT391_1,
-IDS_PCQT392_1,
-IDS_PCQT393_1,
-IDS_PCQT394_1,
-IDS_PCQT395_1,
-IDS_PCQT396_1,
-IDS_PCQT397_1,
+IDS_PCQT391_1,Cause %(count)s HP of damage to enemy battleships.
+IDS_PCQT392_1,Help your team inflict %(count)s spotting damage and survive the battle.
+IDS_PCQT393_1,Hit enemy ships with torpedoes %(count)s time and survive the battle.
+IDS_PCQT394_1,"Earn %(count)s ""Defended"" ribbon."
+IDS_PCQT395_1,Cause %(count)s HP of damage to enemy destroyers.
+IDS_PCQT396_1,"Earn %(count)s ""Captured"" or ""Assisted in capture"" ribbon."
+IDS_PCQT397_1,Be the first to spot %(count)s torpedo.
 IDS_PCQT398_1,Earn %(count)s XP (after modifiers are applied).
-IDS_PCQT399_1,
+IDS_PCQT399_1,Earn %(count)s Credit.
 IDS_PCQT400_1,Earn %(count)s XP (after modifiers are applied).
-IDS_PCQT401_1,
-IDS_PCQT402_1,
-IDS_PCQT403_1,
-IDS_PCQT404_1,
-IDS_PCQT405_1,
-IDS_PCQT406_1,
+IDS_PCQT401_1,Receive %(count)s HP of potential damage and survive the battle.
+IDS_PCQT402_1,Shoot down %(count)s enemy aircraft.
+IDS_PCQT403_1,"Earn %(count)s ""Defended"" ribbon and survive the battle."
+IDS_PCQT404_1,"Earn %(count)s ""Devastating Strike"" achievement."
+IDS_PCQT405_1,Cause %(count)s HP of damage to enemy battleships.
+IDS_PCQT406_1,"Earn %(count)s ""Dreadnought"" achievement."
 IDS_PCQT407_1,"Earn a ""Fireproof"" achievement."
 IDS_PCQT408_1,Cause %(count)s HP of damage to enemy ships with the secondary battery guns.
 IDS_PCQT409_1,Earn %(count)s XP (after modifiers are applied).
-IDS_PCQT410_1,
+IDS_PCQT410_1,Earn %(count)s Credit.
 IDS_PCQT411_1,Earn %(count)s XP (after modifiers are applied).
-IDS_PCQT415_1,
-IDS_PCQT416_1,
-IDS_PCQT417_1,
-IDS_PCQT419_1,
+IDS_PCQT415_1,Hit the citadel of an enemy ship %(count)s time.
+IDS_PCQT416_1,Shoot down %(count)s enemy aircraft.
+IDS_PCQT417_1,"Earn %(count)s ""Defended"" ribbon."
+IDS_PCQT419_1,Receive %(count)s HP of potential damage and survive the battle.
 IDS_PCQT420_1,Sink an enemy destroyer and survive the battle.
-IDS_PCQT421_1,
+IDS_PCQT421_1,Earn any %(count)s achievement.
 IDS_PCQT422_1,"Earn a ""Witherer"" achievement."
-IDS_PCQT423_1,
-IDS_PCQT424_1,
-IDS_PCQT425_1,
+IDS_PCQT423_1,Cause %(count)s HP of damage to enemy cruisers.
+IDS_PCQT424_1,Earn any %(count)s ribbon.
+IDS_PCQT425_1,Cause %(count)s HP of damage to battleships.
 IDS_PCQT426_1,Earn %(count)s XP (after modifiers are applied).
-IDS_PCQT427_1,
+IDS_PCQT427_1,Earn %(count)s Credit.
 IDS_PCQT428_1,Earn %(count)s XP (after modifiers are applied).
 IDS_PCQT501_1,Earn %(count)s Commander XP (after modifiers are applied).
 IDS_PCQT502_1,Earn %(count)s Credits (after modifiers are applied).
 IDS_PCQT503_1,"Sink an enemy destroyer, win the battle, and survive."
-IDS_PCQT504_1,
-IDS_PCQT505_1,
-IDS_PCQT506_1,
+IDS_PCQT504_1,Earn the most XP on your team %(count)s time.
+IDS_PCQT505_1,Rank among the top 3 XP earners on your team %(count)s time.
+IDS_PCQT506_1,Cause %(count)s HP of damage to enemy ships and win the battle.
 IDS_PCQT507_1,"Sink an enemy destroyer, win the battle, and survive."
-IDS_PCQT508_1,
+IDS_PCQT508_1,Earn the most XP on your team %(count)s time.
 IDS_PCQT509_1,Earn %(count)s XP (after modifiers are applied).
 IDS_PCQT510_1,Earn %(count)s Commander XP (after modifiers are applied).
 IDS_PCQT511_1,Earn %(count)s Credits (after modifiers are applied).
-IDS_PCQT512_1,
+IDS_PCQT512_1,"Earn %(count)s ""Captured"" or ""Assisted in capture"" ribbon."
 IDS_PCQT513_1,"Be among the top 3 XP earners on your team, gain a victory, and receive a ""Set on fire"" or ""Caused flooding"" ribbon."
 IDS_PCQT514_1,"Be among the top 7 XP earners on your team, gain a victory, and cause %(count)s HP of damage to enemy ships by fire or flooding."
-IDS_PCQT515_1,
-IDS_PCQT516_1,
-IDS_PCQT517_1,
+IDS_PCQT515_1,"Earn %(count)s ""Set on fire"" or ""Caused flooding"" ribbon."
+IDS_PCQT516_1,"Finish among the top 3 XP earners on your team, gain a victory, and help your team inflict %(count)s spotting damage."
+IDS_PCQT517_1,"Earn the most XP on your team, gain a victory, and earn %(count)s ""Set on fire"" or ""Caused flooding"" ribbon."
 IDS_PCQT518_1,Earn %(count)s XP (after modifiers are applied).
 IDS_PCQT519_1,Earn %(count)s Commander XP (after modifiers are applied).
 IDS_PCQT520_1,Earn %(count)s Credits (after modifiers are applied).
-IDS_PCQT521_1,
-IDS_PCQT522_1,
+IDS_PCQT521_1,Hit the citadel of an enemy ship %(count)s time.
+IDS_PCQT522_1,Receive %(count)s HP of potential damage and win the battle.
 IDS_PCQT523_1,"Be among the top 5 XP earners on your team, gain a victory, and receive a ""Devastating Strike"" achievement."
 IDS_PCQT524_1,"Be among the top 3 XP earners on your team, gain a victory, and receive a heroic achievement."
-IDS_PCQT525_1,
-IDS_PCQT526_1,
-IDS_PCQT527_1,
+IDS_PCQT525_1,"Be among the top 3 XP earners on your team, gain a victory, and shoot down %(count)s enemy aircraft."
+IDS_PCQT526_1,"Earn %(count)s ""Dreadnought,"" ""Fireproof,"" or ""Unsinkable"" achievement."
+IDS_PCQT527_1,"Earn %(count)s ""High Caliber"" or ""Confederate"" achievement."
 IDS_PCQT528_1,Earn %(count)s XP (after modifiers are applied).
 IDS_PCQT529_1,Earn %(count)s Commander XP (after modifiers are applied).
 IDS_PCQT530_1,Earn %(count)s Credits (after modifiers are applied).
 IDS_PCQT531_1,"Rank among the top 5 XP earners on your team, gain a victory, and destroy a hostile Japanese ship."
 IDS_PCQT532_1,"Rank among the top 5 XP earners on your team, gain a victory, and destroy a hostile German ship."
-IDS_PCQT533_1,
-IDS_PCQT534_1,
-IDS_PCQT535_1,
-IDS_PCQT536_1,
-IDS_PCQT537_1,
+IDS_PCQT533_1,Cause %(count)s HP of damage to German or Japanese ships.
+IDS_PCQT534_1,"Be among the top 3 XP earners on your team, gain a victory, and receive any %(count)s achievement."
+IDS_PCQT535_1,"Be among the top 3 XP earners on your team, gain a victory, and incapacitate %(count)s module on an enemy ship."
+IDS_PCQT536_1,Cause %(count)s HP of damage to enemy Japanese ships in victorious battles.
+IDS_PCQT537_1,Cause %(count)s HP of damage to enemy German ships in victorious battles.
 IDS_PCQT538_1,Earn %(count)s XP (after modifiers are applied).
 IDS_PCQT539_1,Earn %(count)s Commander XP (after modifiers are applied).
 IDS_PCQT540_1,Earn %(count)s Credits (after modifiers are applied).
-IDS_PCQT541_1,
-IDS_PCQT542_1,
-IDS_PCQT543_1,
-IDS_PCQT544_1,
-IDS_PCQT545_1,
-IDS_PCQT546_1,
+IDS_PCQT541_1,"Hit enemy ships %(count)s time with rockets, aerial bombs, or aerial torpedoes."
+IDS_PCQT542_1,Shoot down %(count)s enemy aircraft.
+IDS_PCQT543_1,Be among the top 3 XP earners on your team and receive any %(count)s achievement.
+IDS_PCQT544_1,Earn any %(count)s ribbon.
+IDS_PCQT545_1,Earn any %(count)s achievement.
+IDS_PCQT546_1,Earn %(count)s heroic achievement.
 IDS_PCQT547_1,Earn %(count)s Credits (after modifiers are applied).
 IDS_PCQT548_1,Earn %(count)s Credits (after modifiers are applied).
 IDS_PCQT549_1,Earn %(count)s XP (after modifiers are applied).
-IDS_PCQT644_1,
-IDS_PCQT645_1,
-IDS_PCQT646_1,
-IDS_PCQT647_1,
-IDS_PCQT648_1,
+IDS_PCQT644_1,Earn any %(count)s ribbon.
+IDS_PCQT645_1,Earn %(count)s Credit.
+IDS_PCQT646_1,Cause %(count)s HP of damage to enemy ships.
+IDS_PCQT647_1,Cause %(count)s HP of damage with main battery guns.
+IDS_PCQT648_1,"Earn %(count)s ""Destroyed"" ribbon."
 IDS_PCQT649_1,Earn %(count)s XP (after modifiers are applied).
-IDS_PCQT650_1,
-IDS_PCQT651_1,
+IDS_PCQT650_1,"Earn %(count)s ""Destroyed"" ribbon."
+IDS_PCQT651_1,"Earn %(count)s ""Torpedo hits"" ribbon."
 IDS_PCQT652_1,Earn %(count)s Base XP (before modifiers are applied).
-IDS_PCQT653_1,
-IDS_PCQT654_1,
-IDS_PCQT655_1,
-IDS_PCQT656_1,
-IDS_PCQT657_1,
+IDS_PCQT653_1,Win %(count)s battle.
+IDS_PCQT654_1,Earn %(count)s Credit.
+IDS_PCQT655_1,"Earn %(count)s ""Destroyed"" ribbon."
+IDS_PCQT656_1,"Earn %(count)s ""Set on fire"" or ""Citadel hits"" ribbon."
+IDS_PCQT657_1,Receive %(count)s HP of potential damage.
 IDS_PCQT658_1,Earn %(count)s Base XP (before modifiers are applied).
-IDS_PCQT659_1,
-IDS_PCQT660_1,
-IDS_PCQT661_1,
+IDS_PCQT659_1,"Earn %(count)s ""Main battery hits"" ribbon."
+IDS_PCQT660_1,"Earn %(count)s ""Captured"" or ""Assisted in capture"" ribbon."
+IDS_PCQT661_1,"Earn %(count)s ""Torpedo hits"" ribbon."
 IDS_PCQT662_1,Earn %(count)s XP (after modifiers are applied).
-IDS_PCQT663_1,
+IDS_PCQT663_1,Cause %(count)s HP of damage to enemy ships.
 IDS_PCQT664_1,Earn %(count)s XP (after modifiers are applied).
-IDS_PCQT665_1,
-IDS_PCQT666_1,
-IDS_PCQT667_1,
-IDS_PCQT668_1,
+IDS_PCQT665_1,Rank %(count)s time among the top-5 XP earners on your team.
+IDS_PCQT666_1,Help your team inflict %(count)s spotting damage.
+IDS_PCQT667_1,Cause %(count)s HP of damage to enemy ships.
+IDS_PCQT668_1,Cause %(count)s HP of damage with main battery guns.
 IDS_PCQT669_1,Cause %(count)s HP of damage to enemy ships by fire.
-IDS_PCQT670_1,
-IDS_PCQT671_1,
-IDS_PCQT672_1,
-IDS_PCQT673_1,
-IDS_PCQT674_1,
-IDS_PCQT675_1,
-IDS_PCQT676_1,
-IDS_PCQT677_1,
+IDS_PCQT670_1,"Earn %(count)s ""Torpedo hits"" or ""Set on fire"" ribbon."
+IDS_PCQT671_1,Cause %(count)s HP of damage to enemy ships with ship torpedoes.
+IDS_PCQT672_1,Earn %(count)s Credit.
+IDS_PCQT673_1,Cause %(count)s HP of damage to enemy ships.
+IDS_PCQT674_1,Earn %(count)s Credit.
+IDS_PCQT675_1,"Earn %(count)s ""Destroyed"" ribbon."
+IDS_PCQT676_1,"Earn %(count)s ""Secondary battery hits"" ribbon."
+IDS_PCQT677_1,"Earn %(count)s ""Main battery hits"" ribbon."
 IDS_PCQT678_1,Cause %(count)s HP of damage to enemy ships with the main battery guns.
-IDS_PCQT679_1,
-IDS_PCQT680_1,
-IDS_PCQT681_1,
+IDS_PCQT679_1,Receive %(count)s HP of potential damage.
+IDS_PCQT680_1,Hit enemy ships with the main guns %(count)s time.
+IDS_PCQT681_1,"Earn %(count)s ""Torpedo hits"" ribbon."
 IDS_PCQT682_1,Earn %(count)s Commander XP.
 IDS_PCQT683_1,Cause %(count)s HP of damage to enemy ships.
-IDS_PCQT684_1,
-IDS_PCQT685_1,
-IDS_PCQT686_1,
+IDS_PCQT684_1,Earn %(count)s Credit.
+IDS_PCQT685_1,Rank among the top 3 XP earners on your team %(count)s time.
+IDS_PCQT686_1,Receive %(count)s HP of potential damage.
 IDS_PCQT687_1,Cause %(count)s HP of damage to enemy ships with the main battery guns.
-IDS_PCQT688_1,
-IDS_PCQT689_1,
-IDS_PCQT690_1,
+IDS_PCQT688_1,"Earn %(count)s ""Citadel hits"" ribbon."
+IDS_PCQT689_1,"Earn %(count)s ""Set on fire"" ribbon."
+IDS_PCQT690_1,Hit enemy ships with the main guns %(count)s time.
 IDS_PCQT691_1,Cause %(count)s HP of damage to enemy ships.
 IDS_PCQT692_1,Cause %(count)s HP of damage to enemy ships with torpedoes.
 IDS_PCQT693_1,Earn %(count)s Base XP (before modifiers are applied).
@@ -40965,90 +40973,90 @@ IDS_PLAY_COLLECTION_VIDEO,Watch video
 IDS_PLAY_OTHER_NATIONS,"As you advance in the game, you will be able to take command of other nations' ships."
 IDS_PLAY_RANDOM_PHRASE,Play a random phrase
 IDS_PLEASE_READ,Read
-IDS_PLURAL_FORMS,
-IDS_PL_ABILITY_TITLE,
-IDS_PL_AIRCARRIER,
-IDS_PL_AIRPLANES,
-IDS_PL_AIRPLANE_BOMBER,
-IDS_PL_AIRPLANE_FIGHTER,
-IDS_PL_AIRPLANE_SKIP,
-IDS_PL_AIRPLANE_TORPEDO,
-IDS_PL_AIR_FLIGHT,
-IDS_PL_ALMANAC_WINDOW_DEFAULT_TIME_STATUS,
-IDS_PL_ALMANAC_WINDOW_EXTRAREWARDS_STATUS,
-IDS_PL_AMOUNT_OF_AVAILABLE_EXTERIORS_TO_LINK,
-IDS_PL_ANY_SHIP,
-IDS_PL_ARC_EVENT_MAIN_SCREEN_POINTS_TILL_NEXT_REWARD,
-IDS_PL_ARC_EVENT_MAIN_SCREEN_TASK_POINTS_FOR_PROGRESS_ITEM,
-IDS_PL_ARC_EVENT_MAIN_SCREEN_TASK_TOOLTIP_PROGRESS_BAR_SUM_DESCRIPTION,
-IDS_PL_BATTLEPASS_STAGE_POINTS_REWARD_AMOUNT,
-IDS_PL_BATTLES,
-IDS_PL_BATTLESHIP,
-IDS_PL_BATTLES_COUNT,
-IDS_PL_BATTLES_TILL_NEXT_LEVEL,
-IDS_PL_CAMOUFLAGE_TITLE,
-IDS_PL_CASUAL_CVC_WAR_STAGE_ATTEMPTS_STATUS,
-IDS_PL_CREDITS,
-IDS_PL_CRUISER,
-IDS_PL_DAYS_PARAM,
-IDS_PL_DAY_FULL,
-IDS_PL_DAY_FULL_ACC,
-IDS_PL_DESTROYER,
-IDS_PL_EARN_POINTS_BY_RANK_WIN,
-IDS_PL_EARN_POINTS_BY_SCENARIO_STARS,
-IDS_PL_ENSIGNS_TITLE,
-IDS_PL_EXPERIENCE,
-IDS_PL_FLAGS_TITLE,
-IDS_PL_FREE_EXPERIENCE,
-IDS_PL_GOLD,
-IDS_PL_HITS_TORPEDOS,
-IDS_PL_HOURS_PARAM,
-IDS_PL_HOUR_FULL,
-IDS_PL_HOUR_FULL_ACC,
-IDS_PL_KNOTS,
-IDS_PL_KNOTS_SPACE,
-IDS_PL_LOOTBOXES,
-IDS_PL_LOOTBOX_COUNT,
-IDS_PL_LOOTBOX_EPIC_TITLE,
-IDS_PL_LOOTBOX_PCL000_UNKNOWN_TITLE,
-IDS_PL_LOOTBOX_PCL001_CREDITS_TITLE,
-IDS_PL_LOOTBOX_PCL002_SIGNALS_TITLE,
-IDS_PL_LOOTBOX_PCL004_LUCKY_TITLE,
-IDS_PL_LOOTBOX_PCL005_EPIC_TITLE,
-IDS_PL_LOOTBOX_TITLE,
-IDS_PL_MINUTES_COUNT,
-IDS_PL_MINUTE_FULL,
-IDS_PL_MINUTE_FULL_ACC,
-IDS_PL_MINUTE_FULL_ROD,
-IDS_PL_MODERNIZATION_TITLE,
-IDS_PL_MONTH_FULL,
-IDS_PL_MONTH_FULL_ACC,
-IDS_PL_MORE_BATTLES,
-IDS_PL_PARAGON_XP_TITLE,
-IDS_PL_PERMOFLAGE_TITLE,
-IDS_PL_PLACES,
-IDS_PL_PLANES,
-IDS_PL_PLAYERS_COUNT,
-IDS_PL_POINTS,
-IDS_PL_RANK_REWARDS_VICTORIES_CURRENT,
-IDS_PL_RANK_REWARDS_VICTORIES_NEXT,
-IDS_PL_RANK_STARS,
-IDS_PL_RENT_STATUS_TIME_LEFT,
-IDS_PL_REWARD,
-IDS_PL_SECONDS,
-IDS_PL_SECOND_FULL,
-IDS_PL_SECOND_FULL_ACC,
-IDS_PL_SHIPS,
-IDS_PL_SLOTS,
-IDS_PL_SQUADRONS,
-IDS_PL_SSE_COMPLETE_TASKS,
-IDS_PL_TILL_REWARD,
-IDS_PL_TIME_SPENT_IN_GAME,
-IDS_PL_TIME_SPENT_IN_GAME_MORE_THAN,
-IDS_PL_TOOLTIP_NEXT_MONTH_REWARD,
-IDS_PL_VICTORY,
-IDS_PL_YOU_HAVE_BEEN_DENUNCATED_MORE_THAN_BY_X_MEN,
-IDS_PL_YOU_HAVE_BEEN_PRAISED_BY_X_MEN,
+IDS_PLURAL_FORMS,0
+IDS_PL_ABILITY_TITLE,%(_amount)s consumable
+IDS_PL_AIRCARRIER,aircraft carrier
+IDS_PL_AIRPLANES,aircraft
+IDS_PL_AIRPLANE_BOMBER,bomber
+IDS_PL_AIRPLANE_FIGHTER,attack aircraft
+IDS_PL_AIRPLANE_SKIP,skip bomber
+IDS_PL_AIRPLANE_TORPEDO,torpedo bomber
+IDS_PL_AIR_FLIGHT,attack flight
+IDS_PL_ALMANAC_WINDOW_DEFAULT_TIME_STATUS,You have %(durationAlmanac)s day to claim the rewards.
+IDS_PL_ALMANAC_WINDOW_EXTRAREWARDS_STATUS,"For the next %(extraRewardClaimDay)s day, additional rewards will be available to you."
+IDS_PL_AMOUNT_OF_AVAILABLE_EXTERIORS_TO_LINK,Can be linked to %(_amount)s ship
+IDS_PL_ANY_SHIP,ship
+IDS_PL_ARC_EVENT_MAIN_SCREEN_POINTS_TILL_NEXT_REWARD,Until the next reward: %(_pointsTillNext)s Point
+IDS_PL_ARC_EVENT_MAIN_SCREEN_TASK_POINTS_FOR_PROGRESS_ITEM,point
+IDS_PL_ARC_EVENT_MAIN_SCREEN_TASK_TOOLTIP_PROGRESS_BAR_SUM_DESCRIPTION,For reaching %(_cutoffs)s mark
+IDS_PL_BATTLEPASS_STAGE_POINTS_REWARD_AMOUNT,%(_amount)s Progress Point
+IDS_PL_BATTLES,%s battle
+IDS_PL_BATTLESHIP,battleship
+IDS_PL_BATTLES_COUNT,battle
+IDS_PL_BATTLES_TILL_NEXT_LEVEL,%(pointsToNext)s battle until the next level
+IDS_PL_CAMOUFLAGE_TITLE,%(_amount)s camouflage
+IDS_PL_CASUAL_CVC_WAR_STAGE_ATTEMPTS_STATUS,Remaining attempts: %(_attemptsLeft)s
+IDS_PL_CREDITS,Credit
+IDS_PL_CRUISER,cruiser
+IDS_PL_DAYS_PARAM,%(_days)s day
+IDS_PL_DAY_FULL,day
+IDS_PL_DAY_FULL_ACC,day
+IDS_PL_DESTROYER,destroyer
+IDS_PL_EARN_POINTS_BY_RANK_WIN,%(_pointsRank)s point if your team wins.
+IDS_PL_EARN_POINTS_BY_SCENARIO_STARS,%(_pointsScenario)s point for each star received when your team wins.
+IDS_PL_ENSIGNS_TITLE,%(_amount)s signal
+IDS_PL_EXPERIENCE,XP
+IDS_PL_FLAGS_TITLE,%(_amount)s flag
+IDS_PL_FREE_EXPERIENCE,Free XP
+IDS_PL_GOLD,Doubloon
+IDS_PL_HITS_TORPEDOS,ship torpedo hit
+IDS_PL_HOURS_PARAM,%(_hours)s hour
+IDS_PL_HOUR_FULL,hour
+IDS_PL_HOUR_FULL_ACC,hour
+IDS_PL_KNOTS,knot
+IDS_PL_KNOTS_SPACE, knot
+IDS_PL_LOOTBOXES,container
+IDS_PL_LOOTBOX_COUNT,%(_amount)s container
+IDS_PL_LOOTBOX_EPIC_TITLE,%(_amount)s Supercontainer
+IDS_PL_LOOTBOX_PCL000_UNKNOWN_TITLE,%(_amount)s random container
+IDS_PL_LOOTBOX_PCL001_CREDITS_TITLE,%(_amount)s More Economic Rewards container
+IDS_PL_LOOTBOX_PCL002_SIGNALS_TITLE,%(_amount)s More Signals container
+IDS_PL_LOOTBOX_PCL004_LUCKY_TITLE,%(_amount)s container
+IDS_PL_LOOTBOX_PCL005_EPIC_TITLE,%(_amount)s Supercontainer
+IDS_PL_LOOTBOX_TITLE,%(_amount)s container
+IDS_PL_MINUTES_COUNT,minute.
+IDS_PL_MINUTE_FULL,minute
+IDS_PL_MINUTE_FULL_ACC,minute
+IDS_PL_MINUTE_FULL_ROD,minute
+IDS_PL_MODERNIZATION_TITLE,%(_amount)s upgrade
+IDS_PL_MONTH_FULL,month
+IDS_PL_MONTH_FULL_ACC,month
+IDS_PL_MORE_BATTLES,%(battleCount)d battle left
+IDS_PL_PARAGON_XP_TITLE,Research Point
+IDS_PL_PERMOFLAGE_TITLE,%(_amount)s permanent camouflage
+IDS_PL_PLACES,place
+IDS_PL_PLANES,aircraft
+IDS_PL_PLAYERS_COUNT,player
+IDS_PL_POINTS,point
+IDS_PL_RANK_REWARDS_VICTORIES_CURRENT,Reward for %(_victoriesCount)s victory
+IDS_PL_RANK_REWARDS_VICTORIES_NEXT,Until the next reward: %(_victoriesCount)s victory
+IDS_PL_RANK_STARS,%s Star
+IDS_PL_RENT_STATUS_TIME_LEFT,Rental ends in: %(_days)d day
+IDS_PL_REWARD,<body>And <h3>%(rewardCount)s</h3> more reward</body>
+IDS_PL_SECONDS,second
+IDS_PL_SECOND_FULL,second
+IDS_PL_SECOND_FULL_ACC,second
+IDS_PL_SHIPS,ship
+IDS_PL_SLOTS,slot
+IDS_PL_SQUADRONS,squadron
+IDS_PL_SSE_COMPLETE_TASKS,Complete %(count)d mission
+IDS_PL_TILL_REWARD,Will become available in %(_timeLeft)s day
+IDS_PL_TIME_SPENT_IN_GAME,Your AOND has been %(hours)s hour
+IDS_PL_TIME_SPENT_IN_GAME_MORE_THAN,Your AOND has been more than %(hours)s hour
+IDS_PL_TOOLTIP_NEXT_MONTH_REWARD,You have %(_timeLeft)s day to claim all the rewards.
+IDS_PL_VICTORY,victory
+IDS_PL_YOU_HAVE_BEEN_DENUNCATED_MORE_THAN_BY_X_MEN,Your karma has decreased by %(amount)s.
+IDS_PL_YOU_HAVE_BEEN_PRAISED_BY_X_MEN,Your karma has increased by %(amount)s.
 IDS_POINTS_TODAY,Points earned today: %(pointsCurrent)s
 IDS_POINTS_TO_THE_NEXT_LOOTBOX,Points until the next container: %(pointsToNext)s
 IDS_POINT_ATTENTION_BANNED,"You sent the ""Attention to Area in Square"" command too often."
@@ -41738,7 +41746,7 @@ IDS_PRMP_READ_BUTTON,READ
 IDS_PRMP_RECEIVE,Get
 IDS_PRMP_RECEIVE_BUTTON,COLLECT
 IDS_PRMP_REDIRECT_TO_MODAL_WINDOW,You will be redirected to the currency exchange screen
-IDS_PRMP_SWITCH_BUTTON_UNREAD_COUNT,
+IDS_PRMP_SWITCH_BUTTON_UNREAD_COUNT,%(count)s more notification
 IDS_PRMP_UNDERSTOOD_BUTTON,GOT IT
 IDS_PRMP_WATCH_BUTTON,VIEW
 IDS_PRMP_YOUR_EXCHANGE_RATES,<body>Your profitable <h3>EXCHANGE RATE</h3></body>
@@ -44164,7 +44172,7 @@ IDS_PVE_REWARD_ISSUED,Issued: %(issued_date)s
 IDS_PVE_REWARD_ISSUED_THIS_BATTLE,Earned in this battle
 IDS_PVE_SHIPS,warships
 IDS_PVE_SUBMARINES,submarines
-IDS_PVE_TASK_REWARDS_REASON,
+IDS_PVE_TASK_REWARDS_REASON,Reward for completing one secondary task
 IDS_PVE_TECH_CONDITIONS,Completion Criteria
 IDS_PVE_TORPEDO_HIT,by torpedoes
 IDS_PVE_TRANSPORTS,transport ships
@@ -48857,7 +48865,7 @@ IDS_QUESTION_DO_PURCHASE_FOR_STEEL,Purchase for Steel
 IDS_QUESTION_DROP_BRANCH_CONFIRMATION_WINDOW,Reset the branch and get Battle Performance Bonuses?
 IDS_QUESTION_EXCHANGE,Exchange
 IDS_QUESTION_EXIT_GAME,Exit game?
-IDS_QUESTION_EXPAND_BARRACKS_FOR,
+IDS_QUESTION_EXPAND_BARRACKS_FOR,Add %s place to the Reserve for
 IDS_QUESTION_EXTERIOR_LINK,Link and mount on
 IDS_QUESTION_GET_GIFT_SHIP,Get the ship free of charge?
 IDS_QUESTION_INSTALL,Mount?
@@ -48888,27 +48896,27 @@ IDS_QUESTION_RETURN_TO_DOCK,Return to Port?
 IDS_QUESTION_SELL_SHIP_FOR,Sell the ship for
 IDS_QUESTION_UNEQUAL_TEAMS,The teams are incomplete. Start the battle?
 IDS_QUESTION_UNMOUNT_FOR,Demount for
-IDS_QUEST_CLANGALEONLY_WIN,
-IDS_QUEST_CLANHURRICANEONLY_WIN,
-IDS_QUEST_CLANSTORMONLY_WIN,
-IDS_QUEST_CLANTYPHOONONLY_WIN,
-IDS_QUEST_COLLECTIONER_SHIPS,
+IDS_QUEST_CLANGALEONLY_WIN,Win %(achievementCount)s battle in the Gale League or higher.
+IDS_QUEST_CLANHURRICANEONLY_WIN,Win %(achievementCount)s battle in the Hurricane League or higher.
+IDS_QUEST_CLANSTORMONLY_WIN,Win %(achievementCount)s battle in the Storm League or higher.
+IDS_QUEST_CLANTYPHOONONLY_WIN,Win %(achievementCount)s battle in the Typhoon League or higher.
+IDS_QUEST_COLLECTIONER_SHIPS,Build a collection of %(achievementCount)s ship.
 IDS_QUEST_CONTRIBUTOR_HONORED,Honorary Contributor.
-IDS_QUEST_CONTRIBUTOR_YEAR,
-IDS_QUEST_DAMAGECOUNT,
-IDS_QUEST_EXTRA_BATTLELIMIT,
-IDS_QUEST_KOTSBATTLES_WIN,
+IDS_QUEST_CONTRIBUTOR_YEAR,A commemorative emblem for %(achievementCount)s year in the Contributors team.
+IDS_QUEST_DAMAGECOUNT,Achieve %(damage)s average damage per battle.
+IDS_QUEST_EXTRA_BATTLELIMIT,The result of the last %(battleCount)s battle is taken into account.
+IDS_QUEST_KOTSBATTLES_WIN,Win %(achievementCount)s game with your team in King of the Sea tournaments.
 IDS_QUEST_KOTS_CHAMPION,Win a King of the Sea tournament with your team.
-IDS_QUEST_LIMITED_EXECUTION,
+IDS_QUEST_LIMITED_EXECUTION,You may complete this challenge %(_numberOfQuestsGeneral)s time.
 IDS_QUEST_LIMITED_EXECUTION_DONE,You have completed this challenge the maximum number of times.
 IDS_QUEST_LIMITED_EXECUTION_DONE_PER_DAY,Today you have completed this challenge the maximum number of times.
-IDS_QUEST_LIMITED_EXECUTION_PER_DAY,
-IDS_QUEST_LIMITED_EXECUTION_START,
-IDS_QUEST_LIMITED_EXECUTION_START_PER_DAY,
+IDS_QUEST_LIMITED_EXECUTION_PER_DAY,You may complete this challenge %(_numberOfQuestsGeneral)s time per day.
+IDS_QUEST_LIMITED_EXECUTION_START,You have completed this challenge %(_numberOfQuestsDone)s time out of the available %(_numberOfQuestsGeneral)s.
+IDS_QUEST_LIMITED_EXECUTION_START_PER_DAY,Today you have completed this challenge %(_numberOfQuestsDone)s time out of the available %(_numberOfQuestsGeneral)s.
 IDS_QUEST_SHIPS_CONDITIONS,Ships restrictions
 IDS_QUEST_START_CONDITIONS,Completion Criteria
-IDS_QUEST_TEAMPOSITION_TOP3,
-IDS_QUEST_UNIQUE_STARS,
+IDS_QUEST_TEAMPOSITION_TOP3,Win %(achievementCount)s battle in which you were among the top 3 XP earners on your team.
+IDS_QUEST_UNIQUE_STARS,Earn %(uniqueStars)s star for victories in Ranked Battles. Only stars received for the first time in a Season are counted.
 IDS_QUICK_COMMANDS,Quick Commands
 IDS_QUICK_COMMANDS_BANNED,You sent quick commands too often.
 IDS_QUICK_COMMANDS_C,QUICK COMMANDS
@@ -48973,8 +48981,8 @@ IDS_RAGE_MODE_TRIGGER_RECEIVED_DAMAGE_SKIP_BOMB,Receive %(triggerValue)s HP of d
 IDS_RAGE_MODE_TRIGGER_RIBBONACTIVATOR,Earn %(triggerValue)s ribbons
 IDS_RAGE_MODE_TRIGGER_ROCKET_HIT,Hit an enemy ship with a rocket
 IDS_RAGE_MODE_TRIGGER_SHIELD_HIT,Inflict damage on enemy shield
-IDS_RAGE_MODE_TRIGGER_STAY_INVISIBLE,
-IDS_RAGE_MODE_TRIGGER_STAY_SPOTTED,
+IDS_RAGE_MODE_TRIGGER_STAY_INVISIBLE,Every consecutive %(triggerValue)s s you are unspotted
+IDS_RAGE_MODE_TRIGGER_STAY_SPOTTED,Every %(triggerValue)s s you are spotted
 IDS_RAGE_MODE_TRIGGER_SUPPORT_CONSUMABLE_ONALLY,Reinforce an allied ship with a consumable
 IDS_RAGE_MODE_TRIGGER_SUPPORT_CONSUMABLE_ONSELF,Reinforce your ship with a consumable
 IDS_RAGE_MODE_TRIGGER_TIMERACTIVATOR,Progress added for every %(triggerValue)s s
@@ -49022,7 +49030,7 @@ IDS_RANKED_LEAGUE_REWARDS_2,Silver League Rewards
 IDS_RANKED_LEAGUE_REWARDS_3,Bronze League Rewards
 IDS_RANKED_LEAGUE_REWARDS_DESC,Rewards are given for victories in Ranked Battles.
 IDS_RANKED_LEAGUE_REWARDS_STATUS_CHECK,Rewards received
-IDS_RANKED_LEAGUE_REWARDS_STATUS_DEFAULT,
+IDS_RANKED_LEAGUE_REWARDS_STATUS_DEFAULT,%(curCount)s reward out of %(totalCount)s received
 IDS_RANKED_LEAGUE_TOOLTIP_DESC,"Your progress in the league is reset for each Sprint. To enter the next league, you need to qualify for it."
 IDS_RANKED_LEAGUE_TOOLTIP_TITLE,League
 IDS_RANKED_MATCHMAKER_WAITING_FOR_OTHER_DIVISION,Divisions can participate only in battles where the opposing team also has Divisions
@@ -49110,7 +49118,7 @@ IDS_RANK_IN_LEAGUE_STATUS_WAITING,You will start the season with this rank
 IDS_RANK_LEAGUE_CAROUSEL_STATUS_CURRENT,Current league
 IDS_RANK_LEAGUE_CAROUSEL_STATUS_PASSED,You have advanced through this league
 IDS_RANK_LEAGUE_CAROUSEL_STATUS_QUAL_AVAILABLE,Pass the qualification
-IDS_RANK_LEAGUE_CAROUSEL_STATUS_QUAL_LOCKED,
+IDS_RANK_LEAGUE_CAROUSEL_STATUS_QUAL_LOCKED,Advance through the previous league
 IDS_RANK_LEAGUE_CAROUSEL_STATUS_QUAL_PASSED,Wait for the Sprint to start
 IDS_RANK_LEAGUE_CAROUSEL_STATUS_UNAVALABLE,The league is unavailable
 IDS_RANK_NO_CHANGES,Previous Rank
@@ -49180,7 +49188,7 @@ IDS_REALM_NO_TRANSLATE_TST,TST
 IDS_REALM_RU,CIS
 IDS_REALM_TGS,TestServer Asia
 IDS_REALM_WINST,TestServer North America
-IDS_REASON_GIFTBOX_BY_BATTLES,
+IDS_REASON_GIFTBOX_BY_BATTLES,%(battles)s battle
 IDS_REASSIGN_CREW_BUTTON,CHANGE COMMANDER
 IDS_RECALL_INVITATION,Recall Invitation
 IDS_RECEIVED,RECEIVED
@@ -49446,13 +49454,13 @@ IDS_REWARDS_CREWPOINTS_TITLE,%(_amount)s Commander XP
 IDS_REWARDS_ELITEXP_TITLE,%(_amount)s Elite Commander XP
 IDS_REWARDS_FOR_MISSION_COMPLETE,Reward for completing the final task of the mission:
 IDS_REWARDS_MOLYBDENUM_TITLE,%(_amount)s Clan Tokens
-IDS_REWARDS_PL_BARCAPACITY_TITLE,
-IDS_REWARDS_PL_CREDITS_TITLE,
-IDS_REWARDS_PL_EXP_TITLE,
-IDS_REWARDS_PL_FREEXP_TITLE,
-IDS_REWARDS_PL_GOLD_TITLE,
+IDS_REWARDS_PL_BARCAPACITY_TITLE,%(_amount)s place in the Reserve
+IDS_REWARDS_PL_CREDITS_TITLE,%(_amount)s Credit
+IDS_REWARDS_PL_EXP_TITLE,%(_amount)s XP
+IDS_REWARDS_PL_FREEXP_TITLE,%(_amount)s Free XP
+IDS_REWARDS_PL_GOLD_TITLE,%(_amount)s Doubloon
 IDS_REWARDS_PL_PREMIUM_TITLE,%(_amount)s Wargaming Premium Account
-IDS_REWARDS_PL_SLOTS_TITLE,
+IDS_REWARDS_PL_SLOTS_TITLE,%(_amount)s Port slot
 IDS_REWARDS_PL_WOWS_PREMIUM_TITLE,%(_amount)s Warships Premium Account
 IDS_REWARDS_RECEIVED,Rewards received
 IDS_REWARDS_SALTPETER_TITLE,%(_amount)s Recruiting Tokens
@@ -52373,7 +52381,7 @@ IDS_SHIPS_DAMAGED,Warships Damaged
 IDS_SHIPS_DAMAGED_HINT,Number of enemy warships you damaged in this battle
 IDS_SHIPS_IN_SERIES,Ships in the series
 IDS_SHIPS_LEFT,SHIPS LEFT
-IDS_SHIPS_RESTRICTIONS_REMAIN,
+IDS_SHIPS_RESTRICTIONS_REMAIN,And %(shipsRemain)s more ship
 IDS_SHIPS_SPOTTED,Warships spotted
 IDS_SHIPS_SPOTTED_AVERAGE,Warships spotted
 IDS_SHIPS_SPOTTED_AVERAGE_TOOLTIP,Average number of warships spotted
@@ -53749,10 +53757,10 @@ IDS_SHIP_PURCHASE,Purchase Ship
 IDS_SHIP_RARITY_RESTRICTION,Ship rarity restrictions
 IDS_SHIP_RENT_CREW_HINT,Ship Commander for rent for %(_timeLeft)s
 IDS_SHIP_RENT_TIME_IS_UP_TOOLTIP,"The ship will be removed from your account after you leave a battle or set your status to ""Not ready"""
-IDS_SHIP_RENT_UNTIL_DAYS,
-IDS_SHIP_RENT_UNTIL_HOURS,
-IDS_SHIP_RENT_UNTIL_MINUTES,
-IDS_SHIP_RENT_UNTIL_SECONDS,
+IDS_SHIP_RENT_UNTIL_DAYS,Rental period ends in: %(_rentUntil)s day
+IDS_SHIP_RENT_UNTIL_HOURS,Rental period ends in: %(_rentUntil)s hour
+IDS_SHIP_RENT_UNTIL_MINUTES,Rental period ends in: %(_rentUntil)s minute
+IDS_SHIP_RENT_UNTIL_SECONDS,Rental period ends in: %(_rentUntil)s second
 IDS_SHIP_RENT_UNTIL_ZERO,Ship rental will expire soon
 IDS_SHIP_REWARD,%s %s
 IDS_SHIP_SELL,Sell Ship
@@ -53778,7 +53786,7 @@ IDS_SHOOT_DEPTH_CHARGES_PREF_TOOLTIP_DESCRIPTION,Launch depth charges.
 IDS_SHOOT_SHIFT_CHANGED,Accuracy of enemy fire directed at your ship decreased
 IDS_SHOTS,Shells fired
 IDS_SHOTS_HINT,Number of shells fired
-IDS_SHOT_MINUTE,
+IDS_SHOT_MINUTE,rounds/min
 IDS_SHOW,SHOW
 IDS_SHOWGAMESTATS,Game statistics
 IDS_SHOWGAMESTATS_PREF_TOOLTIP_DESCRIPTION,"View battle statistics, map description, and missions."
@@ -54116,8 +54124,8 @@ IDS_SNOWFLAKES_WINDOW_PROGRESSBAR_DESC_LEFT,Earn
 IDS_SNOWFLAKES_WINDOW_PROGRESSBAR_DESC_RIGHT,Base XP in battles to obtain Festive Rewards
 IDS_SNOWFLAKES_WINDOW_SUBHEADER_ALL_SHIPS_SELECTED,You selected all available ships. Collect your Rewards!
 IDS_SNOWFLAKES_WINDOW_SUBHEADER_NO_MORE_REWARDS,You have claimed the available Festive Rewards! Continue earning Base XP in battle to claim them from other ships.
-IDS_SNOWFLAKES_WINDOW_SUBHEADER_PICK_MORE_REWARDS,
-IDS_SNOWFLAKES_WINDOW_SUBHEADER_PICK_REWARDS,
+IDS_SNOWFLAKES_WINDOW_SUBHEADER_PICK_MORE_REWARDS,Select %(_snowflakesAmount)s more ship to claim Festive Rewards from without taking her into battle.
+IDS_SNOWFLAKES_WINDOW_SUBHEADER_PICK_REWARDS,Select %(_snowflakesAmount)s ship to claim Festive Rewards from without taking it into battle.
 IDS_SOLD_FOR,Sold for:
 IDS_SOLMYR,Solmyr
 IDS_SOME_PREFS_ORPHANED_CAPTION_APPLY_QUESTION,"You have not assigned keys for certain actions.
@@ -55163,11 +55171,11 @@ IDS_SUBST_ARC_EVENT_COMMON_STATUS_PRIMETIME_STARTS_IN_SHORT,Start in: %(_timeTil
 IDS_SUBST_ARC_EVENT_FINAL_EFFICIENCY,Your performance was higher than that of %(_higherThan)s% of players
 IDS_SUBST_ARC_EVENT_FINAL_SUBTITLE,"You've joined %(_teamsJoined)s of %(_teamsTotal)s teams, and achieved the following results:"
 IDS_SUBST_ARC_EVENT_MAIN_SCREEN_TASK_PERSONAL_LEADERBOARD,Top %(_percentRate)s%
-IDS_SUBST_ARC_EVENT_MAIN_SCREEN_TASK_STATUS_DONE_POINTS_RECEIVED,
+IDS_SUBST_ARC_EVENT_MAIN_SCREEN_TASK_STATUS_DONE_POINTS_RECEIVED,%(_points)s Point earned
 IDS_SUBST_ARC_EVENT_MAIN_SCREEN_TASK_STATUS_TIME_TILL_FINISH,Ends in %(_timeLeft)s
 IDS_SUBST_ARC_EVENT_MAIN_SCREEN_TASK_STATUS_TIME_TILL_START,Starts in %(_timeLeft)s
 IDS_SUBST_ARC_EVENT_PORT_STATUS_ALL_REWARDS_RECEIVED,All rewards received
-IDS_SUBST_ARC_EVENT_PORT_STATUS_POINTS_TILL_NEXT_REWARD,
+IDS_SUBST_ARC_EVENT_PORT_STATUS_POINTS_TILL_NEXT_REWARD,Until the next reward: %(_pointsTillNext)s point
 IDS_SUBST_ARC_EVENT_STAGE_ENDS_AT,The stage will last until %(_expiryDateTime)s
 IDS_SUBST_ARC_EVENT_STAGE_ENDS_IN,The stage ends in %(_timeLeft)s
 IDS_SUBST_BATTLEPASS_CURRENT_LEVEL_TITLE,Current Level %(_level)s
@@ -55179,7 +55187,7 @@ IDS_SUBST_BATTLE_CARD_HEADER,"%(_baseHeader)s.
 IDS_SUBST_BONUSTAG_CONDITIONS_DESCRIPTION,Win any type of battle or earn %(_baseExpCount)s Base XP in a single battle.
 IDS_SUBST_BRAWL_SEASON_ENDS_IN,The season ends in %(_timeTillEnd)s
 IDS_SUBST_CAMOUFLAGE,%(_exteriorNameIds)s camouflage
-IDS_SUBST_CREDITS,
+IDS_SUBST_CREDITS,%(credits)s Credit
 IDS_SUBST_DOCK_BANNER_BATTLEPASS_PROGRESS_TEXT,Level: %(_level)s
 IDS_SUBST_DOCK_BANNER_BATTLEPASS_TOOLTIP_TIME,Event ends in: %(_timeLeft)s
 IDS_SUBST_ENSIGN,%(_exteriorNameIds)s flag
@@ -55193,7 +55201,7 @@ IDS_SUBST_EVENT_HUB_STATUS_TIME,Operation ends in: %(_timeLeft)s
 IDS_SUBST_EVENT_SEASON_ENDS_IN,Event ends in: %(_timeLeft)s
 IDS_SUBST_FLAGS,%(_exteriorNameIds)s signal
 IDS_SUBST_GRAND_STRATEGY_PASS_BANNER_PROGRESS_INFO,Sectors claimed: %(_level)s / %(_maxLevel)s
-IDS_SUBST_GRAND_STRATEGY_PASS_DAYS_LEFT,
+IDS_SUBST_GRAND_STRATEGY_PASS_DAYS_LEFT,Ends in %(_days)d day
 IDS_SUBST_GRAND_STRATEGY_PASS_EVENT_ENDS_IN,Ends in: %(_timeLeft)s
 IDS_SUBST_HINT_SHIP_RESTRICTION_LEVEL,Tier %(level)s ships
 IDS_SUBST_HINT_SHIP_RESTRICTION_LEVELS,Tier %(levelRange)s ships
@@ -55203,23 +55211,23 @@ IDS_SUBST_MODERN_ERA_LEVEL_COMPLETED,Reward received
 IDS_SUBST_MODERN_ERA_PHASE_WILL_OPEN_IN,Available in %(_startTime)s
 IDS_SUBST_MODERN_ERA_PROGRESS_LEVEL,LEVEL %(_level)s
 IDS_SUBST_MODERN_ERA_PROGRESS_NEXT_PHASE_IN,Reward available in %(_timeLeft)s
-IDS_SUBST_NEWBIE_GIFTS_BATTLES_TO_PLAY,
-IDS_SUBST_NEWBIE_GIFTS_CONDITION_TEXT_1_TOOLTIP,
-IDS_SUBST_NEWBIE_GIFTS_CONDITION_TO_GET_SHIP,
-IDS_SUBST_NEWBIE_GIFTS_IS_NOT_AVAILABLE_TOOLTIP,
+IDS_SUBST_NEWBIE_GIFTS_BATTLES_TO_PLAY,You can get the ship for free after %(battleCount)s battle.
+IDS_SUBST_NEWBIE_GIFTS_CONDITION_TEXT_1_TOOLTIP,Play %(battleCount)s battle to get this ship free of charge.
+IDS_SUBST_NEWBIE_GIFTS_CONDITION_TO_GET_SHIP,Play %(battleCount)d more battle and one of these ships will be yours at no cost
+IDS_SUBST_NEWBIE_GIFTS_IS_NOT_AVAILABLE_TOOLTIP,"Play %(battleCount)s battle to get this ship free of charge. Can be completed in any battle type, playing any ship. Only one ship is available free of charge."
 IDS_SUBST_NEWBIE_QUESTS_TIME_LEFT_LAST_DAY,The section will be available for %(timeLeft)s
 IDS_SUBST_NTH_RANKED_SEASON_STARTS_IN,Time left until Season %(_seasonId)s starts: %(_timeTillStart)s
 IDS_SUBST_NY_BATTLEPASS_STATUS_TIME,Ends in %(timeLeft)s
-IDS_SUBST_PL_ARC_EVENT_POSTBATTLE_TOOLTIP_POINTS_RECEIVED,
-IDS_SUBST_PL_NEWBIE_QUESTS_TIME_LEFT_DAYS,
-IDS_SUBST_PL_OPEN_N_CONTAINERS,
-IDS_SUBST_PL_OWNED_LOOTBOXES_COUNT_TOTAL_WITH_TYPES,
-IDS_SUBST_PL_OWNED_LOOTBOXES_COUNT_TYPES,
-IDS_SUBST_PL_SSE_CATEGORY_TIME_LEFT_DAYS,
-IDS_SUBST_PL_SSE_POSTBATTLE_TASKS_TOTAL,
-IDS_SUBST_PL_SSE_REPEAT_NUMBER,
-IDS_SUBST_PL_SSE_TIME_LEFT_DAYS,
-IDS_SUBST_POINTS,
+IDS_SUBST_PL_ARC_EVENT_POSTBATTLE_TOOLTIP_POINTS_RECEIVED,%(_points)s Point earned in battle
+IDS_SUBST_PL_NEWBIE_QUESTS_TIME_LEFT_DAYS,The section will be available for %(timeLeft)s day
+IDS_SUBST_PL_OPEN_N_CONTAINERS,Open %(count)d container
+IDS_SUBST_PL_OWNED_LOOTBOXES_COUNT_TOTAL_WITH_TYPES,You have %(lootboxesCount)d container %(lootboxesTypesCountString)s
+IDS_SUBST_PL_OWNED_LOOTBOXES_COUNT_TYPES,of %(lootboxesTypesCount)s type
+IDS_SUBST_PL_SSE_CATEGORY_TIME_LEFT_DAYS,The section will be available for %(timeLeft)s day
+IDS_SUBST_PL_SSE_POSTBATTLE_TASKS_TOTAL,%(taskCount)s mission in total
+IDS_SUBST_PL_SSE_REPEAT_NUMBER,Can be completed %(repeatNum)s time
+IDS_SUBST_PL_SSE_TIME_LEFT_DAYS,Mission will be available for %(timeLeft)s day
+IDS_SUBST_POINTS,%(points)s point
 IDS_SUBST_RANKED_SEASON_ENDS_IN,Time until Season ends: %(_timeLeft)s
 IDS_SUBST_RANKED_SEASON_STARTS_IN,Season will start in: %(_timeTillStart)s
 IDS_SUBST_RANKED_SPRINT_ENDS_IN,Time left until Sprint ends: %(_timeLeft)s
@@ -55232,7 +55240,7 @@ IDS_SUBST_SHIP_ACES_TIME_STATUS_FINISHING_SEASON,Event ends in: %(timeLeft)s
 IDS_SUBST_SHIP_ACES_TIME_STATUS_FINISHING_SPRINT,Stage ends in: %(timeLeft)s
 IDS_SUBST_SHIP_ACES_TIME_STATUS_START,Stage starts in: %(timeLeft)s
 IDS_SUBST_SHIP_LEGENDARY,%(_shipClass)s as part of the %(_nationProgram)s Program
-IDS_SUBST_SNOWFLAKES_WINDOW_SUBHEADER_SNOWFLAKES_AMOUNT,
+IDS_SUBST_SNOWFLAKES_WINDOW_SUBHEADER_SNOWFLAKES_AMOUNT,You can claim Festive Reward from %(_snowflakesAmount)s more ship.
 IDS_SUBST_SNOWFLAKE_EARN_TO_RECEIVE,Earn %(_baseExpCount)s Base XP playing this ship to receive Festive Rewards.
 IDS_SUBST_SPECS_TIME_ENDS_IN,Event ends in: %(_timeLeft)s
 IDS_SUBST_SSE_CATEGORY_DAILY_RESET_IN,The section will be updated in %(timeLeft)s
@@ -55242,10 +55250,10 @@ IDS_SUBST_SSE_DAILY_RESET_IN,Updating in %(timeLeft)s
 IDS_SUBST_SSE_EXPIRES_AT,Mission can be completed until %(expiryDateTime)s
 IDS_SUBST_SSE_IS_ACTIVATED_AT,The mission will become available on %(activationDateTime)s
 IDS_SUBST_SSE_STATUS_LOCKED_NEXTEPICNOTUNLOCKEDYET,Available in %(unlockTime)s
-IDS_SUBST_SSE_STATUS_LOCKED_NEXTEPICNOTUNLOCKEDYET_MINUTES,
-IDS_SUBST_SSE_STATUS_LOCKED_NEXTEPICNOTUNLOCKEDYET_SECONDS,
+IDS_SUBST_SSE_STATUS_LOCKED_NEXTEPICNOTUNLOCKEDYET_MINUTES,Available in %(unlockTime)s minute
+IDS_SUBST_SSE_STATUS_LOCKED_NEXTEPICNOTUNLOCKEDYET_SECONDS,Available in %(unlockTime)s second
 IDS_SUBST_SSE_TIME_LEFT_LAST_DAY,Mission will be available for %(timeLeft)s
-IDS_SUBST_STRATEGIC_ACTIONS_ADDITIONAL_REWARD_STATUS_LOCKED,
+IDS_SUBST_STRATEGIC_ACTIONS_ADDITIONAL_REWARD_STATUS_LOCKED,Take control over %(_count)s territory
 IDS_SUBST_STRATEGIC_ACTIONS_COMMON_EVENT_STATUS_TIME,Event ends in: %(_timeLeft)s
 IDS_SUBST_STRATEGIC_ACTIONS_TERRITORY_LEVEL_1,Difficulty level: Low
 IDS_SUBST_STRATEGIC_ACTIONS_TERRITORY_LEVEL_2,Difficulty level: Medium
@@ -55558,7 +55566,7 @@ IDS_SYS_MSG_PLAYER_ACTION_IN_DIVISION_0_DIVISION,Player joined Division
 IDS_SYS_MSG_PLAYER_ACTION_IN_DIVISION_1_DIVISION,Player left Division
 IDS_SYS_MSG_PLAYER_ACTION_IN_DIVISION_2_DIVISION,Player removed from Division
 IDS_SYS_MSG_PLAYER_IS_COMMANDER_DIVISION,Player appointed as Division Commander
-IDS_SYS_MSG_PL_RECEIVED_REWARDS,
+IDS_SYS_MSG_PL_RECEIVED_REWARDS,Plus %(_countRestRewards)d more reward
 IDS_SYS_MSG_PRAISES_ACCEPTED,Compliment accepted!
 IDS_SYS_MSG_PRAISES_RECEIVED,You were complimented!
 IDS_SYS_MSG_PREM_OFF,Premium Account expired
@@ -55723,7 +55731,7 @@ IDS_SYS_MSG_STRATEGIC_ACTIONS_REWARDS_CLAIM,Rewards of the Archipelago of Heroes
 IDS_SYS_MSG_SUBALBUM_REWARDED,Collection section complete
 IDS_SYS_MSG_TIMELEFT_SERVER_REBOOT,Time until server reboot: %(_timeLeft)s
 IDS_SYS_MSG_TIMELEFT_SERVER_REBOOT_DOWNTIME,Server will be unavailable for %(_timeLeft)s
-IDS_SYS_MSG_TIME_SPENT_IN_GAME,
+IDS_SYS_MSG_TIME_SPENT_IN_GAME,You have been logged in for %(hours)s hour.
 IDS_SYS_MSG_TRADED,Ship received
 IDS_SYS_MSG_TRANFER_XP,Convert XP
 IDS_SYS_MSG_TRANSACTION_CURRENCY_LIMIT_EXCEEDED_COMMON,Transaction error
@@ -55917,7 +55925,7 @@ Can be activated once per battle."
 IDS_TALENT_PAW102_2_8,Speed Is Life
 IDS_TALENT_PAW102_2_8_DESCRIPTION_BATTLE_GROUP_OPERATIONS,Activates upon dealing a certain amount of torpedo damage.
 IDS_TALENT_PAW102_2_8_DESCRIPTION_BATTLE_GROUP_REGULAR,Activates upon dealing a certain amount of torpedo damage.
-IDS_TALENT_PAW102_2_8_LEVEL_ACTIVATION,
+IDS_TALENT_PAW102_2_8_LEVEL_ACTIVATION,Activates upon dealing %(_activationNum)s HP of torpedo damage.
 IDS_TALENT_PAW102_2_8_PROGRESSION_DESC,"The effect increases with damage dealt, up to %(_levelsCount)i times per battle."
 IDS_TALENT_PBW100_1_2,Ruthless
 IDS_TALENT_PBW100_1_2_DESCRIPTION_BATTLE_GROUP_OPERATIONS,"Activates upon dealing 60,000 HP of fire and flooding damage.
@@ -55929,7 +55937,7 @@ Can be activated once per battle."
 IDS_TALENT_PBW100_2_8_15,Lightning Fast
 IDS_TALENT_PBW100_2_8_15_DESCRIPTION_BATTLE_GROUP_OPERATIONS,Activates upon causing flooding a certain number of times.
 IDS_TALENT_PBW100_2_8_15_DESCRIPTION_BATTLE_GROUP_REGULAR,Activates upon causing flooding a certain number of times.
-IDS_TALENT_PBW100_2_8_15_LEVEL_ACTIVATION,
+IDS_TALENT_PBW100_2_8_15_LEVEL_ACTIVATION,Activates after causing flooding %(_activationNum)s time.
 IDS_TALENT_PBW100_2_8_15_PROGRESSION_DESC,"The effect increases relative to how many times your attacks cause flooding, up to %(_levelsCount)i times per battle."
 IDS_TALENT_PBW100_3_0_21,Equipment Spoils
 IDS_TALENT_PBW100_3_0_21_DESCRIPTION_BATTLE_GROUP_OPERATIONS,"Activates upon destroying four ships.
@@ -56032,7 +56040,7 @@ Can be activated once per battle."
 IDS_TALENT_PJW018_1_1_2,Second Wind
 IDS_TALENT_PJW018_1_1_2_DESCRIPTION_BATTLE_GROUP_OPERATIONS,Activates upon destroying a certain number of ships.
 IDS_TALENT_PJW018_1_1_2_DESCRIPTION_BATTLE_GROUP_REGULAR,Activates upon destroying a certain number of ships.
-IDS_TALENT_PJW018_1_1_2_LEVEL_ACTIVATION,
+IDS_TALENT_PJW018_1_1_2_LEVEL_ACTIVATION,Activates upon destroying %(_activationNum)s ship.
 IDS_TALENT_PJW018_1_1_2_PROGRESSION_DESC,"The activated effect increases with the number of enemy ships destroyed, up to %(_levelsCount)i times per battle."
 IDS_TALENT_PJW018_2_0_21,Emergency Reserve
 IDS_TALENT_PJW018_2_0_21_DESCRIPTION_BATTLE_GROUP_OPERATIONS,Activates if you are the first to destroy or assist in destroying a ship.
@@ -56226,81 +56234,81 @@ T-22"
 IDS_TASKRESTRICTIONSPECIAL_TIRPIZ,"Complete the task in Random, Co-op, and Ranked Battles, playing battleship Tirpitz."
 IDS_TASKRESTRICTIONSPECIAL_VISBY,"Completion criteria:
 Visby"
-IDS_TASKRESTRICTION_AIRCARRIER_PVP,
-IDS_TASKRESTRICTION_AVCA_PVP,
-IDS_TASKRESTRICTION_AVDD_PVP,
-IDS_TASKRESTRICTION_AV_PVP,
-IDS_TASKRESTRICTION_AV_PVPCOOP,
-IDS_TASKRESTRICTION_BATTLESHIP_PVP,
-IDS_TASKRESTRICTION_BBCADD_PVP,
-IDS_TASKRESTRICTION_BBCADD_PVPCOOPRANKEDCLAN,
-IDS_TASKRESTRICTION_BBCA_PVP,
-IDS_TASKRESTRICTION_BBDD_PVP,
-IDS_TASKRESTRICTION_BB_PVP,
-IDS_TASKRESTRICTION_BB_PVPCOOP,
-IDS_TASKRESTRICTION_BB_PVPRANKED,
-IDS_TASKRESTRICTION_BR_PVPRANKED,
-IDS_TASKRESTRICTION_CADD_PVP,
-IDS_TASKRESTRICTION_CADD_PVPRANKED,
-IDS_TASKRESTRICTION_CA_PVP,
-IDS_TASKRESTRICTION_CA_PVPCOOPRANKEDCLAN,
-IDS_TASKRESTRICTION_CA_PVPRANKED,
-IDS_TASKRESTRICTION_CLANTYPE,
-IDS_TASKRESTRICTION_COMMONWEALTH_PVP,
-IDS_TASKRESTRICTION_COOP,
-IDS_TASKRESTRICTION_CRUISER_PVP,
-IDS_TASKRESTRICTION_DD_PVP,
-IDS_TASKRESTRICTION_DD_PVPRANKED,
-IDS_TASKRESTRICTION_DESTROYER_PVP,
-IDS_TASKRESTRICTION_EUROPE_PVP,
-IDS_TASKRESTRICTION_EU_PVP,
-IDS_TASKRESTRICTION_EU_PVPCOOPRANKEDCLAN,
+IDS_TASKRESTRICTION_AIRCARRIER_PVP,Complete the task in Random Battles with Tier %(level)s aircraft carriers.
+IDS_TASKRESTRICTION_AVCA_PVP,Complete the task in Random Battles with Tier %(level)s aircraft carriers or cruisers.
+IDS_TASKRESTRICTION_AVDD_PVP,Complete the task in Random Battles with Tier %(level)s destroyers or aircraft carriers.
+IDS_TASKRESTRICTION_AV_PVP,Complete the task in Random Battles with Tier %(level)s aircraft carriers.
+IDS_TASKRESTRICTION_AV_PVPCOOP,Complete the task in Random and Co-op Battles with Tier %(level)s aircraft carriers.
+IDS_TASKRESTRICTION_BATTLESHIP_PVP,Complete the task in Random Battles with Tier %(level)s battleships.
+IDS_TASKRESTRICTION_BBCADD_PVP,"Complete the task in Random Battles with Tier %(level)s ships, except aircraft carriers."
+IDS_TASKRESTRICTION_BBCADD_PVPCOOPRANKEDCLAN,"Complete the task in Random, Co-op, Ranked, and Clan Battles with Tier %(level)s ships, except aircraft carriers."
+IDS_TASKRESTRICTION_BBCA_PVP,Complete the task in Random Battles with Tier %(level)s battleships and cruisers.
+IDS_TASKRESTRICTION_BBDD_PVP,Complete the task in Random Battles with Tier %(level)s battleships or destroyers.
+IDS_TASKRESTRICTION_BB_PVP,Complete the task in Random Battles with Tier %(level)s battleships.
+IDS_TASKRESTRICTION_BB_PVPCOOP,Complete the task in Random and Co-op Battles with Tier %(level)s battleships.
+IDS_TASKRESTRICTION_BB_PVPRANKED,Complete the task in Random and Ranked Battles with Tier %(level)s battleships.
+IDS_TASKRESTRICTION_BR_PVPRANKED,Complete the task in Random and Ranked Battles with British Tier %(level)s ships.
+IDS_TASKRESTRICTION_CADD_PVP,Complete the task in Random Battles with Tier %(level)s destroyers or cruisers.
+IDS_TASKRESTRICTION_CADD_PVPRANKED,Complete the task in Random and Ranked Battles with Tier %(level)s destroyers or cruisers.
+IDS_TASKRESTRICTION_CA_PVP,Complete the task in Random Battles with Tier %(level)s cruisers.
+IDS_TASKRESTRICTION_CA_PVPCOOPRANKEDCLAN,"Complete the task in Random, Co-op, Ranked, or Clan Battles with Tier %(level)s cruisers."
+IDS_TASKRESTRICTION_CA_PVPRANKED,Complete the task in Random and Ranked Battles with Tier %(level)s cruisers.
+IDS_TASKRESTRICTION_CLANTYPE,Complete the task in Clan Battles with Tier %(level)s ships.
+IDS_TASKRESTRICTION_COMMONWEALTH_PVP,Complete the task in Random Battles with Commonwealth Tier %(level)s ships.
+IDS_TASKRESTRICTION_COOP,Complete the task in Co-op Battles with Tier %(level)s ships.
+IDS_TASKRESTRICTION_CRUISER_PVP,Complete the task in Random Battles with Tier %(level)s cruisers.
+IDS_TASKRESTRICTION_DD_PVP,Complete the task in Random Battles with Tier %(level)s destroyers.
+IDS_TASKRESTRICTION_DD_PVPRANKED,Complete the task in Random and Ranked Battles with Tier %(level)s destroyers.
+IDS_TASKRESTRICTION_DESTROYER_PVP,Complete the task in Random Battles with Tier %(level)s destroyers.
+IDS_TASKRESTRICTION_EUROPE_PVP,Complete the task in Random Battles with European Tier %(level)s ships.
+IDS_TASKRESTRICTION_EU_PVP,Complete the task in Random Battles with European Tier %(level)s ships.
+IDS_TASKRESTRICTION_EU_PVPCOOPRANKEDCLAN,"Complete the task in Random, Co-op, Ranked, or Clan Battles with European Tier %(level)s ships."
 IDS_TASKRESTRICTION_EXTRA_SOLO,The player must not be in a Division at the start of the battle.
-IDS_TASKRESTRICTION_FRANCE_PVP,
-IDS_TASKRESTRICTION_FRBB_PVPCOOP,
-IDS_TASKRESTRICTION_FR_PVPCOOP,
-IDS_TASKRESTRICTION_GEBB_PVPRANKED,
-IDS_TASKRESTRICTION_GERMANY_PVP,
-IDS_TASKRESTRICTION_GE_PVPRANKED,
-IDS_TASKRESTRICTION_ITALY_PVP,
-IDS_TASKRESTRICTION_JAPAN_PVP,
-IDS_TASKRESTRICTION_NETHERLANDS_PVP,
-IDS_TASKRESTRICTION_PANAMERICA_PVP,
-IDS_TASKRESTRICTION_PANASIA_PVP,
-IDS_TASKRESTRICTION_PVP,
-IDS_TASKRESTRICTION_PVPCOOP,
-IDS_TASKRESTRICTION_PVPCOOPERATIVEPVE,
+IDS_TASKRESTRICTION_FRANCE_PVP,Complete the task in Random Battles with French Tier %(level)s ships.
+IDS_TASKRESTRICTION_FRBB_PVPCOOP,Complete the task in Random and Co-op Battles with French Tier %(level)s battleships.
+IDS_TASKRESTRICTION_FR_PVPCOOP,Complete the task in Random and Co-op Battles with French Tier %(level)s ships.
+IDS_TASKRESTRICTION_GEBB_PVPRANKED,Complete the task in Random and Ranked Battles with German Tier %(level)s battleships.
+IDS_TASKRESTRICTION_GERMANY_PVP,Complete the task in Random Battles with German Tier %(level)s ships.
+IDS_TASKRESTRICTION_GE_PVPRANKED,Complete the task in Random and Ranked Battles with German Tier %(level)s ships.
+IDS_TASKRESTRICTION_ITALY_PVP,Complete the task in Random Battles with Italian Tier %(level)s ships.
+IDS_TASKRESTRICTION_JAPAN_PVP,Complete the task in Random Battles with Japanese Tier %(level)s ships.
+IDS_TASKRESTRICTION_NETHERLANDS_PVP,Complete the task in Random Battles playing Dutch Tier %(level)s ships.
+IDS_TASKRESTRICTION_PANAMERICA_PVP,Complete the task in Random Battles playing Pan-American Tier %(level)s ships.
+IDS_TASKRESTRICTION_PANASIA_PVP,Complete the task in Random Battles with Pan-Asian Tier %(level)s ships.
+IDS_TASKRESTRICTION_PVP,Complete the task in Random Battles with Tier %(level)s ships.
+IDS_TASKRESTRICTION_PVPCOOP,Complete the task in Random and Co-op Battles with Tier %(level)s ships.
+IDS_TASKRESTRICTION_PVPCOOPERATIVEPVE,Complete the task in Random and Co-op Battles as well as in Operations with Tier %(level)s ships.
 IDS_TASKRESTRICTION_PVPCOOPERATIVE_AIGLE,Complete the task in Random and Co-op Battles with destroyer Aigle.
-IDS_TASKRESTRICTION_PVPCOOPRANKED,
-IDS_TASKRESTRICTION_PVPCOOPRANKEDCLAN,
-IDS_TASKRESTRICTION_PVPCOOPRANKEDCLANPVEBRAWL,
-IDS_TASKRESTRICTION_PVPCOOPRANKEDPVEBRAWL,
+IDS_TASKRESTRICTION_PVPCOOPRANKED,"Complete the task in Random, Co-op, and Ranked Battles with Tier %(level)s ships."
+IDS_TASKRESTRICTION_PVPCOOPRANKEDCLAN,"Complete the task in Random, Co-op, Ranked, and Clan Battles with Tier %(level)s ships."
+IDS_TASKRESTRICTION_PVPCOOPRANKEDCLANPVEBRAWL,"Complete the task in Random, Co-op, Ranked, and Clan Battles, as well as in Operations and Brawl with Tier %(level)s ships."
+IDS_TASKRESTRICTION_PVPCOOPRANKEDPVEBRAWL,"Complete the task in Random, Co-op, and Ranked Battles, as well as in Operations and Brawl with Tier %(level)s ships."
 IDS_TASKRESTRICTION_PVPCOOPRANKED_PEF,"Complete the task in Random, Co-op, and Ranked Battles with battleship Prinz Eitel Friedrich."
-IDS_TASKRESTRICTION_PVPONLY,
-IDS_TASKRESTRICTION_PVPPVE,
-IDS_TASKRESTRICTION_PVPRANKED,
-IDS_TASKRESTRICTION_PVPRANKEDCOOP,
+IDS_TASKRESTRICTION_PVPONLY,Complete the task in Random Battles with Tier %(level)s ships.
+IDS_TASKRESTRICTION_PVPPVE,Complete the task in Random Battles and in Operations with Tier %(level)s ships.
+IDS_TASKRESTRICTION_PVPRANKED,Complete the task in Random and Ranked Battles with Tier %(level)s ships.
+IDS_TASKRESTRICTION_PVPRANKEDCOOP,"Complete the task in Co-op, Random, and Ranked Battles with Tier %(level)s ships."
 IDS_TASKRESTRICTION_PVPRANKED_DALLAS,Complete the task in Random and Ranked Battles with cruiser Dallas.
 IDS_TASKRESTRICTION_PVPRANKED_HATSUHARU,Complete the task in Random and Ranked Battles with destroyer Hatsuharu.
 IDS_TASKRESTRICTION_PVPRANKED_ICARUS,Complete the task in Random and Ranked Battles with destroyer Icarus.
 IDS_TASKRESTRICTION_PVPRANKED_NORMANDIE,Complete the task in Random and Ranked Battles with battleship Normandie.
 IDS_TASKRESTRICTION_PVPRANKED_NURNBERG,Complete the task in Random and Ranked Battles with cruiser Nürnberg.
 IDS_TASKRESTRICTION_PVP_ORKAN_SMALAND,Complete the task in Random Battles with destroyer Orkan or Småland.
-IDS_TASKRESTRICTION_RANKEDONLY,
-IDS_TASKRESTRICTION_RUSSIA_PVP,
-IDS_TASKRESTRICTION_SPAIN_PVP,
+IDS_TASKRESTRICTION_RANKEDONLY,Complete the task in Ranked Battles with Tier %(level)s ships.
+IDS_TASKRESTRICTION_RUSSIA_PVP,Complete the task in Random Battles with Soviet Tier %(level)s ships.
+IDS_TASKRESTRICTION_SPAIN_PVP,Complete the task in Random Battles playing Spanish Tier %(level)s ships.
 IDS_TASKRESTRICTION_STANDART,Completion criteria:
-IDS_TASKRESTRICTION_SUBMARINE_PVP,
-IDS_TASKRESTRICTION_UKCADD_PVPRANKED,
-IDS_TASKRESTRICTION_UKCA_PVPRANKED,
-IDS_TASKRESTRICTION_UK_PVP,
-IDS_TASKRESTRICTION_USAVCA_PVP,
-IDS_TASKRESTRICTION_USAVDD_PVP,
-IDS_TASKRESTRICTION_USAV_PVPCOOP,
-IDS_TASKRESTRICTION_USA_PVP,
-IDS_TASKRESTRICTION_USBBCA_PVP,
-IDS_TASKRESTRICTION_USCA_PVP,
-IDS_TASKRESTRICTION_US_PVP,
+IDS_TASKRESTRICTION_SUBMARINE_PVP,Complete the task in Random Battles playing Tier %(level)s submarines.
+IDS_TASKRESTRICTION_UKCADD_PVPRANKED,Complete the task in Random and Ranked Battles with British Tier %(level)s destroyers or cruisers.
+IDS_TASKRESTRICTION_UKCA_PVPRANKED,Complete the task in Random and Ranked Battles with British Tier %(level)s cruisers.
+IDS_TASKRESTRICTION_UK_PVP,Complete the task in Random Battles with British Tier %(level)s ships.
+IDS_TASKRESTRICTION_USAVCA_PVP,Complete the task in Random Battles with U.S. Tier %(level)s aircraft carriers and cruisers.
+IDS_TASKRESTRICTION_USAVDD_PVP,Complete the task in Random Battles with U.S. Tier %(level)s destroyers and aircraft carriers.
+IDS_TASKRESTRICTION_USAV_PVPCOOP,Complete the task in Random and Co-op Battles with U.S. Tier %(level)s aircraft carriers.
+IDS_TASKRESTRICTION_USA_PVP,Complete the task in Random Battles with U.S. Tier %(level)s ships.
+IDS_TASKRESTRICTION_USBBCA_PVP,Complete the task in Random Battles with U.S. Tier %(level)s battleships and cruisers.
+IDS_TASKRESTRICTION_USCA_PVP,Complete the task in Random Battles with U.S. Tier %(level)s cruisers.
+IDS_TASKRESTRICTION_US_PVP,Complete the task in Random Battles with U.S. Tier %(level)s ships.
 IDS_TASKS,Combat Missions
 IDS_TASKS_DONE_COLON,Completed:
 IDS_TASKS_UPDATED_COLON,In progress:
@@ -56312,14 +56320,14 @@ IDS_TASK_CANCEL_EXECUTION_QUESTION,Your current progress will be reset. Cancel t
 IDS_TASK_CANCEL_WITH_PROGRESS,Cancel the task. All progress in the task will be lost.
 IDS_TASK_COMPLETED,Completed
 IDS_TASK_EXPLAIN_TOOLTIP,Select a task. You can select tasks from different missions and campaigns. Selected tasks will be carried out in parallel.
-IDS_TASK_EXPLAIN_TOOLTIP_PREM,
+IDS_TASK_EXPLAIN_TOOLTIP_PREM,Premium Account allows you to carry out %(count)s task concurrently
 IDS_TASK_IN_PROGRESS,In progress
 IDS_TASK_IN_PROGRESS_REPEAT,In progress again
 IDS_TASK_IS_USELESS,"This task is optional, the final task has been unlocked."
 IDS_TASK_LOCKED,Unavailable for completion
 IDS_TASK_NOT_DONE,Not completed
 IDS_TASK_PLATFORM_GFN,"To complete the combat mission, please log in to the game via GeForce NOW."
-IDS_TASK_RECEIVE_BATTLE_POINTS,
+IDS_TASK_RECEIVE_BATTLE_POINTS,Earn %s Battle Point
 IDS_TASK_REPLAYABLE,Can be completed again
 IDS_TASK_RESTRICTIONS,Restrictions:
 IDS_TASK_REWARD_INSTRUCTION,Collect reward
@@ -56990,7 +56998,7 @@ If dive capacity is depleted, the submarine starts emergency surfacing"
 IDS_TOOLTIP_BATTERY_REGEN_RATE,Dive capacity recharge rate when on the surface
 IDS_TOOLTIP_BATTLETYPE_INTERFACE,Display the selected battle type in the interface
 IDS_TOOLTIP_BATTLE_BONUS_DAILY_DESCRIPTION,Reward for a victory in any battle type. Can be obtained once per day.
-IDS_TOOLTIP_BATTLE_BONUS_MULTIPLE_DESCRIPTION,
+IDS_TOOLTIP_BATTLE_BONUS_MULTIPLE_DESCRIPTION,Reward for the next %(_battleAmount)s victory.
 IDS_TOOLTIP_BATTLE_BONUS_ONCE_DESCRIPTION,The reward can be obtained only once.
 IDS_TOOLTIP_BATTLE_GROUP_OPERATIONS,Operations
 IDS_TOOLTIP_BATTLE_GROUP_REGULAR,"Random Battle, Co-op Battle, Ranked Battle, Brawl"
@@ -57238,10 +57246,10 @@ IDS_TORPEDO_RELOAD_PREF_TOOLTIP_DESCRIPTION,Reload a torpedo launcher on ships w
 IDS_TORPEDO_SPEED_MULTIPLIER_CHANGED,Torpedo speed increased
 IDS_TOTAL,Total
 IDS_TOTAL_DAMAGE,Damage
-IDS_TOTAL_MISSIONS_IN_CAMPAIGN,
+IDS_TOTAL_MISSIONS_IN_CAMPAIGN,%(count)s MISSION
 IDS_TOTAL_PLAYERS_HINT,Total players in queue
 IDS_TOTAL_PLAYERS_IN_CLAN,Total players in Clan
-IDS_TOTAL_TASKS_IN_CAMPAIGN,
+IDS_TOTAL_TASKS_IN_CAMPAIGN,%(count)s TASK
 IDS_TOTAL_TASK_FOR_BATTLE_ACHIEVEMENT,Earn a heroic achievement
 IDS_TOTAL_TASK_FOR_BATTLE_ACHIEVEMENT_DESCRIPTION,Points are awarded for earning heroic achievements in this battle
 IDS_TOTAL_TASK_FOR_BATTLE_ACHIEVEMENT_PER_ONE,Earn an achievement
@@ -57940,8 +57948,8 @@ IDS_WELTHUND,Welthund
 IDS_WEST,Dusty Rodes
 IDS_WE_ADVANCED_CREW,Seasoned Commander
 IDS_WE_ADVANCED_CREW_WITH_NAME,Seasoned Commander %(name)s
-IDS_WE_ADVANCED_CREW_WITH_NAME_AND_POINTS,
-IDS_WE_ADVANCED_CREW_WITH_POINTS,
+IDS_WE_ADVANCED_CREW_WITH_NAME_AND_POINTS,Seasoned Commander %(name)s with %(points)s skill point
+IDS_WE_ADVANCED_CREW_WITH_POINTS,Seasoned Commander with %(points)s skill point
 IDS_WE_ARE_WORKING_ON_THIS,We are troubleshooting the issue
 IDS_WE_AWARDED_FLAG,%(name)s awarded flag
 IDS_WE_BACKGROUND_INLINE,'%(name)s' background
@@ -57955,8 +57963,8 @@ IDS_WE_CREW_WITHOUT_NAME_AND_POINTS,Commander with no skill points
 IDS_WE_CREW_WITH_NAME_AND_WITHOUT_POINTS,Commander %(name)s with no skill points
 IDS_WE_DEFAULT_CREW,Commander
 IDS_WE_DEFAULT_CREW_WITH_NAME,Commander %(name)s
-IDS_WE_DEFAULT_CREW_WITH_NAME_AND_POINTS,
-IDS_WE_DEFAULT_CREW_WITH_POINTS,
+IDS_WE_DEFAULT_CREW_WITH_NAME_AND_POINTS,Commander %(name)s with %(points)s skill point
+IDS_WE_DEFAULT_CREW_WITH_POINTS,Commander with %(points)s skill point
 IDS_WE_DEFAULT_FLAG,%(name)s flag
 IDS_WE_EMBLEM_INLINE,%(name)s emblem
 IDS_WE_EXPENDABLE_BOOST,%(name)s expendable bonus
@@ -57986,15 +57994,15 @@ IDS_WE_SIGNAL_WITHOUT_AMOUNT,%(name)s signal
 IDS_WE_SIGNAL_WITH_AMOUNT,%(name)s signal x%(amount)s
 IDS_WE_SPECIAL_CREW,Special Commander
 IDS_WE_SPECIAL_CREW_WITH_NAME,Special Commander %(name)s
-IDS_WE_SPECIAL_CREW_WITH_NAME_AND_POINTS,
-IDS_WE_SPECIAL_CREW_WITH_POINTS,
+IDS_WE_SPECIAL_CREW_WITH_NAME_AND_POINTS,Special Commander %(name)s with %(points)s skill point
+IDS_WE_SPECIAL_CREW_WITH_POINTS,Special Commander with %(points)s skill point
 IDS_WE_SPECIAL_FLAG,%(name)s special flag
 IDS_WE_STOCK_IN_THE_INVENTORY,Stock in the Inventory: %(count)s
 IDS_WE_SYMBOL_INLINE,%(name)s symbol
 IDS_WE_UNIQUE_CREW,Unique Commander
 IDS_WE_UNIQUE_CREW_WITH_NAME,Unique Commander %(name)s
-IDS_WE_UNIQUE_CREW_WITH_NAME_AND_POINTS,
-IDS_WE_UNIQUE_CREW_WITH_POINTS,
+IDS_WE_UNIQUE_CREW_WITH_NAME_AND_POINTS,Unique Commander %(name)s with %(points)s skill point
+IDS_WE_UNIQUE_CREW_WITH_POINTS,Unique Commander with %(points)s skill point
 IDS_WG_PREMIUM_ACCOUNT_CR_VALUE,+%(value)s %
 IDS_WG_PREMIUM_ACCOUNT_ENDS_TIME,Wargaming Premium Account expires in: %(timeLeft)s
 IDS_WG_PREMIUM_ACCOUNT_XP_VALUE,+%(value)s %

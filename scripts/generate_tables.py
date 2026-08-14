@@ -134,25 +134,42 @@ def style_header(ws, ncols: int):
         cell.fill = PatternFill("solid", fgColor=HEADER_FILL)
 
 
-def make_global_xlsx(version_dir: Path, data: dict):
+def write_xlsx(path: Path, title: str, headers: list, rows: list,
+               col_widths: list, desc: str = "") -> int:
+    """通用 xlsx 写入: 表头样式 + 数据 + 列宽 + 冻结 + 筛选 + 等宽字体
+    + 幽灵行清理 + XML 远端验证, 返回数据行数。
+
+    三个表格(对照/差异/舰船差异)共用此函数, 避免重复代码。
+    desc: 打印描述, 如 "差异" / "舰船差异", 空则省略。
+    """
     wb = Workbook()
     ws = wb.active
-    ws.title = "翻译对照"
-    ws.append(HEADERS)
-    style_header(ws, 5)
-    for k in sorted(data):
-        d = data[k]
-        ws.append([k, d.get("zh", ""), d.get("zh_sg", ""), d.get("en", ""), ""])
-    for col, w in zip("ABCDE", [26, 50, 50, 50, 50]):
+    ws.title = title
+    ws.append(headers)
+    style_header(ws, len(headers))
+    for r in rows:
+        ws.append(r)
+    # 列宽: col_widths 按 A/B/C... 顺序对应
+    for col, w in zip("ABCDEFGHIJKLMN", col_widths):
         ws.column_dimensions[col].width = w
-    ws.freeze_panes = "A2"
-    ws.auto_filter.ref = f"A1:E{ws.max_row}"
-    apply_data_font(ws, 5)
-    ghost = purge_ghost_rows(ws, len(data) + 1)
-    out = version_dir / "global.xlsx"
-    wb.save(out)
-    verify_xml_clean(out, len(data) + 1)
-    print(f"  [生成] {out} ({ws.max_row - 1} 行, 幽灵行清理 {ghost})")
+    ws.freeze_panes = "A2"  # 冻结表头行
+    last_col = chr(ord("A") + len(headers) - 1)
+    ws.auto_filter.ref = f"A1:{last_col}{ws.max_row}"  # 表头筛选
+    apply_data_font(ws, len(headers))
+    ghost = purge_ghost_rows(ws, len(rows) + 1)
+    wb.save(path)
+    verify_xml_clean(path, len(rows) + 1)
+    suffix = f" {desc}" if desc else ""
+    print(f"  [生成] {path} ({len(rows)} 行{suffix}, 幽灵行清理 {ghost})")
+    return len(rows)
+
+
+def make_global_xlsx(version_dir: Path, data: dict):
+    """三语言对照表: 键值 + zh + zh_sg + en + 最终翻译(留空)"""
+    rows = [[k, d.get("zh", ""), d.get("zh_sg", ""), d.get("en", ""), ""]
+            for k, d in sorted(data.items())]
+    write_xlsx(version_dir / "global.xlsx", "翻译对照", HEADERS, rows,
+               [26, 50, 50, 50, 50])
 
 
 def read_translations(ship_path: Path) -> dict:
@@ -228,48 +245,21 @@ def diff_data(old: dict, new: dict) -> list:
     return rows
 
 
+DIFF_COL_WIDTHS = [26, 10, 45, 45, 45, 45, 45, 45, 20]  # 差异表列宽: 键/类型/旧新翻译.../最终翻译
+
+
 def make_diff_xlsx(new_dir: Path, old: dict, new: dict):
-    """全部词条差异 -> global_diff.xlsx"""
+    """全部词条差异 -> global_diff.xlsx (新增/删除/修改三类型)"""
     rows = diff_data(old, new)
-    wb = Workbook()
-    ws = wb.active
-    ws.title = "翻译差异"
-    ws.append(DIFF_HEADERS)
-    style_header(ws, len(DIFF_HEADERS))
-    for r in rows:
-        ws.append(r)
-    for col, w in zip("ABCDEFGHI", [26, 10, 45, 45, 45, 45, 45, 45, 20]):
-        ws.column_dimensions[col].width = w
-    ws.freeze_panes = "A2"
-    ws.auto_filter.ref = f"A1:I{ws.max_row}"
-    apply_data_font(ws, 9)
-    ghost = purge_ghost_rows(ws, len(rows) + 1)
-    out = new_dir / "global_diff.xlsx"
-    wb.save(out)
-    verify_xml_clean(out, len(rows) + 1)
-    print(f"  [生成] {out} ({len(rows)} 行差异, 幽灵行清理 {ghost})")
+    write_xlsx(new_dir / "global_diff.xlsx", "翻译差异", DIFF_HEADERS, rows,
+               DIFF_COL_WIDTHS, "差异")
 
 
 def make_ship_diff_xlsx(new_dir: Path, old: dict, new: dict):
     """舰船词条差异 -> ship_diff.xlsx (无宏, 不对比最终翻译列)"""
     rows = [r for r in diff_data(old, new) if SHIP_KEY_RE.match(r[0])]
-    wb = Workbook()
-    ws = wb.active
-    ws.title = "舰船差异"
-    ws.append(DIFF_HEADERS)
-    style_header(ws, len(DIFF_HEADERS))
-    for r in rows:
-        ws.append(r)
-    for col, w in zip("ABCDEFGHI", [26, 10, 45, 45, 45, 45, 45, 45, 20]):
-        ws.column_dimensions[col].width = w
-    ws.freeze_panes = "A2"
-    ws.auto_filter.ref = f"A1:I{ws.max_row}"
-    apply_data_font(ws, 9)
-    ghost = purge_ghost_rows(ws, len(rows) + 1)
-    out = new_dir / "ship_diff.xlsx"
-    wb.save(out)
-    verify_xml_clean(out, len(rows) + 1)
-    print(f"  [生成] {out} ({len(rows)} 行舰船差异, 幽灵行清理 {ghost})")
+    write_xlsx(new_dir / "ship_diff.xlsx", "舰船差异", DIFF_HEADERS, rows,
+               DIFF_COL_WIDTHS, "舰船差异")
 
 
 def find_latest_versions(repo: Path) -> tuple:
