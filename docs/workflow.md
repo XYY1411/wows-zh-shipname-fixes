@@ -19,7 +19,8 @@
    - 生成版本 `README.md`
 3. **生成表格**（`scripts/generate_tables.py`）：
    - 自动检测最新两个版本，生成 `global.xlsx` / `ship.xlsm` / 差异表
-   - **翻译迁移**：从旧版本 ship.xlsm 按键值迁移最终翻译（详见 [表格与差异生成](tables.md)）
+   - **增量生成**：已存在的文件跳过（保护人工翻译），详见 [表格与差异生成](tables.md)
+   - **翻译迁移**：从旧版本 ship.xlsm 按键值迁移最终翻译
 4. **提交推送**：全部变更自动 commit 并 push，推送显式携带 token 认证，5 分钟超时防挂起
 
 ## 注意事项

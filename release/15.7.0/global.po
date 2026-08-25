@@ -63005,14 +63005,14 @@ msgid "IDS_PASB506_YEAR"
 msgstr "1916"
 
 msgid "IDS_PASB507"
-msgstr "西弗吉尼亚 41"
+msgstr "西弗吉尼亚 1941"
 
 msgid "IDS_PASB507_DESCR"
 msgstr ""
 "科罗拉多级第三艘，也是最后一艘战列舰。USS西弗吉尼亚号在战间期进行航行训练和演习。在二战之前，这艘战列舰本该有鼓包、加固的甲板装甲和防空系统，以及新的锅炉和火控系统，但现代化改造被推迟到1942年后却不了了之。在珍珠港事件中，西弗吉尼亚号遭到多次鱼雷和炸弹击中后缓缓沉没。1942年5月，该战列舰被捞起并进行了修理，它那时才终于进行了彻底的现代化改造。"
 
 msgid "IDS_PASB507_FULL"
-msgstr "西弗吉尼亚 41"
+msgstr "西弗吉尼亚 1941"
 
 msgid "IDS_PASB507_NUMBER"
 msgstr "4"
@@ -63117,14 +63117,14 @@ msgid "IDS_PASB519_YEAR"
 msgstr "1938"
 
 msgid "IDS_PASB527"
-msgstr "西弗吉尼亚 44"
+msgstr "西弗吉尼亚 1944"
 
 msgid "IDS_PASB527_DESCR"
 msgstr ""
 "USS西弗吉尼亚号在珍珠港事件中沉没。1942年，该战舰被打捞起来，并进行了大规模重建。它安装了防雷鼓包、加固的甲板、新的上层建筑、雷达和新型两用副炮。它在莱特岛战役开始前及时重返太平洋。在此战役中，它多次成功击中战列舰山城号和巡洋舰最上号。1945年，该战舰参加了硫磺岛战役和冲绳岛战役。在战争期间，西弗吉尼亚号荣获5枚战斗之星。"
 
 msgid "IDS_PASB527_FULL"
-msgstr "西弗吉尼亚 44"
+msgstr "西弗吉尼亚 1944"
 
 msgid "IDS_PASB527_NUMBER"
 msgstr "4"
@@ -71711,14 +71711,14 @@ msgid "IDS_PBSB537_YEAR"
 msgstr "1942"
 
 msgid "IDS_PBSB547"
-msgstr "声望 44"
+msgstr "声望 1944"
 
 msgid "IDS_PBSB547_DESCR"
 msgstr ""
 "HMS声望号于1915年铺设龙骨，1916年9月开始服役。该战舰未能参加一战。它在两次世界大战之间经历了升级。在二战期间，声望号参加了对德国破袭舰海军上将施佩伯爵号和俾斯麦号的追击，以及挪威战役。它作为H舰队的一员护送马耳他船团并承担外交事务。1944年，它被移交给东方舰队，并参加了二战的最后阶段。"
 
 msgid "IDS_PBSB547_FULL"
-msgstr "声望 44"
+msgstr "声望 1944"
 
 msgid "IDS_PBSB547_NUMBER"
 msgstr "2"
@@ -72284,14 +72284,14 @@ msgid "IDS_PBSC516_YEAR"
 msgstr "1929"
 
 msgid "IDS_PBSC518"
-msgstr "虎 59"
+msgstr "虎 1959"
 
 msgid "IDS_PBSC518_DESCR"
 msgstr ""
 "1941年，当局订购了两艘“改进型斐济”级巡洋舰。1948年，当局决定根据修改后的项目，安装2座152毫米两用炮座来完成这些战舰的建造。HMS虎号于1941年10月铺设龙骨，但直到1945年才下水，而在隔年，它的所有工程停止。1959年3月，被改造成防空巡洋舰的虎号以新身份服役。1968年至1972年间，它被改造成直升机航空母舰。"
 
 msgid "IDS_PBSC518_FULL"
-msgstr "虎 59"
+msgstr "虎 1959"
 
 msgid "IDS_PBSC518_NUMBER"
 msgstr "3"
@@ -72425,14 +72425,14 @@ msgid "IDS_PBSC708_YEAR"
 msgstr "1939"
 
 msgid "IDS_PBSC716"
-msgstr "俄里翁 44"
+msgstr "俄里翁 1944"
 
 msgid "IDS_PBSC716_DESCR"
 msgstr ""
 "利安得级轻型巡洋舰，适合在中队里执行侦察任务，但同样擅长独立作战。俄里翁44号作战生涯的大部分时间都是在地中海度过的。到二战结束时，它作为英国皇家海军中最卓越的战舰之一，赢得很高的荣誉。该巡洋舰参加了卡拉布里亚和马塔潘角海战、克里特岛海战和马耳他岛保卫战。1943年和1944年，它掩护盟军在西西里岛、意大利、法国南部和希腊登陆。在1944年6月的诺曼底登陆日，该巡洋舰是第一艘向敌方在诺曼底的阵地开火的战舰。"
 
 msgid "IDS_PBSC716_FULL"
-msgstr "俄里翁 44"
+msgstr "俄里翁 1944"
 
 msgid "IDS_PBSC716_NUMBER"
 msgstr "5"
@@ -72805,14 +72805,14 @@ msgid "IDS_PBSD605_YEAR"
 msgstr "1930"
 
 msgid "IDS_PBSD717"
-msgstr "朱庇特 42"
+msgstr "朱庇特 1942"
 
 msgid "IDS_PBSD717_DESCR"
 msgstr ""
 "J级战舰，与前代“标准”驱逐舰不同，特点是布局独特、尺寸更大、武器更强。HMS朱庇特号最初在本土舰队服役，之后被调往地中海。从1941年12月开始，该战舰参与了盟军在东南亚的行动，并在该地区击沉了一艘日本潜艇。1942年2月27日，朱庇特号在爪哇海海战中因撞上水雷而沉没。"
 
 msgid "IDS_PBSD717_FULL"
-msgstr "朱庇特 42"
+msgstr "朱庇特 1942"
 
 msgid "IDS_PBSD717_NUMBER"
 msgstr "8"
@@ -97044,14 +97044,14 @@ msgid "IDS_PFSC105_YEAR"
 msgstr "1935"
 
 msgid "IDS_PFSC106"
-msgstr "拉·加利索尼埃"
+msgstr "拉加利索尼埃"
 
 msgid "IDS_PFSC106_DESCR"
 msgstr ""
 "伦敦海军条约签署后，法国着手开发新型巡洋舰。技术规格包括抵御从9,000米外打来的138.6毫米炮弹和14,000米外打来的152毫米炮弹。武器包括9门152毫米火炮。二战期间，加利索尼埃号在突尼斯海岸巡逻，并在弩炮行动期间为战列舰普罗旺斯号提供掩护。"
 
 msgid "IDS_PFSC106_FULL"
-msgstr "拉·加利索尼埃"
+msgstr "拉加利索尼埃"
 
 msgid "IDS_PFSC106_NUMBER"
 msgstr "6"
@@ -97188,14 +97188,14 @@ msgid "IDS_PFSC210_YEAR"
 msgstr "1944"
 
 msgid "IDS_PFSC506"
-msgstr "德·格拉斯"
+msgstr "德格拉斯"
 
 msgid "IDS_PFSC506_DESCR"
 msgstr ""
 "基于加利索尼埃级改进设计的巡洋舰。该战舰具有不同的推进装置和更先进的上层建筑。防空炮的位置也得以改进。巡洋舰格拉斯号在二战爆发前几天铺设龙骨。"
 
 msgid "IDS_PFSC506_FULL"
-msgstr "德·格拉斯"
+msgstr "德格拉斯"
 
 msgid "IDS_PFSC506_NUMBER"
 msgstr "1"
@@ -102167,14 +102167,14 @@ msgid "IDS_PGSB610_YEAR"
 msgstr "1945"
 
 msgid "IDS_PGSB708"
-msgstr "俾斯麦 41"
+msgstr "俾斯麦 1941"
 
 msgid "IDS_PGSB708_DESCR"
 msgstr ""
 "著名的德国战列舰俾斯麦号只执行过一次作战任务：1941年5月19日自哥腾哈芬港出航，并于5月27日在法国近海的战斗中被击沉而告终。在短短数日间，俾斯麦号击沉了英国皇家海军的骄傲——战列巡洋舰HMS胡德号、威胁盟军在北大西洋的交通线，并引来英国海军部在该区调度几乎所有可用的主力战舰。"
 
 msgid "IDS_PGSB708_FULL"
-msgstr "俾斯麦 41"
+msgstr "俾斯麦 1941"
 
 msgid "IDS_PGSB708_NUMBER"
 msgstr "2"
@@ -102183,14 +102183,14 @@ msgid "IDS_PGSB708_YEAR"
 msgstr "1940"
 
 msgid "IDS_PGSB717"
-msgstr "沙恩霍斯特 43"
+msgstr "沙恩霍斯特 1943"
 
 msgid "IDS_PGSB717_DESCR"
 msgstr ""
 "两艘用于破袭行动的战列舰系列中的首舰，在二战爆发的几个月前开始服役。沙恩霍斯特号在1939年11月进行了它的首次破袭作战。随后它支援了登陆挪威的行动，破袭大西洋，以及突破英吉利海峡。1943年，该战列舰被调往挪威以对抗北极船团。1943年12月26日，由海军少将埃里希·贝指挥的沙恩霍斯特号在北角附近被盟军中队击沉。"
 
 msgid "IDS_PGSB717_FULL"
-msgstr "沙恩霍斯特 43"
+msgstr "沙恩霍斯特 1943"
 
 msgid "IDS_PGSB717_NUMBER"
 msgstr "2"
@@ -102868,14 +102868,14 @@ msgid "IDS_PGSC710_YEAR"
 msgstr "1945"
 
 msgid "IDS_PGSC717"
-msgstr "纽伦堡 44"
+msgstr "纽伦堡 1944"
 
 msgid "IDS_PGSC717_DESCR"
 msgstr ""
 "轻型巡洋舰，为其前身巡洋舰莱比锡号的略微修改版本。二战初期数月，纽伦堡号参与了北海的布雷行动。其后的大部分战时服役则在波罗的海担任训练舰。经过多次现代化改装，此战舰的防空武器显著强化，同时移除了弹射器与一对鱼雷发射管。1945年，纽伦堡号作为赔偿移交苏联。"
 
 msgid "IDS_PGSC717_FULL"
-msgstr "纽伦堡 44"
+msgstr "纽伦堡 1944"
 
 msgid "IDS_PGSC717_NUMBER"
 msgstr "1"
@@ -103276,7 +103276,7 @@ msgstr ""
 "1937型驱逐舰设计初衷为行动范围较大的战舰。这些战舰的用途是在大西洋防御或攻击船团，以及在热带气候下行动。1937J型是该项目的基础。但在1938年4月，设计工作停止了，因为在单一舰体上实现要求的作战能力、作战范围、航速和可靠性无功而返。"
 
 msgid "IDS_PGSD208_FULL"
-msgstr "古斯塔夫·尤利乌斯·梅尔克"
+msgstr "古斯塔夫·尤里乌斯·梅尔克"
 
 msgid "IDS_PGSD208_NUMBER"
 msgstr "1"
@@ -106983,14 +106983,14 @@ msgid "IDS_PHSC508_YEAR"
 msgstr "1953"
 
 msgid "IDS_PHSC509"
-msgstr "范·斯佩克"
+msgstr "范斯佩克"
 
 msgid "IDS_PHSC509_DESCR"
 msgstr ""
 "1938年，在国际紧张局势的背景下，荷兰国防部决定加强海军。1939年出炉的项目在大多数方面与德国战舰沙恩霍斯特号相似。出于经济原因，当局决定缩小新战舰的尺寸。政府倾向于建造一艘16,000吨的巡洋舰，具有33节的航速，并搭载240或280毫米主炮。但最终为了确保足够的装甲防护，他们不得不使用较小的203毫米口径。如果该项目得到进一步推进，这艘战舰很可能在二战结束时会加强对空防御。"
 
 msgid "IDS_PHSC509_FULL"
-msgstr "范·斯佩克"
+msgstr "范斯佩克"
 
 msgid "IDS_PHSC509_NUMBER"
 msgstr "1"
@@ -107047,14 +107047,14 @@ msgid "IDS_PHSC720_YEAR"
 msgstr "1947"
 
 msgid "IDS_PHSC730"
-msgstr "联合"
+msgstr "同盟"
 
 msgid "IDS_PHSC730_DESCR"
 msgstr ""
 "一艘假想的战后荷兰巡洋舰设计，自七省级发展而来，着重强化战舰的防空能力。此巡洋舰的主炮为120毫米Bofors两用炮，于20世纪50年代初期由荷兰皇家海军采用服役。"
 
 msgid "IDS_PHSC730_FULL"
-msgstr "联合"
+msgstr "同盟"
 
 msgid "IDS_PHSC730_NUMBER"
 msgstr "1"
@@ -116092,14 +116092,14 @@ msgid "IDS_PJSS528_YEAR"
 msgstr "1944"
 
 msgid "IDS_PJSS720"
-msgstr "伊-56 44"
+msgstr "伊-56 1944"
 
 msgid "IDS_PJSS720_DESCR"
 msgstr ""
 "三艘B3级巡洋潜艇之一，根据二战爆发前的海军造船计划而建造。I-56号于1944年6月开始服役。最初装备140毫米火炮，但该潜艇只短暂保留了这种配置。到了1944年10月，它已经开始改装为载人鱼雷的母艇。"
 
 msgid "IDS_PJSS720_FULL"
-msgstr "伊-56 44"
+msgstr "伊-56 1944"
 
 msgid "IDS_PJSS720_NUMBER"
 msgstr "3"
@@ -124937,14 +124937,14 @@ msgid "IDS_PRSD507_YEAR"
 msgstr "1936"
 
 msgid "IDS_PRSD517"
-msgstr "塔什干 39"
+msgstr "塔什干 1939"
 
 msgid "IDS_PRSD517_DESCR"
 msgstr ""
 "驱逐领舰塔什干号是在意大利奥德罗·特尔尼·奥兰多造船厂设计和建造的。3座苏联制造的130毫米B-2L（1936式）双联装炮塔本应装在该舰上；然而，在设计阶段，B-2L和B-2M项目被合并为B-2LM，导致测试延迟。当它于1939年10月开始服役时，3座130毫米B-13单装炮座被作为临时武器安装在该舰上。这火炮陪伴该战舰迎来了伟大的卫国战争的开始。到1941年7月，塔什干号收到了其标准武器——3座B-2LM炮座。"
 
 msgid "IDS_PRSD517_FULL"
-msgstr "塔什干 39"
+msgstr "塔什干 1939"
 
 msgid "IDS_PRSD517_NUMBER"
 msgstr "1"
@@ -132989,14 +132989,14 @@ msgid "IDS_PWSD705_YEAR"
 msgstr "1944"
 
 msgid "IDS_PWSD708"
-msgstr "闪电 44"
+msgstr "闪电 1944"
 
 msgid "IDS_PWSD708_DESCR"
 msgstr ""
 "出自英国考斯造船厂的大型驱逐舰ORP闪电号拥有强大的武器，它在二战时的欧洲战区军事行动中发挥了积极作用。它曾在1940年春的挪威战役和敦刻尔克大撤退期间支援盟军行动。1942年5月，ORP闪电号保护了怀特岛上的家乡造船厂免受德国空军的袭击。1944年夏，它在支援诺曼底登陆时与德国战舰交战。如今，ORP闪电号是波兰格丁尼亚海军博物馆的一艘博物舰。"
 
 msgid "IDS_PWSD708_FULL"
-msgstr "闪电 44"
+msgstr "闪电 1944"
 
 msgid "IDS_PWSD708_NUMBER"
 msgstr "2"
@@ -133021,14 +133021,14 @@ msgid "IDS_PWSD710_YEAR"
 msgstr "1954"
 
 msgid "IDS_PWSD717"
-msgstr "斯图尔 43"
+msgstr "斯图尔 1943"
 
 msgid "IDS_PWSD717_DESCR"
 msgstr ""
 "由英国海军部根据战时应急计划订购的八艘S级驱逐舰于1943年和1944年进入服役。该系列中的两艘战舰被转交给挪威皇家海军，并命名为斯托德号和斯文纳号。在北角海战中，驱逐舰斯托德号名垂青史。挪威鱼雷在击沉德国战列舰沙恩霍斯特号的过程中发挥了重要作用。1944年6月，斯托德号支援诺曼底登陆，此后它又继续服役15年。"
 
 msgid "IDS_PWSD717_FULL"
-msgstr "斯图尔 43"
+msgstr "斯图尔 1943"
 
 msgid "IDS_PWSD717_NUMBER"
 msgstr "8"
@@ -133037,14 +133037,14 @@ msgid "IDS_PWSD717_YEAR"
 msgstr "1943"
 
 msgid "IDS_PWSD719"
-msgstr "闪电 52"
+msgstr "闪电 1952"
 
 msgid "IDS_PWSD719_DESCR"
 msgstr ""
 "波兰驱逐舰闪电号自二战伊始便投入战斗。战争期间，它多次在英国造船厂进行重新武装。战后数年后的1951年，此战舰再次进行现代化改装：原有的英制102毫米主炮更换为苏联100毫米火炮，所有防空与反潜系统也全部替换为苏联制系统。经过这次改装后，闪电号在波兰海军中服役了近四分之一世纪，最终退役并在格丁尼亚作为博物馆舰。"
 
 msgid "IDS_PWSD719_FULL"
-msgstr "闪电 52"
+msgstr "闪电 1952"
 
 msgid "IDS_PWSD719_NUMBER"
 msgstr "2"

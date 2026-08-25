@@ -28,16 +28,20 @@ SHIP_KEY_RE = re.compile(r"^IDS_P[A-Z]S[A-Z]\d{3}(?:_FULL)?$")
 META_KEYS = {"#PluralForms", ""}
 DIFF_TYPES = {"added": "新增", "removed": "删除", "modified": "修改"}
 HEADER_FILL = "FF4472C4"  # 模板表头同款蓝色
-DATA_FONT = Font(name="Consolas", size=11)  # 数据区等宽字体, 系统自带无需安装
+ZH_DATA_FONT = Font(name="微软雅黑", size=11)  # 数据区中文字体
+EN_DATA_FONT = Font(name="Arial", size=11)     # 数据区英文字体(拉丁/数字)
+# 各表的中文列(1-based): 这些列用微软雅黑, 其余英文/拉丁列用 Arial
+CROSS_ZH_COLS = {2, 3, 5}          # 五列对照表(ship/global): zh, zh_sg, 最终翻译
+DIFF_ZH_COLS = {2, 3, 4, 5, 6, 9}  # 差异表: 差异类型, zh旧/新, zh_sg旧/新, 最终翻译
 
 
-def apply_data_font(ws, ncols: int):
-    """数据区统一使用 Consolas 等宽字体"""
+def apply_data_font(ws, ncols: int, zh_cols: set):
+    """数据区按列设字体: 中文列用微软雅黑, 英文/拉丁列用 Arial"""
     if ws.max_row < 2:
         return
     for row in ws.iter_rows(min_row=2, max_row=ws.max_row, max_col=ncols):
         for cell in row:
-            cell.font = DATA_FONT
+            cell.font = ZH_DATA_FONT if cell.column in zh_cols else EN_DATA_FONT
 
 
 def purge_ghost_rows(ws, expected: int) -> int:
@@ -135,11 +139,12 @@ def style_header(ws, ncols: int):
 
 
 def write_xlsx(path: Path, title: str, headers: list, rows: list,
-               col_widths: list, desc: str = "") -> int:
-    """通用 xlsx 写入: 表头样式 + 数据 + 列宽 + 冻结 + 筛选 + 等宽字体
+               col_widths: list, zh_cols: set, desc: str = "") -> int:
+    """通用 xlsx 写入: 表头样式 + 数据 + 列宽 + 冻结 + 筛选 + 按列字体
     + 幽灵行清理 + XML 远端验证, 返回数据行数。
 
     三个表格(对照/差异/舰船差异)共用此函数, 避免重复代码。
+    zh_cols: 中文列(1-based), 这些列用微软雅黑; 其余列用 Arial。
     desc: 打印描述, 如 "差异" / "舰船差异", 空则省略。
     """
     wb = Workbook()
@@ -155,7 +160,7 @@ def write_xlsx(path: Path, title: str, headers: list, rows: list,
     ws.freeze_panes = "A2"  # 冻结表头行
     last_col = chr(ord("A") + len(headers) - 1)
     ws.auto_filter.ref = f"A1:{last_col}{ws.max_row}"  # 表头筛选
-    apply_data_font(ws, len(headers))
+    apply_data_font(ws, len(headers), zh_cols)
     ghost = purge_ghost_rows(ws, len(rows) + 1)
     wb.save(path)
     verify_xml_clean(path, len(rows) + 1)
@@ -169,7 +174,7 @@ def make_global_xlsx(version_dir: Path, data: dict):
     rows = [[k, d.get("zh", ""), d.get("zh_sg", ""), d.get("en", ""), ""]
             for k, d in sorted(data.items())]
     write_xlsx(version_dir / "global.xlsx", "翻译对照", HEADERS, rows,
-               [26, 50, 50, 50, 50])
+               [26, 50, 50, 50, 50], CROSS_ZH_COLS)
 
 
 def read_translations(ship_path: Path) -> dict:
@@ -217,11 +222,14 @@ def make_ship_xlsm(version_dir: Path, data: dict, template: Path, carry_from: Pa
         ws.append([k, d.get("zh", ""), d.get("zh_sg", ""), d.get("en", ""), old_tr])
     ws.freeze_panes = "A2"
     ws.auto_filter.ref = f"A1:E{ws.max_row}"
-    apply_data_font(ws, 5)
+    apply_data_font(ws, 5, CROSS_ZH_COLS)
     ghost = purge_ghost_rows(ws, len(ship_data) + 1)
+    # xlsm 行高固定 16.3 (含表头), 数据行统一对齐
+    for r in range(1, ws.max_row + 1):
+        ws.row_dimensions[r].height = 16.3
     wb.save(dst)
     verify_xml_clean(dst, len(ship_data) + 1)
-    print(f"  [生成] {dst} ({ws.max_row - 1} 行舰船词条, 迁移翻译 {carried} 条, 幽灵行清理 {ghost})")
+    print(f"  [生成] {dst} ({ws.max_row - 1} 行舰船词条, 迁移翻译 {carried} 条, 幽灵行清理 {ghost}, 行高 16.3)")
 
 
 def diff_data(old: dict, new: dict) -> list:
@@ -252,14 +260,14 @@ def make_diff_xlsx(new_dir: Path, old: dict, new: dict):
     """全部词条差异 -> global_diff.xlsx (新增/删除/修改三类型)"""
     rows = diff_data(old, new)
     write_xlsx(new_dir / "global_diff.xlsx", "翻译差异", DIFF_HEADERS, rows,
-               DIFF_COL_WIDTHS, "差异")
+               DIFF_COL_WIDTHS, DIFF_ZH_COLS, "差异")
 
 
 def make_ship_diff_xlsx(new_dir: Path, old: dict, new: dict):
     """舰船词条差异 -> ship_diff.xlsx (无宏, 不对比最终翻译列)"""
     rows = [r for r in diff_data(old, new) if SHIP_KEY_RE.match(r[0])]
     write_xlsx(new_dir / "ship_diff.xlsx", "舰船差异", DIFF_HEADERS, rows,
-               DIFF_COL_WIDTHS, "舰船差异")
+               DIFF_COL_WIDTHS, DIFF_ZH_COLS, "舰船差异")
 
 
 def find_latest_versions(repo: Path) -> tuple:

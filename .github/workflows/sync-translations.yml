@@ -35,13 +35,18 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add translations/ templates/ scripts/ .github/
-          if git diff --cached --quiet; then
-            echo "没有新内容，无需提交"
-          else
+          # 只认 mo/po/csv 这些确定性数据源是否有实质变化。
+          # xlsx/xlsm 每次生成都会写入不同的 created/modified 时间戳,
+          # 即使内容没变字节也会变, 会让 git 误判为"有修改"。所以不把它们当提交依据。
+          if git diff --cached --name-only --diff-filter=ACM | grep -Ei '\.(mo|po|csv)$' | grep -q .; then
             git commit -m "同步 ModSDK 翻译并生成版本表格"
             echo "开始推送..."
             git push "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${GITHUB_REF_NAME}"
             echo "推送完成"
+          else
+            # 没有实质翻译变化: 丢弃 xlsx/xlsm 的时间戳噪声, 不提交
+            git checkout -- translations/ templates/ scripts/ .github/ 2>/dev/null || true
+            echo "没有新的翻译内容（仅有表格时间戳噪声），不提交"
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

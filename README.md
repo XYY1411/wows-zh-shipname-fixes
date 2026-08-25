@@ -12,6 +12,7 @@
 2. **生成表格** — 每个版本自动生成 CSV、三语言对照表 `global.xlsx`、舰船词条表 `ship.xlsm`（含 VB 宏自动配色）
 3. **版本差异** — 新版本自动对比上一版本，生成差异表 `global_diff.xlsx` / `ship_diff.xlsx`
 4. **翻译迁移** — 生成新版本时按键值自动迁移旧版本已填写的最终翻译，只留新增舰船待填
+5. **构建发布** — 人工执行 `build_release.py`，把已翻译的 `ship.xlsm` 合并进官方翻译，编译成 mod 用的 `global.mo` 发布文件
 
 ## 去哪找文件
 
@@ -22,14 +23,17 @@
 | 舰船词条表（翻译入口） | `translations/<版本号>/ship.xlsm`                            |
 | 版本差异表             | `translations/<版本号>/global_diff.xlsx`、`ship_diff.xlsx`   |
 | 原始键值数据           | `translations/<版本号>/<语言>/global.csv`、`ship.csv`        |
+| mod 发布文件           | `release/<版本号>/{zh,zh_sg}/LC_MESSAGES/global.mo`          |
 | 自动同步工作流         | `.github/workflows/sync-translations.yml`                    |
 | 生成脚本               | `scripts/sync_translations.py`、`scripts/generate_tables.py` |
+| 发布脚本               | `scripts/build_release.py`                                   |
 
 ## 怎么用
 
 - **看翻译**：打开 `translations/<版本号>/global.xlsx`（全部词条）或 `ship.xlsm`（舰船词条，打开后启用宏自动配色）
 - **填翻译**：在 `ship.xlsm` 的 **最终翻译** 列填写修正译名，保存提交
 - **触发同步**：到 GitHub Actions 页面手动 Run workflow，或等每天 03:00 UTC 自动执行
+- **构建发布**：翻译完成后运行 `py -3 scripts/build_release.py <版本号>`（缺省默认最新），在 `release/<版本号>/` 生成 mod 发布文件
 
 ## 详细文档
 
@@ -37,6 +41,7 @@
 - [自动同步工作流](docs/workflow.md)
 - [表格与差异生成](docs/tables.md)
 - [翻译修正流程](docs/translation.md)
+- [mod 发布构建](docs/release.md)
 
 ## 感谢
 

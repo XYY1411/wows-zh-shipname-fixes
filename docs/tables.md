@@ -3,9 +3,19 @@
 脚本：`scripts/generate_tables.py`
 
 ```
-python scripts/generate_tables.py            # 自动取最新两个版本
-python scripts/generate_tables.py <新版本> <旧版本>
+py -3 scripts/generate_tables.py            # 自动取最新两个版本
+py -3 scripts/generate_tables.py <新版本> <旧版本>
+py -3 scripts/generate_tables.py --force   # 强制重建（默认跳过已存在文件）
 ```
+
+## 增量生成（幂等保护）
+
+默认**只生成缺失的文件**：目标文件已存在则跳过（`[跳过]`），保护人工修改
+（翻译、差异表的最终翻译列等）不被重复运行覆盖。
+
+- 需要**强制重建**时加 `--force`
+- 强制重建 `ship.xlsm` 时会**先读取目标文件现有的最终翻译再写回**，
+  重建不会丢失已填翻译（自身优先，旧版本迁移仅补漏）
 
 ## 生成产物
 
@@ -18,12 +28,23 @@ python scripts/generate_tables.py <新版本> <旧版本>
 
 ## 翻译迁移
 
-生成新版本 `ship.xlsm` 时，自动读取**旧版本** `ship.xlsm` 的最终翻译列（E 列），
-按键值（A 列）迁移到新版本对应行：
+生成新版本 `ship.xlsm` 时，自动按键值（A 列）迁移最终翻译（E 列），来源优先级：
+
+1. **目标文件自身**（`--force` 重建时防止丢失人工翻译）
+2. **旧版本** `ship.xlsm`（补漏，不覆盖已有）
+
+规则：
 
 - 旧版本已有的键 → 迁移最终翻译
 - **新增键 → 最终翻译留空**，待人工填写
 - 旧版本 `ship.xlsm` 已存在则**跳过不覆盖**，保护人工翻译
+
+## 复数条目说明
+
+官方 `.mo` 中部分键是 **gettext 复数条目**（`msgid_plural`，翻译存在 `msgstr_plural`，
+多为含 `%(...)s` 占位符的动态文本，如"还有 XX 天"）。
+`sync_translations.py` 导出 CSV 时取第一个复数形式（zh/zh_sg 的 `nplurals=1`），
+确保这些键的翻译不丢失——否则游戏会因找不到键而直接显示键值（`IDS_XXX`）。
 
 ## 差异判定规则
 
