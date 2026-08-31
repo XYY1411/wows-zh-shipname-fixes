@@ -7,7 +7,7 @@
 - **自动同步**：每天检查 ModSDK 新版本，拉取 zh / zh_sg / en 翻译，按版本归档
 - **生成表格**：`global.xlsx` 对照表、`ship.xlsm` 舰船词条（含 VB 宏配色）
 - **版本差异 + 翻译迁移**：自动对比上一版本、迁移已填最终翻译
-- **构建发布**：`build_release.py` 生成 `standard` / `full` 两个子版本；`--release` 递增修订号
+- **构建发布**：`build_release.py` 生成**仅含差异**的 `standard` / `full` 增量（按 zh/zh_sg 双语言），供 Localization Loader 加载；`--release` 递增修订号
 - **打包发布**：`package_release.py` / 手动工作流打包为 `res_mods/texts` zip 并发布
 
 ## 去哪找文件
@@ -19,7 +19,7 @@
 | 舰船词条表（翻译入口） | `translations/<版本号>/ship.xlsm`                                   |
 | 版本差异表             | `translations/<版本号>/global_diff.xlsx`、`ship_diff.xlsx`          |
 | 原始键值数据           | `translations/<版本号>/<语言>/global.csv`、`ship.csv`               |
-| mod 发布文件           | `release/<版本号>/{standard,full}/{zh,zh_sg}/LC_MESSAGES/global.mo` |
+| mod 发布文件           | `release/<版本号>/{standard,full}/{zh,zh_sg}/LC_MESSAGES/wowsZhShipnameFixes.mo` |
 | 打包产物               | `dist/<版本号>-<variant>.zip`                                       |
 | 同步工作流             | `.github/workflows/sync-translations.yml`                           |
 | 打包工作流             | `.github/workflows/package-release.yml`                             |
@@ -29,7 +29,7 @@
 ## 怎么用
 
 - **看/填翻译**：打开 `translations/<版本号>/ship.xlsm`，在「最终翻译」列填写译名
-- **构建发布**：`py -3 scripts/build_release.py [版本号]`；正式发布加 `--release`
+- **构建发布**：`py -3 scripts/build_release.py [版本号]`（生成增量，需搭配 Localization Loader）；正式发布加 `--release`
 - **打包**：`py -3 scripts/package_release.py [版本号]`
 - **发布**：GitHub Actions 手动运行 _打包并发布 Mod_
 

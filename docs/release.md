@@ -1,6 +1,6 @@
 # mod 发布构建
 
-`scripts/build_release.py` 生成 **standard（缩写键）** 与 **full（全名版）** 两个子版本；`scripts/package_release.py` 打包。
+`scripts/build_release.py` 生成**增量**发布（只含修正的舰船键），供 **TTaro Localization Loader**（阿斯兰自动安装）加载；`scripts/package_release.py` 打包。
 
 ## 构建
 
@@ -13,15 +13,25 @@ py -3 scripts/build_release.py 15.7.0 --release # 正式发布: 递增修订号 
 
 ```
 release/<版本号>[/-r<n>]/
-├── standard/   global.csv/.po/.mo  zh/LC_MESSAGES/global.mo  zh_sg/...  version.txt
-└── full/       结构同 standard, 但缩写键用 _FULL 的完整船名
+├── standard/                 # 标准版(缩写键)
+│   ├── zh/LC_MESSAGES/wowsZhShipnameFixes.mo      # 国服简中
+│   ├── zh_sg/LC_MESSAGES/wowsZhShipnameFixes.mo   # 国际服简中
+│   └── version.txt
+└── full/                     # 全名版(缩写键用 _FULL, 结构同 standard)
 ```
 
-玩家取 `standard/`（或 `full/`）的 `zh/`（或 `zh_sg/`）`global.mo`，放入 `bin/<版本>/res_mods/texts/<语言>/LC_MESSAGES/`。
+玩家取 `standard/`（或 `full/`）放进 `res_mods/texts/`（保留 zh / zh_sg 层级），由 Localization Loader 加载。
+
+## 增量规则
+
+- **只输出差异键**：最终翻译 ≠ 官方 **zh（国服）** 或 **zh_sg（国际服）** 任一不同才计入
+- `full` 版把无后缀键 `IDS_P?S????` 替换为对应 `_FULL` 的完整船名后再算差异
+- 增量为同一份，同时放到 zh / zh_sg 两个语言目录（对无需改动的键覆盖后仍等于官方，安全）
+- **`X-LocalizationLoader-Priority: 50`**（缺省值，非必须；共存的翻译 mod 按优先级裁决）
 
 ## 流程
 
-`ship.xlsm` → `ship.csv` → 合成 `{standard,full}/global.csv`（standard 用最终翻译替换；full 再把缩写键 `IDS_P?S????` 替换为对应 `_FULL` 值）→ po → mo → 复制到 zh/zh_sg → `version.txt`。
+`ship.xlsm` → 最终翻译 → 对比 zh + zh_sg 官方 → 取差异键 → 生成增量 `.mo`（`wowsZhShipnameFixes.mo`，含优先级头）→ 复制到 zh / zh_sg → `version.txt`。
 
 ## 打包
 
@@ -29,10 +39,10 @@ release/<版本号>[/-r<n>]/
 py -3 scripts/package_release.py [版本号(-r)]
 ```
 
-输出 `dist/<版本号>-standard.zip` / `-full.zip`，内部 `res_mods/texts/<zh|zh_sg>/LC_MESSAGES/global.mo`；或用手动工作流发布为 Release。
+输出 `dist/<版本号>-standard.zip` / `-full.zip`，内部 `res_mods/texts/<zh|zh_sg>/LC_MESSAGES/wowsZhShipnameFixes.mo`；或用手动工作流发布为 Release。
 
-## 关键点
+## 要点
 
-- 编译 mo 不用 polib `save_as_mofile`（会丢空翻译键），而是自定义编译器遍历全部条目（含复数条目）
-- `full` 版只处理无后缀键 `IDS_P?S????`，有对应 `_FULL` 则替换为其值，无则保持原值
-- 每个发布目录含 `version.txt`（mod版本/游戏版本/类型/构建时间）
+- 命名不用 `global.mo`（会被游戏自身的 overlay 占用并整体替换），用 **`wowsZhShipnameFixes.mo`**
+- 只含改动键，避免「整份目录拷贝」的冲突、臃肿、随版本更新问题
+- 每个发布目录含 `version.txt`（mod版本 / 游戏版本 / 类型 / 语言 / 变更键数 / 构建时间）
