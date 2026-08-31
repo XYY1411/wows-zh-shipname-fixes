@@ -13,19 +13,50 @@
 """
 import array
 import csv
+import re
 import shutil
 import struct
 import sys
+from datetime import datetime
 from pathlib import Path
 
 import polib
 from openpyxl import load_workbook
 
 # CSV 表头(与 sync_translations.py 导出的格式一致)
-# CSV 表头(与 sync_translations.py 导出的格式一致)
-# CSV 表头(与 sync_translations.py 导出的格式一致)
 CSV_HEADER = ["键值(key)", "翻译(msgstr)"]
-RELEASE_DIR_NAME = "release"  # 发布文件夹名(仓库根目录下)  # 发布文件夹名(仓库根目录下)  # 发布文件夹名(仓库根目录下)
+RELEASE_DIR_NAME = "release"  # 发布文件夹名(仓库根目录下)
+
+
+def next_release_dir(repo: Path, version: str) -> Path:
+    """正式发布: 找 <version>-r<n> 中最大的 n, 返回下一个版本目录 <version>-r(n+1)"""
+    base = repo / RELEASE_DIR_NAME
+    pattern = re.compile(rf"^{re.escape(version)}-r(\d+)$")
+    max_n = 0
+    if base.exists():
+        for d in base.iterdir():
+            if d.is_dir():
+                m = pattern.match(d.name)
+                if m:
+                    max_n = max(max_n, int(m.group(1)))
+    n = max_n + 1
+    return base / f"{version}-r{n}"
+
+
+def write_version_txt(release_dir: Path, version: str, mod_version: str, variant: str = "") -> None:
+    """写 mod 版本元数据文件"""
+    if variant == "full":
+        type_label = "全名版(缩写键也用完整船名)"
+    else:
+        type_label = "标准版(缩写键)"
+    lines = [
+        f"mod版本:      {mod_version}",
+        f"对应游戏版本:  {version}",
+        f"版本类型:      {type_label}",
+        f"构建时间:      {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+    ]
+    (release_dir / "version.txt").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print(f"  [版本] {release_dir.name}/version.txt (mod {mod_version})")
 
 
 def find_latest_version(repo: Path) -> str:
@@ -64,13 +95,29 @@ def ship_xlsm_to_csv(ship_xlsm: Path, out_csv: Path) -> int:
     return len(rows)
 
 
-def merge_global_csv(base_csv: Path, ship_csv: Path, out_csv: Path) -> int:
-    """用 ship.csv 替换 base_csv 中键名相同的键值, 其余原样保留"""
-    replace = {}
+# 无后缀舰船键: IDS_P?S???? (不带 _FULL); 对应 _FULL 键为其完整名称
+SHIP_BASE_KEY_RE = re.compile(r"^IDS_P[A-Z]S[A-Z]\d{3}$")
+
+
+def merge_global_csv(base_csv: Path, ship_csv: Path, out_csv: Path, full_mode: bool = False) -> int:
+    """用 ship.csv 替换 base_csv 中键名相同的键值, 其余原样保留。
+    full_mode: 把无后缀键 IDS_P?S???? 的翻译替换为对应 _FULL 键的翻译(全名版)。
+    """
+    # 读出 ship.csv 全部 (键, 最终翻译)
+    ship_map = {}
     with open(ship_csv, encoding="utf-8-sig", newline="") as f:
         for row in csv.reader(f):
             if row and row[0] and row[0] != CSV_HEADER[0]:
-                replace[row[0]] = row[1]
+                ship_map[row[0]] = row[1] if len(row) > 1 else ""
+
+    replace = dict(ship_map)
+    if full_mode:
+        # 无后缀键: 改用对应 _FULL 键的翻译, 让缩写键位置也显示完整船名
+        for k in list(replace):
+            if SHIP_BASE_KEY_RE.match(k):
+                full_k = k + "_FULL"
+                if full_k in ship_map:
+                    replace[k] = ship_map[full_k]
 
     with open(base_csv, encoding="utf-8-sig", newline="") as f:
         reader = list(csv.reader(f))
@@ -177,8 +224,20 @@ def po_to_mo(po_path: Path, mo_path: Path) -> None:
 
 def main():
     repo = Path(__file__).resolve().parent.parent
-    version = sys.argv[1] if len(sys.argv) > 1 else find_latest_version(repo)
+    args = [a for a in sys.argv[1:] if a != "--release"]
+    release_mode = "--release" in sys.argv   # 正式发布: 递增修订号, 不覆盖
+    version = args[0] if args else find_latest_version(repo)
     print(f"构建 mod 发布版本: {version}")
+
+    # 目标目录: 正式发布(递增 r<n>) 或 本地调试(覆盖最新)
+    if release_mode:
+        release_dir = next_release_dir(repo, version)
+        mod_version = release_dir.name
+        print(f"[正式发布] 生成新版本目录 {release_dir.name} (历史版本保留, 不覆盖)")
+    else:
+        release_dir = repo / RELEASE_DIR_NAME / version
+        mod_version = version
+        print(f"[本地调试] 覆盖最新目录 {release_dir.name} (不保留历史)")
 
     ver_dir = repo / "translations" / version
     if not ver_dir.exists():
@@ -195,29 +254,33 @@ def main():
     ship_csv = ver_dir / "ship.csv"
     ship_xlsm_to_csv(ship_xlsm, ship_csv)
 
-    # 2. 合并 zh_sg/global.csv + ship.csv -> release/<版本>/global.csv
-    release_dir = repo / RELEASE_DIR_NAME / version
+    # 2. 构建两个子版本: standard(缩写) 与 _full(全名, 缩写键也用完整船名)
     release_dir.mkdir(parents=True, exist_ok=True)
-    merged_csv = release_dir / "global.csv"
-    print("2. 合并生成发布 global.csv ...")
-    merge_global_csv(base_global, ship_csv, merged_csv)
+    for variant in ("standard", "full"):
+        variant_dir = release_dir / variant
+        variant_dir.mkdir(parents=True, exist_ok=True)
+        full_mode = (variant == "full")
+        print(f"2. 合并生成 {variant}/global.csv ...")
+        merged_csv = variant_dir / "global.csv"
+        merge_global_csv(base_global, ship_csv, merged_csv, full_mode=full_mode)
 
-    # 3. global.csv -> global.po
-    po_path = release_dir / "global.po"
-    print("3. 生成 global.po ...")
-    csv_to_po(merged_csv, po_path)
+        print(f"3. 生成 {variant}/global.po ...")
+        po_path = variant_dir / "global.po"
+        csv_to_po(merged_csv, po_path)
 
-    # 4. global.po -> global.mo, 复制到 zh / zh_sg
-    mo_tmp = release_dir / "global.mo"
-    print("4. 编译 global.mo ...")
-    po_to_mo(po_path, mo_tmp)
-    for lang in ("zh", "zh_sg"):
-        target = release_dir / lang / "LC_MESSAGES" / "global.mo"
-        target.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(mo_tmp, target)
-        print(f"  [发布] {target}")
+        print(f"4. 编译 {variant}/global.mo ...")
+        mo_tmp = variant_dir / "global.mo"
+        po_to_mo(po_path, mo_tmp)
+        for lang in ("zh", "zh_sg"):
+            target = variant_dir / lang / "LC_MESSAGES" / "global.mo"
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(mo_tmp, target)
+            print(f"  [发布] {target}")
 
-    print(f"\n完成! 发布文件位于: {release_dir}")
+        mod_variant = mod_version if variant == "standard" else f"{mod_version}-full"
+        write_version_txt(variant_dir, version, mod_variant, variant)
+
+    print(f"\n完成! 发布文件位于: {release_dir}/standard 与 {release_dir}/full")
 
 
 if __name__ == "__main__":

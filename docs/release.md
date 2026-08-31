@@ -1,53 +1,38 @@
 # mod 发布构建
 
-脚本：`scripts/build_release.py`
+`scripts/build_release.py` 生成 **standard（缩写键）** 与 **full（全名版）** 两个子版本；`scripts/package_release.py` 打包。
+
+## 构建
 
 ```
-py -3 scripts/build_release.py            # 默认最新版本
-py -3 scripts/build_release.py 15.7.0     # 指定版本
+py -3 scripts/build_release.py [版本号]         # 默认最新; 本地调试(覆盖)
+py -3 scripts/build_release.py 15.7.0 --release # 正式发布: 递增修订号 -r<n>, 不覆盖
 ```
 
-## 发布目录结构
+## 结构
 
 ```
-release/<版本号>/
-├── global.csv          # 合并后的完整键值（舰船键已替换为最终翻译）
-├── global.po           # 中间产物（供检查/再编译）
-├── global.mo           # 编译产物
-├── zh/LC_MESSAGES/global.mo     # mod 发布文件（放入游戏 zh 目录）
-└── zh_sg/LC_MESSAGES/global.mo  # mod 发布文件（放入游戏 zh_sg 目录）
+release/<版本号>[/-r<n>]/
+├── standard/   global.csv/.po/.mo  zh/LC_MESSAGES/global.mo  zh_sg/...  version.txt
+└── full/       结构同 standard, 但缩写键用 _FULL 的完整船名
 ```
 
-玩家拿到 `zh/LC_MESSAGES/global.mo`（或 `zh_sg/` 版本），放入游戏
-`bin/<版本>/res_mods/texts/<语言>/LC_MESSAGES/` 即可生效。
+玩家取 `standard/`（或 `full/`）的 `zh/`（或 `zh_sg/`）`global.mo`，放入 `bin/<版本>/res_mods/texts/<语言>/LC_MESSAGES/`。
 
-## 构建流程
+## 流程
+
+`ship.xlsm` → `ship.csv` → 合成 `{standard,full}/global.csv`（standard 用最终翻译替换；full 再把缩写键 `IDS_P?S????` 替换为对应 `_FULL` 值）→ po → mo → 复制到 zh/zh_sg → `version.txt`。
+
+## 打包
 
 ```
-① 翻译后的 ship.xlsm ──→ translations/<版本号>/ship.csv   （导出最终翻译 E 列）
-② zh_sg/global.csv + ship.csv ──→ release/<版本号>/global.csv
-    （舰船键用最终翻译替换同名键值，其余原样保留）
-③ global.csv ──→ global.po
-④ global.po ──→ global.mo，复制到 zh / zh_sg 的 LC_MESSAGES/
+py -3 scripts/package_release.py [版本号(-r)]
 ```
 
-## 关键设计
+输出 `dist/<版本号>-standard.zip` / `-full.zip`，内部 `res_mods/texts/<zh|zh_sg>/LC_MESSAGES/global.mo`；或用手动工作流发布为 Release。
 
-1. **键集合与官方完全一致**：编译 mo 时不使用 `polib.save_as_mofile`
-   （其 `translated_entries()` 会丢弃空翻译键，导致游戏显示键值 `IDS_XXX`），
-   而是自定义编译器遍历全部条目——包括空翻译键与复数条目。
-2. **复数条目**（`msgid_plural`）：按 gettext 规范用 NUL 字节连接多个形式写入。
-3. **替换统计**：输出中的"替换翻译 N 条"指最终翻译与官方 zh_sg **不同**的舰船键数，
-   其余与官方一致的原样保留。
+## 关键点
 
-## 环境要求
-
-- Python 3.8+，依赖 `openpyxl`、`polib`
-- 统一用 `py -3` 运行（Windows 多 Python 环境下依赖装在 py 默认解释器上）
-
-## 与表格生成的关系
-
-`build_release.py` 独立于 `generate_tables.py`：
-- 表格生成是**自动**的（workflow），发布构建是**人工**执行的（翻译完成后）
-- 发布构建读取 `ship.xlsm` 的最终翻译 + `zh_sg/global.csv`，不修改表格
-- 发布文件在 `release/`，与 `translations/` 的表格互不影响
+- 编译 mo 不用 polib `save_as_mofile`（会丢空翻译键），而是自定义编译器遍历全部条目（含复数条目）
+- `full` 版只处理无后缀键 `IDS_P?S????`，有对应 `_FULL` 则替换为其值，无则保持原值
+- 每个发布目录含 `version.txt`（mod版本/游戏版本/类型/构建时间）

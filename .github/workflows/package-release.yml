@@ -1,0 +1,43 @@
+name: 打包并发布 Mod (手动)
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: '要发布的版本(留空=检测最新; 可带 -r 如 15.7.0-r1)'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # release/ 已在仓库中, checkout 后直接打包即可
+      - name: 打包 zh / zh_sg 为 res_mods/texts zip
+        run: python scripts/package_release.py "${{ inputs.version }}"
+
+      - name: 确定发布版本号
+        id: ver
+        run: |
+          if [ -n "${{ inputs.version }}" ]; then
+            echo "VERSION=${{ inputs.version }}" >> "$GITHUB_ENV"
+          else
+            echo "VERSION=$(ls release | sort -V | tail -1)" >> "$GITHUB_ENV"
+          fi
+          echo "发布版本: $VERSION"
+
+      - name: 发布 GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*.zip
+          tag_name: ${{ env.VERSION }}
+          generate_release_notes: false

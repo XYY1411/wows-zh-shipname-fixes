@@ -1,30 +1,19 @@
-# 自动同步工作流
+# 工作流
 
-工作流文件：`.github/workflows/sync-translations.yml`
+## 自动同步（sync-translations.yml）
 
-## 触发方式
+每天 03:00 UTC（北京时间 11:00）或手动触发。流程：
 
-- **定时**：每天 03:00 UTC（北京时间 11:00）自动检查 ModSDK 新版本
-- **手动**：GitHub Actions 页面点击 **Run workflow** 立即执行
+1. 安装依赖 `polib`、`openpyxl`
+2. `sync_translations.py`：查 ModSDK 最新 tag，有新版本则下载三个语言的 `.mo`，修复文件头并反编译为 `.po`，导出 `global.csv`、`ship.csv`；旧版本缺 CSV 时补生成
+3. `generate_tables.py`：按最新两个版本生成 `global.xlsx`/`ship.xlsm`/差异表，并迁移旧版最终翻译
+4. 提交推送：**只认 `.mo/.po/.csv` 是否有变化**（`xlsx/xlsm` 每次生成含时间戳、字节会变，不能当变更依据）；有实质变化才提交
 
-## 处理流程
+## 打包发布（package-release.yml，手动）
 
-1. **安装依赖**：`polib`（mo 解析）、`openpyxl`（表格生成）
-2. **同步翻译**（`scripts/sync_translations.py`）：
-   - 查询 [wgmods/ModSDK](https://github.com/wgmods/ModSDK) 最新 tag
-   - 与本地已有版本比较，有新版本时用 raw URL 直接下载三个语言的 `.mo` 文件
-   - 修复 `.mo` 文件头（wgmods 元数据换行符丢失，需重建后才能解析）
-   - 用 polib 反编译为 `.po`，导出 `global.csv`（全部词条）与 `ship.csv`（舰船词条）
-   - 已同步版本若 CSV 缺失会自动补生成
-   - 生成版本 `README.md`
-3. **生成表格**（`scripts/generate_tables.py`）：
-   - 自动检测最新两个版本，生成 `global.xlsx` / `ship.xlsm` / 差异表
-   - **增量生成**：已存在的文件跳过（保护人工翻译），详见 [表格与差异生成](tables.md)
-   - **翻译迁移**：从旧版本 ship.xlsm 按键值迁移最终翻译
-4. **提交推送**：全部变更自动 commit 并 push，推送显式携带 token 认证，5 分钟超时防挂起
+输入可选 `version`（留空取最新，可带 `-r` 如 `15.7.0-r1`）。流程：
 
-## 注意事项
-
-- 语言目录名是 **`zh_sg`（下划线）**，不是连字符
-- 旧版本目录**永远保留**，不会因新版本同步而删除
-- workflow 推送使用 `GITHUB_TOKEN`（`contents: write` 权限）
+1. checkout（`release/` 已在仓库）
+2. `package_release.py [version]` 打包 `standard`/`full` 到 `dist/`
+3. 确定版本号（输入值或 `ls release | sort -V | tail -1`）
+4. 上传 `dist/*.zip` 到 GitHub Release（tag=版本号）

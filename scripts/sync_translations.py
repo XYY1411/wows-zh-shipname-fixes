@@ -294,7 +294,7 @@ ModSDK 翻译文件快照，来源: {REPO} 标签 `{tag}`。
 | 文件/目录 | 说明 |
 |---|---|
 | `zh/` `zh_sg/` `en/` | 各语言的原始 .mo、反编译 .po、全部词条 CSV 与舰船词条 CSV |
-| `global.xlsx` | 三语言对照表（键值/zh/zh_sg/en/最终翻译），数据区 Consolas 字体 |
+| `global.xlsx` | 三语言对照表（键值/zh/zh_sg/en/最终翻译），数据区中文微软雅黑/英文 Arial 字体 |
 | `ship.xlsm` | 舰船词条表格（含 VB 宏自动配色，最终翻译列人工填写） |
 | `global_diff.xlsx` | 与上一版本的全部词条差异（新旧翻译对比） |
 | `ship_diff.xlsx` | 与上一版本的舰船词条差异（最终翻译列可填写） |
