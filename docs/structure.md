@@ -8,7 +8,7 @@ wows-zh-shipname-fixes/
 ├── scripts/
 │   ├── sync_translations.py    # 同步 ModSDK 翻译(.mo→po→csv)
 │   ├── generate_tables.py      # 生成 xlsx/xlsm 表格与差异
-│   ├── build_release.py        # 生成增量 standard/full 发布(供 loader)
+│   ├── build_release.py        # 生成完整+增量 standard/full 发布
 │   └── package_release.py      # 打包为 res_mods/texts zip
 ├── templates/
 │   └── ship_template.xlsm      # ship.xlsm 模板(含 VB 宏)
@@ -19,8 +19,10 @@ wows-zh-shipname-fixes/
 │   └── global_diff.xlsx  ship_diff.xlsx
 ├── release/<版本号>[/-r<n>]/
 │   ├── standard/               # 标准版(缩写键)
-│   │   ├── zh/LC_MESSAGES/wowsZhShipnameFixes.mo     # 国服简中增量
-│   │   ├── zh_sg/LC_MESSAGES/wowsZhShipnameFixes.mo  # 国际服简中增量
+│   │   ├── zh/LC_MESSAGES/global.mo            # 完整版(无 loader 用)
+│   │   ├── zh/LC_MESSAGES/wowsZhShipnameFixes.mo   # 增量版(loader 用)
+│   │   ├── zh_sg/LC_MESSAGES/global.mo         # 完整版(国际服)
+│   │   ├── zh_sg/LC_MESSAGES/wowsZhShipnameFixes.mo  # 增量版(国际服)
 │   │   └── version.txt
 │   └── full/                   # 全名版(缩写键用 _FULL, 结构同 standard)
 ├── dist/                       # 打包产物(<版本号>-<variant>.zip, 不提交)
@@ -33,7 +35,7 @@ wows-zh-shipname-fixes/
 ```
 ModSDK .mo → sync_translations.py → global.po/csv + ship.csv
     → generate_tables.py → global.xlsx / ship.xlsm / *_diff.xlsx
-    → build_release.py → release/<版本号>/{standard,full}/{zh,zh_sg}/LC_MESSAGES/wowsZhShipnameFixes.mo
+    → build_release.py → release/<版本号>/{standard,full}/{zh,zh_sg}/LC_MESSAGES/{global.mo, wowsZhShipnameFixes.mo}
     → package_release.py → dist/<版本号>-{standard,full}.zip (res_mods/texts/...)
 ```
 
