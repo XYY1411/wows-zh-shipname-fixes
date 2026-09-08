@@ -6,13 +6,15 @@
 - 增量版 wowsZhShipnameFixes.mo: 只含「最终翻译 ≠ 官方 zh/zh_sg 任一」的舰船键,
                      加 X-LocalizationLoader-Priority 头, 给『使用阿斯兰/Localization Loader』的玩家。
 
-每个版本(standard=缩写键 / full=全名版)下, 两种 .mo 都按 zh(国服简中) 与 zh_sg(国际服简中) 输出。
+每个版本(standard=缩写键 / full=全名版)下, 两种 .mo 都按 zh(国服简中) 与 zh_sg(国际服简中) 输出;
+zh_cn 为 zh 的完整拷贝, 兼容不同客户端对「简体中文」目录的命名(zh / zh_cn)。
 
 用法:
     python scripts/build_release.py                # 默认最新版本
     python scripts/build_release.py 15.7.0         # 指定版本
     python scripts/build_release.py 15.7.0 --release   # 正式发布: 递增修订号, 不覆盖
 """
+
 import array
 import csv
 import re
@@ -29,9 +31,23 @@ CSV_HEADER = ["键值(key)", "翻译(msgstr)"]
 RELEASE_DIR_NAME = "release"  # 发布文件夹名(仓库根目录下)
 MOD_NAME = "wowsZhShipnameFixes"  # mod 名(驼峰, 用作增量 .mo 文件名, 不能叫 global.mo)
 LOCALES = ("zh", "zh_sg")  # 语言目录: zh=国服简中, zh_sg=国际服简中
-LC_PRIORITY = "50"  # LocalizationLoader 优先级(缺省即 50, 并非必须)
+LC_PRIORITY = "60"  # LocalizationLoader 优先级(数值越大越优先, 同前缀 mod 间较高者生效)
 # 无后缀舰船键: IDS_P?S???? (不带 _FULL); 对应 _FULL 键为其完整名称
 SHIP_BASE_KEY_RE = re.compile(r"^IDS_P[A-Z]S[A-Z]\d{3}$")
+
+
+def make_po_metadata(with_priority: bool = False) -> dict:
+    """构造 .mo 元数据头; 增量版额外写 LocalizationLoader 优先级"""
+    md = {
+        "Project-Id-Version": MOD_NAME,
+        "Language": "zh_CN",
+        "MIME-Version": "1.0",
+        "Content-Type": "text/plain; charset=UTF-8",
+        "Content-Transfer-Encoding": "8bit",
+    }
+    if with_priority:
+        md["X-LocalizationLoader-Priority"] = LC_PRIORITY
+    return md
 
 
 def next_release_dir(repo: Path, version: str) -> Path:
@@ -49,8 +65,14 @@ def next_release_dir(repo: Path, version: str) -> Path:
     return base / f"{version}-r{n}"
 
 
-def write_version_txt(release_dir: Path, version: str, mod_version: str, variant: str = "",
-                      full_count: int = 0, inc_count: int = 0) -> None:
+def write_version_txt(
+    release_dir: Path,
+    version: str,
+    mod_version: str,
+    variant: str = "",
+    full_count: int = 0,
+    inc_count: int = 0,
+) -> None:
     """写 mod 版本元数据文件"""
     type_label = "全名版(_FULL)" if variant == "full" else "标准版(缩写键)"
     lines = [
@@ -160,7 +182,12 @@ def po_to_mo(po: polib.POFile, mo_path: Path) -> None:
     output = struct.pack(
         "Iiiiiii",
         0x950412DE,  # gettext magic
-        0, entries_len, 7 * 4, 7 * 4 + entries_len * 8, 0, keystart
+        0,
+        entries_len,
+        7 * 4,
+        7 * 4 + entries_len * 8,
+        0,
+        keystart,
     )
     output += array.array("i", offsets).tobytes()
     output += ids
@@ -169,7 +196,9 @@ def po_to_mo(po: polib.POFile, mo_path: Path) -> None:
     print(f"  [完整] {mo_path} ({entries_len - 1} 条, 含空翻译键)")
 
 
-def build_full_mo(official_map: dict, ship_map: dict, variant: str, out_mo: Path) -> int:
+def build_full_mo(
+    official_map: dict, ship_map: dict, variant: str, out_mo: Path
+) -> int:
     """生成完整版 global.mo: 该语言官方全部键 + 舰船键覆盖为最终翻译, 返回总键数"""
     eff = effective_translations(ship_map, variant)
     merged = dict(official_map)
@@ -177,13 +206,7 @@ def build_full_mo(official_map: dict, ship_map: dict, variant: str, out_mo: Path
         if v:  # 只覆盖有最终翻译的舰船键
             merged[k] = v
     po = polib.POFile()
-    po.metadata = {
-        "Project-Id-Version": MOD_NAME,
-        "Language": "zh_CN",
-        "MIME-Version": "1.0",
-        "Content-Type": "text/plain; charset=UTF-8",
-        "Content-Transfer-Encoding": "8bit",
-    }
+    po.metadata = make_po_metadata()
     for k in sorted(merged):
         po.append(polib.POEntry(msgid=k, msgstr=merged[k]))
     out_mo.parent.mkdir(parents=True, exist_ok=True)
@@ -191,26 +214,24 @@ def build_full_mo(official_map: dict, ship_map: dict, variant: str, out_mo: Path
     return len(merged)
 
 
-def build_incremental_mo(ship_map: dict, official_zh: dict, official_zhsg: dict, variant: str, out_mo: Path) -> int:
+def build_incremental_mo(
+    ship_map: dict, official_zh: dict, official_zhsg: dict, variant: str, out_mo: Path
+) -> int:
     """生成增量版 .mo(只含差异键, 给 Localization Loader), 返回差异键数。
     差异判定: 最终翻译非空 且 与 zh(国服) 或 zh_sg(国际服) 任一官方不同才计入。
     """
     eff = effective_translations(ship_map, variant)
-    delta = {k: v for k, v in eff.items() if v and (official_zh.get(k) != v or official_zhsg.get(k) != v)}
+    delta = {
+        k: v
+        for k, v in eff.items()
+        if v and (official_zh.get(k) != v or official_zhsg.get(k) != v)
+    }
     if not delta:
         print(f"  [{variant}] 无差异键, 跳过增量")
         return 0
 
     po = polib.POFile()
-    po.metadata = {
-        "Project-Id-Version": MOD_NAME,
-        "Language": "zh_CN",
-        "MIME-Version": "1.0",
-        "Content-Type": "text/plain; charset=UTF-8",
-        "Content-Transfer-Encoding": "8bit",
-        # LocalizationLoader 优先级
-        "X-LocalizationLoader-Priority": LC_PRIORITY,
-    }
+    po.metadata = make_po_metadata(with_priority=True)
     for k in sorted(delta):
         po.append(polib.POEntry(msgid=k, msgstr=delta[k]))
 
@@ -220,18 +241,10 @@ def build_incremental_mo(ship_map: dict, official_zh: dict, official_zhsg: dict,
     return len(delta)
 
 
-def cleanup_legacy(variant_dir: Path) -> None:
-    """删除旧版中间产物(global.csv / global.po, 现在直接用 dict 生成不再输出)"""
-    for name in ("global.csv", "global.po"):
-        p = variant_dir / name
-        if p.exists():
-            p.unlink()
-
-
 def main():
     repo = Path(__file__).resolve().parent.parent
     args = [a for a in sys.argv[1:] if a != "--release"]
-    release_mode = "--release" in sys.argv   # 正式发布: 递增修订号, 不覆盖
+    release_mode = "--release" in sys.argv  # 正式发布: 递增修订号, 不覆盖
     version = args[0] if args else find_latest_version(repo)
     print(f"构建 mod 发布版本: {version}")
 
@@ -264,27 +277,45 @@ def main():
         variant_dir.mkdir(parents=True, exist_ok=True)
 
         # 1) 完整版 global.mo: 每个语言一份(给无 loader 用户)
+        #    full_count 取最后一次(zh_sg); zh_sg 因含 #PluralForms 伪键, 键数比 zh 多 1
         full_count = 0
         for lang, official in (("zh", official_zh), ("zh_sg", official_zhsg)):
             full_mo = variant_dir / lang / "LC_MESSAGES" / "global.mo"
             full_count = build_full_mo(official, ship_map, variant, full_mo)
 
-        # 2) 增量版 wowsZhShipnameFixes.mo: 给 loader 用户(zh 生成后复制到 zh_sg)
-        zh_mo = variant_dir / "zh" / "LC_MESSAGES" / f"{MOD_NAME}.mo"
-        inc_count = build_incremental_mo(ship_map, official_zh, official_zhsg, variant, zh_mo)
+        # 2) 增量版 wowsZhShipnameFixes.mo: 给 loader 用户(直接放语言目录下, zh 生成后复制到 zh_sg)
+        zh_mo = variant_dir / "zh" / f"{MOD_NAME}.mo"
+        inc_count = build_incremental_mo(
+            ship_map, official_zh, official_zhsg, variant, zh_mo
+        )
         if inc_count:
-            zhsg_mo = variant_dir / "zh_sg" / "LC_MESSAGES" / f"{MOD_NAME}.mo"
+            zhsg_mo = variant_dir / "zh_sg" / f"{MOD_NAME}.mo"
             zhsg_mo.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(zh_mo, zhsg_mo)
             print(f"  [{variant}] 复制到 {zhsg_mo}")
 
-        write_version_txt(variant_dir, version,
-                          mod_version if variant == "standard" else f"{mod_version}-full",
-                          variant, full_count=full_count, inc_count=inc_count)
-        cleanup_legacy(variant_dir)  # 删除旧 global.csv/po 中间产物
+        write_version_txt(
+            variant_dir,
+            version,
+            mod_version if variant == "standard" else f"{mod_version}-full",
+            variant,
+            full_count=full_count,
+            inc_count=inc_count,
+        )
 
-    print(f"\n完成! 发布文件位于: {release_dir}/{{standard,full}}/{{zh,zh_sg}}/LC_MESSAGES/"
-          f"{{global.mo, {MOD_NAME}.mo}}")
+        # 3) zh_cn: 完全复制 zh(兼容部分客户端用 zh_cn 作为简体中文目录)
+        zh_src = variant_dir / "zh"
+        zh_cn_dst = variant_dir / "zh_cn"
+        if zh_src.exists():
+            if zh_cn_dst.exists():
+                shutil.rmtree(zh_cn_dst)
+            shutil.copytree(zh_src, zh_cn_dst)
+            print(f"  [{variant}] 复制 zh -> zh_cn")
+
+    print(
+        f"\n完成! 发布文件位于: {release_dir}/{{standard,full}}/{{zh,zh_cn,zh_sg}}/"
+        f"{{LC_MESSAGES/global.mo, {MOD_NAME}.mo}}"
+    )
 
 
 if __name__ == "__main__":

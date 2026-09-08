@@ -20,9 +20,11 @@ wows-zh-shipname-fixes/
 ├── release/<版本号>[/-r<n>]/
 │   ├── standard/               # 标准版(缩写键)
 │   │   ├── zh/LC_MESSAGES/global.mo            # 完整版(无 loader 用)
-│   │   ├── zh/LC_MESSAGES/wowsZhShipnameFixes.mo   # 增量版(loader 用)
+│   │   ├── zh/wowsZhShipnameFixes.mo           # 增量版(loader 用)
+│   │   ├── zh_cn/LC_MESSAGES/global.mo         # 完整版(zh 拷贝)
+│   │   ├── zh_cn/wowsZhShipnameFixes.mo        # 增量版(与 zh 同)
 │   │   ├── zh_sg/LC_MESSAGES/global.mo         # 完整版(国际服)
-│   │   ├── zh_sg/LC_MESSAGES/wowsZhShipnameFixes.mo  # 增量版(国际服)
+│   │   ├── zh_sg/wowsZhShipnameFixes.mo        # 增量版(国际服)
 │   │   └── version.txt
 │   └── full/                   # 全名版(缩写键用 _FULL, 结构同 standard)
 ├── dist/                       # 打包产物(<版本号>-<variant>.zip, 不提交)
@@ -35,7 +37,7 @@ wows-zh-shipname-fixes/
 ```
 ModSDK .mo → sync_translations.py → global.po/csv + ship.csv
     → generate_tables.py → global.xlsx / ship.xlsm / *_diff.xlsx
-    → build_release.py → release/<版本号>/{standard,full}/{zh,zh_sg}/LC_MESSAGES/{global.mo, wowsZhShipnameFixes.mo}
+    → build_release.py → release/<版本号>/{standard,full}/{zh,zh_cn,zh_sg}/{LC_MESSAGES/global.mo, wowsZhShipnameFixes.mo}
     → package_release.py → dist/<版本号>-{standard,full}.zip (res_mods/texts/...)
 ```
 

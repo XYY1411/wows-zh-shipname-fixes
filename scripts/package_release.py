@@ -9,7 +9,9 @@
   <版本>-inc-standard.zip      # 增量版, 缩写键
   <版本>-inc-full.zip          # 增量版, 全名版
 
-zip 内部: res_mods/texts/<zh|zh_sg>/LC_MESSAGES/<mo 文件名>
+zip 内部: res_mods/texts/<zh|zh_cn|zh_sg>/
+  global -> <语言>/LC_MESSAGES/<mo>     inc(增量) -> <语言>/<mo>
+(zh_cn 为 zh 的完整拷贝, 兼容不同客户端对简体中文目录的命名)
 
 版本号支持 -r<n> 标记, 如 15.7.0-r1。
 
@@ -27,7 +29,7 @@ RELEASE_DIR_NAME = "release"
 OUT_DIR_NAME = "dist"
 MOD_NAME = "wowsZhShipnameFixes"
 VERSION_RE = re.compile(r"^(\d+\.\d+\.\d+)(?:-r(\d+))?$")
-LANGS = ("zh", "zh_sg")
+LANGS = ("zh", "zh_cn", "zh_sg")
 # 4 种组合: (kind, variant, mo 文件名)。kind: global=全量 / inc=增量
 COMBOS = [
     ("global", "standard", "global.mo"),
@@ -67,7 +69,9 @@ def resolve_release_dir(repo: Path, version: str | None) -> Path:
 
 
 def package_combo(release_dir: Path, out_dir: Path, kind: str, variant: str, mo_name: str):
-    """打包一种组合为 zip: <版本>-<kind>-<variant>.zip(内部 res_mods/texts/<lang>/LC_MESSAGES/<mo>)"""
+    """打包一种组合为 zip: <版本>-<kind>-<variant>.zip。
+    完整版(global)放 res_mods/texts/<lang>/LC_MESSAGES/; 增量版直接放 <lang>/ 下。
+    """
     src = release_dir / variant
     if not src.exists():
         print(f"  [跳过] {variant} 不存在")
@@ -75,9 +79,15 @@ def package_combo(release_dir: Path, out_dir: Path, kind: str, variant: str, mo_
     zip_path = out_dir / f"{release_dir.name}-{kind}-{variant}.zip"
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
         for lang in LANGS:
-            mo = src / lang / "LC_MESSAGES" / mo_name
+            rel = Path("res_mods/texts") / lang
+            if kind == "global":
+                mo = src / lang / "LC_MESSAGES" / mo_name
+                arc = rel / "LC_MESSAGES" / mo_name
+            else:  # 增量: 直接放语言目录下(loader 递归读取)
+                mo = src / lang / mo_name
+                arc = rel / mo_name
             if mo.exists():
-                z.write(mo, Path("res_mods/texts") / lang / "LC_MESSAGES" / mo_name)
+                z.write(mo, arc)
     print(f"  [打包] {zip_path}")
     return zip_path
 

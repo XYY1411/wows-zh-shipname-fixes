@@ -4,7 +4,7 @@
 
 ## Mod 介绍
 
-《战舰世界》现有两个简体中文翻译版本——国服（360服）使用的 `zh` 和国际服（wg服）使用的 `zh-sg`，两边的翻译有很多不同，同时也有很多错误，尤其是国服还会对泛亚及日本舰船进行和谐，如果使用反和谐 mod 也只是简单的替换为国际服文本，反而导致了许多错误，本 mod 用于修正这些翻译错误。
+《战舰世界》现有两个简体中文翻译版本——国服（360服）使用的 `zh/zh-cn` 和国际服（wg服）使用的 `zh-sg`，两边的翻译有很多不同，同时也有很多错误，尤其是国服还会对泛亚及日本舰船进行和谐，如果使用反和谐 mod 也只是简单的替换为国际服文本，反而导致了许多错误，本 mod 用于修正这些翻译错误。
 
 ### 修改内容
 
@@ -19,7 +19,7 @@ Mod 有四种文件以供下载：
 | global   | 以国际服为基础替换全部翻译，会与其他任何修改了翻译的 mod 冲突                 |
 | inc      | 仅修正错误的翻译，国服其他的翻译会保持不变，只会与修改了同一条文本的 mod 冲突 |
 
-**注意**：inc 版本的 mod 需要手动安装 [AndrewTaro/LocalizationLoader](https://github.com/AndrewTaro/LocalizationLoader)
+**注意**：inc 版本的 mod 需要手动安装 [AndrewTaro/LocalizationLoader](https://github.com/AndrewTaro/LocalizationLoader) ，如果安装了 Aslain Modpack 可能会自动安装 AndrewTaro/LocalizationLoader，请先检查是否已经安装了 AndrewTaro/LocalizationLoader
 
 示例：
 

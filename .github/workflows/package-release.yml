@@ -22,7 +22,7 @@ jobs:
           python-version: '3.12'
 
       # release/ 已在仓库中, checkout 后直接打包即可
-      - name: 打包 zh / zh_sg 为 res_mods/texts zip
+      - name: 打包 zh / zh_cn / zh_sg 为 res_mods/texts zip
         run: python scripts/package_release.py "${{ inputs.version }}"
 
       - name: 确定发布版本号
